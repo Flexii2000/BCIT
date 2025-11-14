@@ -287,6 +287,8 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 
 ---
 
+# Chapter 5
+
 ## 5-16-Activity-Based-Costing-Terminology
 [Table of Contents](#Table-of-Contents)
 ![5-16](/images/accounting/5-16-1.jpeg)
@@ -346,6 +348,8 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 
 ---
 
+# Chapter 6
+
 ## 6-20-Westing-Company-Direct-Materials-Purchases-Budget
 [Table of Contents](#Table-of-Contents)
 ![6-20](/images/accounting/6-20-1.jpeg)
@@ -393,3 +397,7 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 ## 6-35-Pet-Transport-Company-Cash-Budget-for-April
 [Table of Contents](#Table-of-Contents)
 ![6-35](/images/accounting/6-35-1.jpeg)
+
+---
+
+# Chapter 7
