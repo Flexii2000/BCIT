@@ -2096,6 +2096,8 @@ COGS = 21,364,000
 
 ---
 
+# Chapter 5
+
 ## 5-16-Activity-Based-Costing-Terminology
 [Table of Contents](#Table-of-Contents)
 ![5-16](/images/accounting/5-16-1.jpeg)
@@ -2784,6 +2786,8 @@ Check: the four totals sum back to $2{,}697{,}070$.
   - Decide whether to expand high-margin services or redesign/streamline low-margin ones.
 
 ---
+
+# Chapter 6
 
 ## 6-20-Westing-Company-Direct-Materials-Purchases-Budget
 [Table of Contents](#Table-of-Contents)
