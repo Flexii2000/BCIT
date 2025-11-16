@@ -1657,4 +1657,166 @@ Set timezone:
 
     sudo timedatectl set-timezone America/Vancouver
 
+---
+
+#### Week 11
+
+---
+
+##### 1. Systemd Journal & journald Overview
+
+**systemd-journald** is the logging daemon in systemd-based Linux systems.  
+It collects log messages from:
+
+- the **kernel**
+- **initrd** (early boot)
+- **systemd services**
+- **user applications** (stdout / stderr)
+
+Journald stores logs in a **binary, indexed format**, which allows very fast filtering and searching.
+
+You interact with the logs using:
+
+    journalctl
+
+---
+
+##### 2. Where Logs Are Stored
+
+###### Volatile logs  
+Stored in:
+
+    /run/log/journal
+
+Lost on reboot.
+
+###### Persistent logs  
+Stored in:
+
+    /var/log/journal
+
+Retained across reboots.
+
+If `/var/log/journal/` exists, journald automatically writes persistent logs.  
+If not, it falls back to volatile storage.
+
+---
+
+##### 3. Configuring journald
+
+Configuration file:
+
+    /etc/systemd/journald.conf
+
+This file contains commented options you can enable or modify (e.g., maximum log size, compression, storage behavior).
+
+Check documentation:
+
+    man journald.conf
+
+Common settings you may adjust:
+
+- `Storage=` (auto, persistent, volatile, none)
+- `SystemMaxUse=`
+- `SystemKeepFree=`
+- `Compress=yes/no`
+
+After modifying the config:
+
+    sudo systemctl restart systemd-journald
+
+---
+
+##### 4. Using journalctl
+
+`journalctl` is the main tool for viewing, filtering, and exporting logs.
+
+###### Reminder:
+
+If you forgot sudo:
+
+    sudo !!
+
+---
+
+###### Basic Commands
+
+    journalctl               # View all logs
+    journalctl -b            # Current boot
+    journalctl -b -1         # Previous boot
+    journalctl --list-boots  # List boot sessions
+    journalctl -k            # Kernel messages only (like dmesg)
+
+---
+
+##### 5. Time-Based Filtering
+
+    journalctl --since "2025-11-11 10:00" --until "2025-11-11 12:00"
+    journalctl --since yesterday
+    journalctl --since 09:00 --until "1 hour ago"
+
+---
+
+##### 6. Filter by Priority
+
+    journalctl -p err -b
+
+Priority levels:
+
+| Level | Name     |
+|-------|-----------|
+| 0 | emerg  |
+| 1 | alert  |
+| 2 | crit   |
+| 3 | err    |
+| 4 | warning|
+| 5 | notice |
+| 6 | info   |
+| 7 | debug  |
+
+---
+
+##### 7. Filter by Unit, PID, or UID
+
+By service:
+
+    journalctl -u nginx
+    journalctl -u ssh --since today
+
+Multiple services:
+
+    journalctl -u nginx -u php-fpm --since today
+
+By PID:
+
+    journalctl _PID=8880
+
+By UID (commonly system users):
+
+    journalctl _UID=1001
+    journalctl _UID=988
+
+Show all UIDs seen by journald:
+
+    journalctl -F _UID
+
+---
+
+##### 8. Output Formatting
+
+    journalctl -o json-pretty   # readable JSON output
+    journalctl -o verbose       # all metadata fields
+    journalctl --no-pager       # disable pager (useful for scripts)
+
+---
+
+##### 9. Live Monitoring (Tail Logs)
+
+    journalctl -f
+
+Follow logs live (like `tail -f`).  
+Exit with CTRL + C.
+
+---
+
  
