@@ -623,4 +623,370 @@
 
 10. What is the purpose of command substitution, and give one example of its use.
 
+---
+
+## Week 7 – Practice Questions  
+
+### Multiple-Choice Questions (MCQ)
+
+1. Which of the following describes the correct order of Bash expansions?
+   A) Variable → Brace → Arithmetic → Command  
+   B) Brace → Tilde → Parameter → Command → Arithmetic → Word Splitting → Filename  
+   C) Filename → Word Splitting → Brace → Parameter  
+   D) Arithmetic → Tilde → Brace → Parameter  
+
+2. What does brace expansion do?
+   A) Runs mathematical expressions  
+   B) Expands variables into values  
+   C) Generates lists or sequences  
+   D) Performs pattern matching  
+
+3. What does `~` expand to (unquoted)?
+   A) The root directory  
+   B) The user’s shell  
+   C) The user’s home directory  
+   D) `/tmp`  
+
+4. What does `${#name}` return?
+   A) The number of files in a directory  
+   B) The length of the variable’s value  
+   C) The exit status of the previous command  
+   D) The number of arguments  
+
+5. What does `${file##*.}` extract?
+   A) The directory name  
+   B) The filename without extension  
+   C) Only the extension  
+   D) The first character  
+
+6. What does `$(command)` represent?
+   A) Array expansion  
+   B) Command substitution  
+   C) Function declaration syntax  
+   D) File descriptor redirection  
+
+7. Which operator will expand unquoted words into multiple items based on whitespace?
+   A) Word splitting  
+   B) Parameter expansion  
+   C) Regex expansion  
+   D) Arithmetic evaluation  
+
+8. What does the wildcard `?` match?
+   A) Any number of characters  
+   B) Digits only  
+   C) Zero or one character  
+   D) Exactly one single character  
+
+9. Which syntax defines a Bash function?
+   A) fun { ... }  
+   B) function fun() { ... } or fun() { ... }  
+   C) newfun = function { ... }  
+   D) define fun { ... }  
+
+10. What does `read -p "Name: " name` do?
+    A) Reads a file  
+    B) Prompts the user and stores input in `name`  
+    C) Creates a new variable  
+    D) Reads silently without echoing  
+
+
+### Short-Answer Questions
+
+1. List all seven types of expansion performed by Bash in order.
+
+2. Provide an example of brace expansion that generates:  
+   file1 file2 file3
+
+3. What does tilde expansion do?
+
+4. Write an example of command substitution that stores the current date in a variable `now`.
+
+5. How do you extract the file extension from the variable `path`?
+
+6. How do you loop through the items in the array `colors=("red" "blue" "green")`?
+
+7. What does `${arr[@]}` return when `arr` is an array?
+
+8. What does arithmetic expansion look like in Bash? Provide an example.
+
+9. What does `read -s` do, and why is it useful?
+
+10. Write a small Bash function named `greet` that prints:  
+    Hello, NAME  
+    using the first argument passed to it.
+
+---
+
+## Week 9 – Practice Questions  
+
+### Multiple-Choice Questions (MCQ)
+
+1. Which file contains user account information such as username, UID, GID, home directory, and login shell?
+   A) /etc/shadow  
+   B) /etc/passwd  
+   C) /etc/group  
+   D) /etc/login  
+
+2. Which file stores encrypted password hashes and is readable only by root?
+   A) /etc/passwd  
+   B) /etc/shadow  
+   C) /etc/auth  
+   D) /etc/secure  
+
+3. Which UID belongs to the root user?
+   A) 1000  
+   B) 65534  
+   C) 0  
+   D) 1  
+
+4. Which command creates a new user with a login shell?
+   A) useradd -s /bin/bash name  
+   B) mkuser name  
+   C) newuser --shell name  
+   D) addaccount name  
+
+5. Which command adds a user to an additional group without removing existing memberships?
+   A) useradd group user  
+   B) usermod -aG group user  
+   C) addgroup user group  
+   D) useredit group user  
+
+6. What do the permission bits `rw-` translate to in octal?
+   A) 2  
+   B) 4  
+   C) 6  
+   D) 7  
+
+7. What does the sticky bit do when set on a directory (e.g., /tmp)?
+   A) Prevents anyone from writing inside it  
+   B) Prevents users from deleting files they do not own  
+   C) Forces all files to inherit owner permissions  
+   D) Enables execution by all users  
+
+8. What does the SUID bit do when applied to an executable?
+   A) Runs the program as its file owner  
+   B) Runs the program as the logged-in user  
+   C) Shares execution privileges with the group  
+   D) Makes the program unreadable  
+
+9. Which command changes both the owner and the group of a file?
+   A) chmod user:group file  
+   B) chgrp user file  
+   C) chown user:group file  
+   D) own file user group  
+
+10. Which command shows the groups a specific user belongs to?
+    A) id user  
+    B) groups user  
+    C) group --list user  
+    D) listgroups user  
+
+
+### Short-Answer Questions
+
+1. What are the three Linux permission classes?
+
+2. What do the letters r, w, and x stand for?
+
+3. Decode the permission string `drwxrw-r--` into user, group, and other permissions.
+
+4. What information is stored in `/etc/passwd`?
+
+5. What information is stored in `/etc/shadow`?
+
+6. How do you set a password for a user named `mo`?
+
+7. What UID range is typically used for normal (non-system) users?
+
+8. What does the command `sudo userdel -r mo` do?
+
+9. Write a command that sets file permissions to `644`.
+
+10. Explain the difference between SUID and SGID in one sentence each.
+
+---
+
+## Week 10 – Practice Questions  
+
+### Multiple-Choice Questions (MCQ)
+
+1. What is systemd?
+   A) A logging system only  
+   B) A bootloader  
+   C) The init system (PID 1) and service manager  
+   D) A package manager  
+
+2. Which command checks the status of a systemd service?
+   A) sys status `<unit>`  
+   B) systemctl check `<unit>`  
+   C) service show `<unit>`  
+   D) systemctl status `<unit>`  
+
+3. Which command starts a systemd service?
+   A) systemctl enable `<unit>`  
+   B) systemctl start `<unit>`  
+   C) run `<unit>`  
+   D) service begin `<unit>`  
+
+4. Where should administrator-created or custom unit files be placed?
+   A) /usr/lib/systemd/system/  
+   B) /etc/systemd/system/  
+   C) /var/systemd/units/  
+   D) ~/.config/systemd/units/  
+
+5. What does the `ExecStart=` directive specify inside a `.service` file?
+   A) Unit description  
+   B) Dependencies  
+   C) The command that the service runs  
+   D) The target the service belongs to  
+
+6. What does `systemctl daemon-reload` do?
+   A) Reloads log files  
+   B) Reloads all running services  
+   C) Reloads unit file definitions  
+   D) Reboots systemd  
+
+7. Which of the following is the multi-user, non-GUI target?
+   A) graphical.target  
+   B) network.target  
+   C) multi-user.target  
+   D) basic.target  
+
+8. Which command lists all configured timers?
+   A) timersctl list  
+   B) systemctl list-units --timers  
+   C) systemctl list-timers  
+   D) systemctl timers  
+
+9. In a `.timer` unit, what does `OnCalendar=` define?
+   A) Startup dependencies  
+   B) The boot delay before starting  
+   C) A calendar-based schedule  
+   D) The timezone  
+
+10. What does `systemctl enable --now myservice.service` do?
+    A) Starts the service only  
+    B) Enables the service on next boot only  
+    C) Enables the service now and on boot  
+    D) Stops the service if running  
+
+
+### Short-Answer Questions
+
+1. What is the purpose of a unit file in systemd?
+
+2. What is PID 1, and why is it important?
+
+3. Explain the difference between `systemctl start` and `systemctl enable`.
+
+4. What does the `WantedBy=` directive do inside a unit file?
+
+5. Write the command used to restart a service named `backup.service`.
+
+6. What is a systemd “target”? Give an example.
+
+7. What does the `OnBootSec=` timer directive specify?
+
+8. How do you reload unit definitions after editing a service file?
+
+9. What command shows all failed systemd units?
+
+10. Name the directories for:  
+    a) default packaged service files  
+    b) custom admin-defined service files  
+
+---
+
+## Week 11 – Practice Questions  
+
+### Multiple-Choice Questions (MCQ)
+
+1. What service collects and manages logs on systemd-based systems?
+   A) syslogd  
+   B) journalctl  
+   C) systemd-journald  
+   D) logrotate  
+
+2. Where are volatile journal logs stored?
+   A) /var/log/journal  
+   B) /run/log/journal  
+   C) /etc/journal  
+   D) /tmp/journal  
+
+3. Where are persistent journal logs stored?
+   A) /run/log/journal  
+   B) /var/log/journal  
+   C) /usr/lib/journal  
+   D) /home/logs  
+
+4. Which command shows all logs from the current boot?
+   A) journalctl -a  
+   B) journalctl -k  
+   C) journalctl -b  
+   D) journalctl --now  
+
+5. Which command lists all previous boot sessions?
+   A) journalctl --boot-list  
+   B) journalctl list-boots  
+   C) journalctl --list-boots  
+   D) bootsctl list  
+
+6. Which priority option shows only error-level logs?
+   A) -p info  
+   B) -p warning  
+   C) -p err  
+   D) -p critical  
+
+7. Which command filters logs by systemd unit?
+   A) journalctl service=`<unit>`  
+   B) journalctl unit `<unit>`  
+   C) journalctl -u `<unit>`  
+   D) logs -u `<unit>`  
+
+8. What does `journalctl -k` show?
+   A) All system logs  
+   B) Kernel-only messages  
+   C) All logs from last hour  
+   D) User messages  
+
+9. Which output mode prints logs as formatted JSON?
+   A) journalctl -o json  
+   B) journalctl -o json-pretty  
+   C) journalctl -o verbose  
+   D) journalctl -o structured  
+
+10. After modifying `/etc/systemd/journald.conf`, which command applies changes?
+    A) journalctl restart  
+    B) systemctl reload journald  
+    C) systemctl restart systemd-journald  
+    D) systemd --reload  
+
+
+### Short-Answer Questions
+
+1. What types of messages does systemd-journald collect?
+
+2. What is the difference between volatile and persistent log storage?
+
+3. What condition triggers journald to use persistent logs automatically?
+
+4. How do you view kernel-only messages?
+
+5. How do you view logs from the previous boot?
+
+6. What does the `-p` option do in journalctl?
+
+7. Write a command that shows all logs from the `ssh` service since today.
+
+8. What does `journalctl -f` do?
+
+9. Where is the main journald configuration file located?
+
+10. After editing journald’s config, what command must be run to apply the changes?
+
+
+
+
+
+
 
