@@ -982,9 +982,250 @@ done
 
 ---
 
-## Final exam preparation
+#### Week 6
 
-#### Content Overview
-- cumulative exam
-- all topics covered in the entire term can and will be part of the exam
+Test 1 was here nothing to do
+
+---
+
+#### Week 7
+
+##### 1. Shell Expansion Overview  
+Bash performs seven types of expansion, in this order:
+
+1. **Brace expansion**  
+2. **Tilde expansion**  
+3. **Parameter & variable expansion**  
+4. **Command substitution**  
+5. **Arithmetic expansion**  
+6. **Word splitting**  
+7. **Filename expansion**
+
+Expansions happen after the command has been tokenized.
+
+---
+
+##### 2. Brace Expansion  
+Generate sequences or comma-separated lists:
+
+    echo {1..5..2}       # 1 3 5
+    echo {a..f..2}       # a c e
+    echo file{1..3}      # file1 file2 file3
+
+---
+
+##### 3. Tilde Expansion  
+Unquoted `~` expands to user’s home directory:
+
+    echo ~       # /home/username
+
+---
+
+##### 4. Parameter & Variable Expansion  
+Basic form:
+
+    var="hello"
+    echo "$var"
+    echo "${var}_world"
+
+Length of string:
+
+    name="Nathan"
+    echo "${#name}"        # 6
+
+Arrays:
+
+    arr=(1 2 3 4)
+    echo "${arr[@]}"       # all items
+    echo "${#arr[@]}"      # number of items
+
+Substring replacement:
+
+    letters="abc"
+    echo "${letters/abc/123}"   # 123
+
+Indirect expansion (match variable names):
+
+    prefix_a=one
+    prefix_b=two
+    echo ${!prefix_*}      # prefix_a prefix_b
+
+String slicing:
+
+    name="Nathan"
+    echo "${name:0:2}"     # Na
+    echo "${name:2:2}"     # th
+
+File extension:
+
+    file="notes.txt"
+    echo "${file##*.}"     # txt
+
+---
+
+##### 5. Command Substitution  
+Stores command output in a variable:
+
+    now=$(date)
+    path=$(realpath "$1")
+
+---
+
+##### 6. Arithmetic Expansion  
+    echo "$(( (3 + 4) * 5 ))"   # 35
+
+Bash math is limited—use `bc` or `awk` for complex math.
+
+---
+
+##### 7. Word Splitting  
+Unquoted expansions split based on whitespace:
+
+    nums1=( $(echo "one two three") )
+    nums2=( "$(echo one two three)" )
+    echo ${#nums1[@]} ${#nums2[@]}   # 3 1
+
+Controlled by **IFS** (default: space, tab, newline).
+
+---
+
+##### 8. Filename Expansion (Globbing)
+Patterns:
+
+- `*` → any string  
+- `?` → one character  
+- `[abc]` → any listed char  
+- `[1-3]` → range  
+
+Examples (assume test dirs created):
+
+    ls d*          # items starting with d
+    ls dir?        # dir1 dir2
+    ls *[1-2]      # items ending with 1 or 2
+
+---
+
+##### 9. Bash Functions  
+Two forms (second is preferred):
+
+    function foo { ... }
+
+    foo() {
+      commands
+    }
+
+Arguments:
+
+    say_hi() {
+      echo "hi $1"
+    }
+    say_hi "Bob"
+
+Default argument values:
+
+    greet() {
+      local name="${1:-Guest}"
+      echo "Hello, $name"
+    }
+
+Local variables:
+
+    myfunc() {
+      local x="local value"
+      echo "$x"
+    }
+
+Capture output:
+
+    result=$(myfunc)
+
+Access all args:
+
+    printall() {
+      for item in "$@"; do
+        echo "$item"
+      done
+    }
+
+---
+
+##### 10. Getting User Input (`read`)  
+Basic:
+
+    read name
+    echo "Hello, $name!"
+
+Inline prompt:
+
+    read -p "Enter your name: " name
+
+Silent (useful for passwords):
+
+    read -s -p "Password: " pass
+
+Flags:  
+- `-p` prompt  
+- `-s` silent input  
+
+---
+
+##### 11. Bash Heredocs  
+Used to pass multi-line input to commands.
+
+General form:
+
+    command << EOF
+    text
+    more text
+    EOF
+
+Remote execution example:
+
+    ssh user@host << EOF
+      touch test-file
+    EOF
+
+Writing a file with heredoc:
+
+    cat > newfile <<- EOF
+        Line one
+        Line two
+    EOF
+
+`<<-` strips leading tabs.
+
+---
+
+```bash
+# write an array and a for loop that will loop over the array, printing each element.
+
+fruits=("apple" "banana" "cherry")
+
+for fruit in "${fruits[@]}"; do
+    echo "Fruit: $fruit"
+done
+```
+
+```bash
+# Write a conditional that will check if a directory exists.
+
+dir_path="/etc"
+
+if [[ -d "$dir_path" ]]; then
+    echo "Directory exists: $dir_path"
+else
+    echo "Directory does NOT exist: $dir_path"
+fi
+```
+
+```bash
+# Write a function that uses a local variable.
+
+say_hi() {
+    local name="Guest"
+    echo "Hello, $name"
+}
+
+say_hi
+```
  
