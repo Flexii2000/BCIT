@@ -779,10 +779,208 @@ Add it to PATH inside `.bash_profile` or `.profile`:
 
 ---
 
+#### Week 5
+
+1. **The Shebang (`#!`)**  
+> The first line of a script that specifies which interpreter should run the file.  
+Examples:  
+    #!/bin/bash  
+    #!/usr/bin/env bash  
+- Must be the **first line**  
+- Allows running a script directly: `./scriptname`
+
+---
+
+2. **Running Scripts**  
+Make a script executable:  
+    chmod u+x scriptname  
+Run it:  
+    ./scriptname  
+Scripts in `~/.local/bin` need `./` unless that directory is added to PATH.
+
+---
+
+3. **Quotes**  
+- `"double quotes"` → **expand variables**  
+- `'single quotes'` → **literal text**  
+
+Examples:  
+```bash
+    echo "$HOME"   # expands  
+    echo '$HOME'   # literal  
+```
+
+---
+
+4. **Variables**  
+Assign:  
+    animal="wolf"  
+Use:  
+    echo "$animal"  
+
+Environment variables:  
+    export VAR=value  
+    unset VAR  
+
+Convention: environment variables use **UPPERCASE**.
+
+---
+
+5. **Special Variables**  
+
+| Variable | Meaning |
+|----------|---------|
+| `$0` | Script name |
+| `$1`, `$2` | Positional arguments |
+| `$$` | Script’s PID |
+| `$#` | Number of arguments |
+| `$@` | All arguments (split) |
+| `$*` | All args as one string |
+| `$?` | Exit code of last command |
+
+---
+
+6. **Conditionals**  
+Basic:  
+```bash
+    if [[ cond ]]; then
+        commands
+    fi  
+```
+
+With elif/else:  
+```bash
+    if [[ cond1 ]]; then
+        ...
+    elif [[ cond2 ]]; then
+        ...
+    else
+        ...
+    fi
+```
+
+---
+
+7. **Tests (`[[ ]]`)**  
+File tests:  
+```bash
+    [[ -f file ]]   # file exists  
+    [[ -d dir  ]]   # directory exists  
+```
 
 
+Numeric/string tests:  
+```bash
+    [[ $x -ge 10 ]]  
+    [[ "$name" == "bob" ]]  
+```
+Why `[[` is preferred: safer, supports patterns, supports regex, no need to quote variables.
+
+---
+
+8. **Case Statement**  
+```bash
+    case "$var" in
+      A) echo "A";;
+      B|b) echo "B or b";;
+      [0-9]) echo "digit";;
+      *) echo "default";;
+    esac  
+```
+
+Patterns:  
+- `*` anything  
+- `?` one char  
+- `[a-z]` range  
+- `|` OR  
+
+---
+
+9. **Loops**  
+```bash
+For loop (list):  
+    for x in a b c; do
+        echo "$x"
+    done  
+
+Sequence:  
+    for i in {1..5}; do echo "$i"; done  
+
+C-style:  
+    for ((i=0; i<10; i++)); do echo "$i"; done  
+
+`break` → leave loop  
+`continue` → next iteration  
+```
+
+---
+
+10. **Arrays**  
+
+```bash
+
+Indexed array:  
+    arr=("one" "two" "three")
+    echo "${arr[0]}"
+    echo "${arr[@]}"
+    echo "${#arr[@]}"  
+
+Associative array:  
+    declare -A person
+    person["name"]="Jan"
+    person["age"]="31"
+    echo "${person["name"]}"  
+```
+
+---
+
+11. **Command Substitution**  
+Store output of a command:  
+    now=$(date)
+
+---
+
+12. **Troubleshooting**  
+Enable debugging/tracing:  
+    set -x  
+
+Use **shellcheck**:  
+    shellcheck scriptname  
+Helps identify syntax errors, quoting issues, and best practices.
+
+---
+
+#### For-Loops
+
+##### Looping over a LIST (created in advance)
+
+```bash
+list="apple banana cherry"
+
+for item in $list; do
+    echo "List item: $item"
+done
+```
 
 
+##### Looping over a LIST (inline declaration)
+```bash
+for item in one two three; do
+    echo "Inline list item: $item"
+done
+```
+
+
+##### Looping over an ARRAY (created in advance)
+```bash
+fruits=("mango" "orange" "kiwi")
+
+for fruit in "${fruits[@]}"; do
+    echo "Array item: $fruit"
+done
+```
+
+---
 
 ## Final exam preparation
 
