@@ -29,8 +29,53 @@ Host hostname
 - `ssh-keygen` create a new ssh key pair. To specify a path we use `ssh-keygen -f ~/.ssh/someKey` (creates someKey and someKey.pub)
 - `ssh-keygen -t ed25519 -C "you@example.com"` adds a ssh type (`-t`) and a comment to the new key pair (`-C`)
 
+---
 
-#### Cloud init
+#### Cloud-Init  
+1. Important files and their purpose  
+- `cloud-config.yaml` main configuration file used to automate server setup on the first boot  
+- `/var/log/cloud-init.log` detailed log output for debugging cloud-init execution  
+- `/var/lib/cloud/` directory where cloud-init stores internal state, instance metadata, and processed configs  
+- `/etc/cloud/cloud.cfg.d/` directory containing additional cloud-init configuration fragments  
+
+2. The cloud-config.yaml file  
+The cloud-config file defines everything that should happen the first time a VM boots.  
+It uses YAML syntax and always starts with:
+
+    #cloud-config
+
+A minimal example for creating a user, adding an SSH key, and installing a package:
+
+    #cloud-config
+    users:
+      - name: username
+        primary_group: username
+        groups: sudo
+        shell: /bin/bash
+        sudo: "ALL=(ALL) NOPASSWD:ALL"
+        ssh-authorized-keys:
+          - ssh-ed25519 AAAA...yourPublicKey...
+
+    packages:
+      - tmux
+
+    disable_root: true
+
+- `users:` creates a new Linux user before first login  
+- `ssh-authorized-keys:` adds your public key to `~/.ssh/authorized_keys`  
+- `packages:` installs software packages during initialization  
+- `disable_root:` disables SSH login for the root account  
+
+3. cloud-init usage in practice  
+- Paste your `cloud-config.yaml` into DigitalOcean’s “Add Initialization Scripts (user data)” field when creating a Droplet  
+- DigitalOcean passes this file to the VM, and cloud-init runs it exactly once during first boot  
+- After VM creation, connect using SSH and set your user password:  
+      sudo passwd username  
+- To verify cloud-init execution, use:  
+      sudo cloud-init status  
+      sudo cat /var/log/cloud-init.log
+
+---
 
 #### Vim essentials
 1. Different vim modes
