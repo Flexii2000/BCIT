@@ -267,3 +267,271 @@
 
 ---
 
+## Week 1 & Week 2 – Practice Questions  
+
+
+### Multiple-Choice Questions (MCQ)
+
+1. Linux filesystems are:
+   A) Case-insensitive  
+   B) Case-sensitive  
+   C) Sometimes case-sensitive  
+   D) Case-random  
+
+2. Which of the following are three different files on Linux?
+   A) file, FILE, File  
+   B) file1, file1, file1  
+   C) file.txt, file.TXT, file.txt.bak  
+   D) None of the above  
+
+3. Which command prints the value of an environment variable?
+   A) print VAR  
+   B) echo VAR  
+   C) echo $VAR  
+   D) var echo VAR  
+
+4. Which symbol in the shell prompt indicates a **normal** user?
+   A) %  
+   B) $  
+   C) #  
+   D) @  
+
+5. Which directory contains a user’s personal shell configuration?
+   A) /etc/  
+   B) /bin/  
+   C) /usr/local/  
+   D) ~/  
+
+6. What does the command `cd` without arguments do?
+   A) Prints current directory  
+   B) Goes to /root  
+   C) Goes to the user’s home directory  
+   D) Clears the screen  
+
+7. Which command lists all files, including hidden ones?
+   A) ls  
+   B) ls -a  
+   C) ls -h  
+   D) ls --all-hidden-only  
+
+8. What is the purpose of the PATH variable?
+   A) Stores your current directory  
+   B) Tells the shell where to look for commands  
+   C) Lists all environment variables  
+   D) Sets the default user  
+
+9. What does the wildcard `*` match?
+   A) One character  
+   B) Digits only  
+   C) Any number of characters  
+   D) Uppercase characters only  
+
+10. Which command shows a manual page for a utility?
+    A) help utility  
+    B) man utility  
+    C) utility --man  
+    D) manual utility  
+
+
+### Short-Answer Questions
+
+1. Why are file names like `Ocean`, `ocean`, and `OCEAN` considered different in Linux?
+
+2. What command shows which shell you are currently using?
+
+3. Explain what the shell does in one sentence.
+
+4. What does the `$PATH` environment variable contain?
+
+5. How do you list hidden files in a directory?
+
+6. What does the prompt symbol `#` indicate?
+
+7. Give an example of using a wildcard to remove all `.log` files.
+
+8. What command shows a list of directories contained in your PATH?
+
+9. What is the difference between running a command like `ls` and running a script using `./scriptname`?
+
+10. What is the difference between a command, a utility, and a program according to the notes?
+
+---
+
+## Week 3 – Practice Questions  
+
+
+### Multiple-Choice Questions (MCQ)
+
+1. A symbolic link (symlink) is:
+   A) A duplicate copy of a file  
+   B) A file that stores a pointer to another file’s path  
+   C) A compressed file  
+   D) A temporary cache file  
+
+2. Which command creates a symbolic link?
+   A) link  
+   B) cp -s  
+   C) ln -s  
+   D) symlink-create  
+
+3. Which command shows the target of a symlink?
+   A) ls  
+   B) ls -l  
+   C) cat  
+   D) file  
+
+4. In `lrwxrwxrwx 1 root root 9 Jan 12 15:29 yes -> coreutils*`, the arrow (`->`) indicates:
+   A) File permissions  
+   B) File owner  
+   C) The destination of the symbolic link  
+   D) A corrupted file  
+
+5. The command `find . -type f -name "*.txt"` does what?
+   A) Finds all empty files  
+   B) Finds all files ending with `.txt`  
+   C) Replaces all .txt files  
+   D) Finds only files in /tmp  
+
+6. What does the `-exec` option in `find` do?
+   A) Executes a command on each matched file  
+   B) Sorts the output  
+   C) Compresses found files  
+   D) Prompts for confirmation  
+
+7. Which command searches for text inside files?
+   A) find  
+   B) search  
+   C) grep  
+   D) match  
+
+8. What does `grep -r pattern directory/` do?
+   A) Searches only the current file  
+   B) Searches recursively through a directory  
+   C) Replaces a pattern  
+   D) Prints only filenames  
+
+9. What does the pipe operator `|` do?
+   A) Splits a file  
+   B) Sends the output of one command into another  
+   C) Redirects output to a file  
+   D) Moves files between directories  
+
+10. Which command prints filenames that contain a match?
+    A) grep -C  
+    B) grep -w  
+    C) grep -l  
+    D) grep -n  
+
+
+### Short-Answer Questions
+
+1. What is a symbolic link and why is it useful?
+
+2. Write the command to create a symlink named `python` pointing to `/usr/bin/python3`.
+
+3. How can you view a symlink’s target?
+
+4. What is the difference between `mtime` and `ctime` in the `find` command?
+
+5. Write a `find` command that lists all files larger than 10 MB.
+
+6. What does `grep -i` do?
+
+7. Write a command that searches for the word “error” in all `.log` files in the current directory.
+
+8. What does the command `grep -C 2 "warning" logfile` show?
+
+9. Explain what the pipe symbol (`|`) does in command-line workflows.
+
+10. What is the difference between `grep pattern file` and `find . -name pattern`?
+
+---
+
+## Week 4 – Practice Questions  
+
+### Multiple-Choice Questions (MCQ)
+
+1. What is a process in Linux?
+   A) A directory  
+   B) A running instance of a program  
+   C) A configuration file  
+   D) A driver  
+
+2. Which directory contains runtime information for all processes?
+   A) /etc/proc  
+   B) /proc  
+   C) /run  
+   D) /sys  
+
+3. Which PID is always associated with the init system (systemd) on Debian?
+   A) 0  
+   B) 1  
+   C) 42  
+   D) 999  
+
+4. Which command prints the exit code of the last executed command?
+   A) echo $?  
+   B) exit $?  
+   C) show-exit  
+   D) status-last  
+
+5. What is the exit code for a successful command?
+   A) 1  
+   B) 0  
+   C) 2  
+   D) 255  
+
+6. Which keyboard shortcut searches through previous shell history?
+   A) Ctrl+s  
+   B) Ctrl+r  
+   C) Ctrl+h  
+   D) Ctrl+p  
+
+7. Which signal is sent by pressing Ctrl+C?
+   A) SIGSTOP  
+   B) SIGTERM  
+   C) SIGKILL  
+   D) SIGINT  
+
+8. Which signal **cannot** be caught or ignored?
+   A) SIGTERM  
+   B) SIGSTOP  
+   C) SIGKILL  
+   D) SIGUSR1  
+
+9. Which command lists all running processes?
+   A) ps -a  
+   B) ps -e  
+   C) ps -k  
+   D) ps --all-users-only  
+
+10. What does `kill -9 PID` do?
+    A) Gracefully stop a process  
+    B) Pause a process  
+    C) Forcefully kill a process immediately  
+    D) Restart a process  
+
+
+### Short-Answer Questions
+
+1. What does the directory `/proc` contain, and why is it described as a “pseudo-filesystem”?
+
+2. What is special about PID 1?
+
+3. How do you check the exit code of the most recently run command?
+
+4. Explain the purpose of the `SIGTERM` signal.
+
+5. What is the difference between `SIGTERM` and `SIGKILL`?
+
+6. Write a command that lists all running processes in a full, detailed format.
+
+7. Write a command that kills every process with the name “firefox” using a pattern match.
+
+8. How do you search your command history interactively?
+
+9. What does `ps -eo comm,pid,%cpu` show?
+
+10. What does the `--forest` option do when running `ps`?
+
+
