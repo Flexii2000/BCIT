@@ -1439,6 +1439,222 @@ Recursive change:
     sudo chown -R www-data /var/www
 
 ---
-.
+
+#### Week 10
+
+---
+
+##### 1. Managing Services with `systemctl`
+
+###### Check service status
+
+    systemctl status <unit>
+
+###### Start or stop a service
+
+    sudo systemctl start <unit>
+    sudo systemctl stop <unit>
+
+###### Enable (start on boot) or disable
+
+    sudo systemctl enable <unit>
+    sudo systemctl disable <unit>
+
+Enable + start immediately:
+
+    sudo systemctl enable --now <unit>
+
+###### View system/service information
+
+    systemctl          # list running units  
+    systemctl --failed # failed units  
+    systemctl list-unit-files  
+    systemctl status <PID>  
+
+Reload updated unit files:
+
+    sudo systemctl daemon-reload
+
+---
+
+##### 2. What is systemd?
+
+Systemd is:
+
+- the **init system** (PID 1)  
+- the **service manager**  
+- handles boot, logging, power, timers, devices, mounts  
+
+Check PID 1:
+
+    ps -p 1
+    # or
+    cat /proc/1/comm
+
+PID 1 on Debian → always **systemd**.
+
+A **daemon** = background service with no attached terminal (e.g., sshd, nginx).
+
+---
+
+##### 3. systemd Targets
+
+Targets group services needed for a system "state":
+
+Common targets:
+
+- `multi-user.target` → server mode, no GUI  
+- `graphical.target` → full desktop environment  
+
+List them:
+
+    systemctl list-units --type=target
+
+---
+
+##### 4. Unit Files (Very Important)
+
+###### Locations:
+
+| Directory | Purpose |
+|----------|---------|
+| `/usr/lib/systemd/system/` | packaged unit files |
+| `/run/systemd/system/` | runtime generated |
+| `/etc/systemd/system/` | admin-created → highest priority |
+
+###### Unit file structure (INI format)
+
+A `.service` file usually has:
+
+```
+[Unit]
+Description=Some HTTP server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/server
+
+[Install]
+WantedBy=multi-user.target
+```
+
+**Wants= vs WantedBy=:**
+
+- **Wants=** = *This unit wants another unit to run*  
+- **WantedBy=** = *This unit should be pulled in when the target is activated*  
+- `systemctl enable` uses **WantedBy** to create symlinks in `.wants/` directories.
+
+---
+
+##### 5. Using Services
+
+Some essential patterns:
+
+**Start immediately:**
+
+    sudo systemctl start example.service
+
+**Restart after editing config:**
+
+    sudo systemctl restart example.service
+
+**Reload only configuration:**
+
+    sudo systemctl reload example.service
+
+---
+
+##### 6. systemd Timers
+
+Timers replace cron and run services on certain schedules.
+
+###### View active timers:
+
+    systemctl list-timers
+
+A timer file should match its service name:
+
+- `backup.service`
+- `backup.timer`
+
+###### Example: Realtime timer (calendar)
+
+```
+[Unit]
+Description=Run backup weekly
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+
+###### Example: Monotonic timer
+
+```
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=1h
+```
+
+---
+
+##### 7. OnCalendar Syntax
+
+Format:
+
+    DayOfWeek Year-Month-Day Hour:Minute:Second
+
+Examples:
+
+Run daily at 04:00:
+
+    OnCalendar=*-*-* 04:00:00
+
+First Saturday of each month at 18:00:
+
+    OnCalendar=Sat *-*-1..7 18:00:00
+
+Test events:
+
+    systemd-analyze calendar "*-*-* 01:00:00"
+
+---
+
+##### 8. After Creating a Timer or Service
+
+You must:
+
+    sudo systemctl daemon-reload
+
+Then enable it:
+
+    sudo systemctl enable --now mytimer.timer
+
+---
+
+##### 9. Transient Timers (no unit file)
+
+Run a command once after 30 seconds:
+
+    systemd-run --on-active=30 /bin/touch /tmp/foo
+
+Run an existing service in 12h 30m:
+
+    systemd-run --on-active="12h 30m" --unit myunit.service
+
+---
+
+##### 10. Changing Time Zone
+
+Check current timezone:
+
+    timedatectl
+
+Set timezone:
+
+    sudo timedatectl set-timezone America/Vancouver
 
  
