@@ -562,6 +562,225 @@ Pipes make Linux extremely powerful by chaining commands.
 
 ---
 
+#### Week 4
+
+##### 1. Linux Processes  
+A **process** is any running instance of a program (an executable file stored on disk).
+
+- When you run a program, you create a process  
+- Each process has a unique **PID** (Process ID)
+
+###### The `/proc` Directory  
+`/proc` is a **pseudo-filesystem** containing runtime system and process information.
+
+Example: show the command for PID 1
+
+    cat /proc/1/comm
+
+Every running process has a directory inside `/proc` named after its PID.
+
+###### PID 1 is special  
+- PID 1 is always the **init system**  
+- On Debian: PID 1 = `systemd`  
+- PID 1 starts the entire user-space environment
+
+---
+
+##### 2. Exit Codes (Exit Status)
+
+When a process finishes, it returns an **exit code**.
+
+Check exit code of last command:
+
+    echo $?
+
+- `0` → success  
+- non-zero → error or failure  
+
+Try it:
+
+    ls
+    echo $?
+
+→ should be `0`
+
+    sweatyklingons
+    echo $?
+
+→ will be `127` (command not found)
+
+---
+
+##### 3. Shell History  
+- Use **up / down arrow keys** to browse previous commands  
+- Use **Ctrl+r** to search history interactively  
+  (Type a few characters to filter past commands)
+
+---
+
+##### 4. Signals  
+Signals allow users or processes to communicate with other running processes.
+
+Common signals:
+
+| Signal | Number | Meaning |
+|--------|--------|---------|
+| **SIGINT** | 2 | Interrupt (Ctrl + C) |
+| **SIGKILL** | 9 | Force kill immediately |
+| **SIGTERM** | 15 | Graceful shutdown |
+
+List all signals:
+
+    kill -l
+
+###### Signal meanings  
+- **SIGINT** → interrupt a foreground process  
+- **SIGTERM** → request shutdown (preferred)  
+- **SIGKILL** → force shutdown immediately (no cleanup)
+
+---
+
+##### 5. Discovering Processes with `ps`
+
+Basic usage:
+
+    ps
+
+Example output:
+
+    PID   TTY   TIME   CMD
+    97350 pts/0 00:00:00 bash
+    109522 pts/0 00:00:00 ps
+
+See all processes:
+
+    ps -e
+
+View with a pager:
+
+    ps -e | less
+
+Search within the pager using `/bash`  
+Exit pager with `q`
+
+Use `grep` to filter:
+
+    ps -e | grep -i bash
+
+Format the output with `-o`:
+
+    ps -eo comm,pid,%cpu | grep -i systemd
+
+Show process hierarchy:
+
+    ps -e --forest
+or
+    ps -H
+
+---
+
+##### 6. Terminating Processes with `kill` and `pkill`
+
+###### kill  
+Uses **PIDs**:
+
+    kill [PID]
+    kill -9 [PID]     # force kill
+
+Example with command substitution:
+
+    kill -9 $(pidof firefox)
+
+###### pkill  
+Uses **patterns**, easier to work with:
+
+    pkill pattern
+    pkill -9 pattern        # force kill
+    pkill -15 pattern       # send SIGTERM
+    pkill -u username proc  # kill process owned by a user
+
+Be specific when multiple process names match.
+
+---
+
+##### 7. Shell Configuration Files
+
+There are two shell types:
+
+- **Login shell** → run at login  
+- **Non-login shell** → when opening a new terminal or SSH session
+
+###### Login configuration  
+Files executed when logging in:
+
+- `~/.bash_profile`  
+- `~/.profile` (fallback if `.bash_profile` missing)
+
+Good place for **environment variables**.
+
+Example `~/.bash_profile`:
+
+    # Source .bashrc if interactive
+    if [[ $- == *i* && -f $HOME/.bashrc ]]; then
+        source $HOME/.bashrc
+    fi
+
+    export EDITOR="vim"
+
+###### Non-login configuration  
+Executed for every new Bash instance:
+
+- `~/.bashrc`
+
+Good place for:
+
+- prompt configuration  
+- aliases  
+- shell functions  
+
+Example `~/.bashrc` (shortened):
+
+    alias grep='grep --color=auto'
+    alias ls="ls -alh"
+
+    # Prompt
+    PS1="\n\w@\h\n$ "
+
+    # Example function
+    mkd(){
+      mkdir -p "$1" && cd "$1"
+    }
+
+###### Manually re-load config  
+    source ~/.bashrc
+
+---
+
+##### 8. Aliases  
+Aliases are shortcuts for commands used frequently.
+
+Examples:
+
+    alias se="sudo $EDITOR"
+    alias ll="ls -alh"
+
+---
+
+##### 9. Add a Directory to PATH  
+Common for storing personal scripts in:
+
+`$HOME/.local/bin`
+
+Add it to PATH inside `.bash_profile` or `.profile`:
+
+    if [[ -d $HOME/.local/bin ]]; then
+      export PATH="$HOME/.local/bin:$PATH"
+    fi
+
+---
+
+
+
 
 
 
