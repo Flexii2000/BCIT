@@ -534,4 +534,93 @@
 
 10. What does the `--forest` option do when running `ps`?
 
+---
+
+## Week 5 – Practice Questions  
+
+### Multiple-Choice Questions (MCQ)
+
+1. What is the purpose of the **shebang** (`#!`) at the top of a script?
+   A) Sets file permissions  
+   B) Specifies which interpreter should run the script  
+   C) Creates environment variables  
+   D) Marks comments for the shell  
+
+2. What command makes a script executable?
+   A) chmod u-r script.sh  
+   B) chmod +exec script.sh  
+   C) chmod u+x script.sh  
+   D) script --executable  
+
+3. Which type of quotes **do not** allow variable expansion?
+   A) "double quotes"  
+   B) 'single quotes'  
+   C) `backticks`  
+   D) `<<EOF`  
+
+4. Which special variable contains the script’s own filename?
+   A) $1  
+   B) $0  
+   C) $?  
+   D) $@  
+
+5. Which Bash test syntax is considered safer and more feature-complete?
+   A) `[ ]`  
+   B) test  
+   C) (( ))  
+   D) `[[ ]]`  
+
+6. What does the command `source ~/.bashrc` do?
+   A) Reloads the system PATH permanently  
+   B) Reloads shell configuration without starting a new shell  
+   C) Deletes the .bashrc file  
+   D) Runs .bashrc in a subshell  
+
+7. What does the `alias` command do?
+   A) Creates a new file  
+   B) Creates a shortcut for a command  
+   C) Defines a new environment variable  
+   D) Adds a script to PATH  
+
+8. Which file is executed for **login shells**?
+   A) ~/.bashrc  
+   B) ~/.bash_profile  
+   C) ~/.bash_history  
+   D) /etc/profile.d/login.sh  
+
+9. Which file is executed for non-login interactive shells?
+   A) ~/.bash_profile  
+   B) ~/.bashrc  
+   C) /usr/bin/bash  
+   D) ~/.profile  
+
+10. What does command substitution do?
+    A) Runs a command in the background  
+    B) Inserts the output of one command into another  
+    C) Converts commands into text  
+    D) Prints command history  
+
+
+### Short-Answer Questions
+
+1. What is the purpose of the shebang (`#!`) at the top of a script file?
+
+2. How do you make a Bash script named `run.sh` executable?
+
+3. Explain the difference between double quotes and single quotes in Bash.
+
+4. What does `$?` represent?
+
+5. What does `$1` represent inside a Bash script?
+
+6. What does the command `export VAR=value` do?
+
+7. Which file should you edit to add aliases that load for every interactive shell session?
+
+8. Write an example of a simple Bash alias named `ll` that runs `ls -alh`.
+
+9. What does the `local` keyword do inside a Bash function?
+
+10. What is the purpose of command substitution, and give one example of its use.
+
 
