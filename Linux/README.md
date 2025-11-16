@@ -1228,4 +1228,217 @@ say_hi() {
 
 say_hi
 ```
+
+---
+
+#### Week 8
+
+Midterm no new infos
+
+---
+
+#### Week 9
+
+##### 1. Users, Groups & Permissions
+
+###### Understanding `ls -l` Output
+
+Example:
+
+    -rw-r--r-- 1 mh9 devs 9 Apr 12 11:42 test
+    ^ ^   ^   ^
+    | |   |   └── other permissions
+    | |   └────── group permissions
+    | └────────── user permissions
+    └──────────── file type and mode
+
+Who can:
+
+- **user** → read, write  
+- **group** → read  
+- **other** → read  
+
+Everything in Linux is a file.
+
+---
+
+##### User Basics
+
+###### UID Ranges
+- **0** → root  
+- **1–999** → system users  
+- **1000–65533** → regular users  
+- **65534 (nobody)** → unprivileged / anonymous  
+- Very large UIDs also allowed  
+
+---
+
+###### `/etc/passwd`
+
+Stores user account info:
+
+Format:
+
+    mark:x:1001:1001:mark,,,:/home/mark:/bin/bash
+    |   |   |    |      |         |        |
+    |   |   |    |      |         |        └── login shell
+    |   |   |    |      |         └────────── home directory
+    |   |   |    |      └──────────────────── GECOS
+    |   |   |    └──────────────────────────── GID
+    |   |   └───────────────────────────────── UID
+    |   └───────────────────────────────────── password placeholder
+    └───────────────────────────────────────── username
+
+---
+
+###### `/etc/shadow`
+Not readable by normal users. Stores encrypted passwords and expiration details.
+
+---
+
+##### 2. Creating & Managing Users
+
+###### Create a New User
+
+    sudo useradd -s /bin/bash mo
+
+System user (no shell, no home):
+
+    sudo useradd -r backupuser
+
+Delete user:
+
+    sudo userdel -r mo
+
+If they have running processes:
+
+    sudo pkill -u mo
+    sudo userdel -fr mo
+
+Set password:
+
+    sudo passwd mo
+
+Lock/unlock account:
+
+    sudo passwd -l mo
+    sudo passwd -u mo
+
+---
+
+##### 3. Groups
+
+Create group:
+
+    sudo groupadd devs
+
+Add user to group:
+
+    sudo usermod -aG devs mo
+
+List groups of a user:
+
+    groups mo
+
+Groups stored in `/etc/group`.
+
+---
+
+##### 4. Linux Permissions
+
+###### Three Permission Classes:
+- **user**  
+- **group**  
+- **other**
+
+###### Three Permission Types:
+- **r** → read  
+- **w** → write  
+- **x** → execute  
+
+Example:
+
+    drwxrw-r--  
+    |   |  |
+    |   |  └── other
+    |   └────── group
+    └────────── user
+
+Group permissions above = `rw-` → **read + write** = decimal **6**.
+
+---
+
+###### Numeric (Octal) Permissions
+
+| rwx | Decimal |
+|-----|---------|
+| --- | 0 |
+| --x | 1 |
+| -w- | 2 |
+| -wx | 3 |
+| r-- | 4 |
+| r-x | 5 |
+| rw- | 6 |
+| rwx | 7 |
+
+---
+
+###### Special Bits
+
+| Special Bit | Octal | Meaning |
+|-------------|--------|---------|
+| setUID      | 4      | Run as file owner |
+| setGID      | 2      | Run as file group |
+| sticky bit  | 1      | Restrict delete in directory |
+
+Examples:
+
+- passwd uses SUID:
+  
+      -rwsr-xr-x 1 root root ... /usr/bin/passwd
+
+- SGID directory:
+
+      chmod g+s shared_dir
+      chmod 2775 shared_dir
+
+- Sticky bit:
+
+      chmod +t /shared
+      chmod 1777 /tmp
+
+---
+
+##### 5. Changing Permissions (`chmod`)
+
+###### Numeric method:
+
+    chmod 644 file
+
+###### Symbolic:
+
+    chmod u+x file
+    chmod a+x file
+    chmod u=rw,g=r,o= file
+    chmod u+x,g+w,o-r file
+
+---
+
+##### 6. Changing File Ownership (`chown`)
+
+Change owner & group:
+
+    sudo chown user:group file
+
+Change only group:
+
+    sudo chown :group file
+
+Recursive change:
+
+    sudo chown -R www-data /var/www
+
+---
+.
+
  
