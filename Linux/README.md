@@ -3,6 +3,7 @@
 #### Content Overview
 - cumulative tests
 - all topics starting at week 1 until week 11 can and will be part of the test
+- week 1-11 notes summarized
 
 #### SSH
 1. Important files and their locations
@@ -165,6 +166,403 @@ System & Service management
 - `/var/log/journal` persistent log files (not deleted at shutdown or before new boot)
 - `/run/log/journal` temporary log files (deleted at shutdown or before new boot)
 - `/var/log/dmesg` specific kernel log files (accessed with `journalctl -k`)
+
+---
+
+#### Week 1
+
+Nothing major to summarize
+
+---
+
+#### Week 2
+
+##### 1. Case Sensitivity in Linux  
+Linux filesystems are case sensitive.  
+This means `Ocean`, `ocean`, and `OCEAN` are three different files.  
+Always pay attention to case when typing filenames, commands, or paths.
+
+---
+
+##### 2. What is the Shell?  
+The shell is a program that lets you run commands on a computer.  
+It allows full control of the system in a text-based environment.
+
+- You can run programs (e.g., `ls`, `firefox`, `cat`)  
+- You can navigate directories  
+- You can write shell scripts to automate tasks  
+- Many shell options exist; the most common ones:
+
+###### Common Shells
+- **Bash** – Default on most Linux distros (used in this course)  
+- **Fish** – User-friendly, auto-completion, syntax highlighting  
+- **zsh** – Default on macOS; common in Linux too  
+
+Check which shell you're using:
+
+    echo $SHELL
+
+This prints the value of the SHELL environment variable.  
+Environment variables use `$` when referenced.
+
+---
+
+##### 3. Running Commands in the Shell  
+You start with a prompt similar to:
+
+    user@host:~$
+
+`$` means normal user, `#` means root user.
+
+To run a command:
+1. Type the command  
+2. Press Enter  
+3. The shell searches for the command in:
+   - shell functions  
+   - shell built-ins  
+   - directories listed in `$PATH`  
+
+Check your PATH:
+
+    echo $PATH
+
+If the command is found and executable, the shell runs it in a new process.
+
+---
+
+##### 4. Terminology  
+- **Utility**: a small command-line program (e.g., `cat`)  
+- **Command**: may contain multiple utilities, flags, pipes, etc.  
+  Example:
+
+    ps -eo comm,rss | grep bash
+
+Contains:
+- `ps`  
+- `grep`  
+- `|` (pipe)  
+- arguments  
+
+---
+
+##### 5. Important Shell Commands
+
+###### `cd` – change directory  
+    cd Documents/scripts  
+    cd ..            # go up one directory  
+    cd               # go to home directory  
+
+###### `ls` – list files  
+    ls  
+    ls -a            # show hidden files  
+    ls -al           # long listing  
+
+###### `mkdir` – make directories  
+    mkdir newdir  
+    mkdir -p one/two/three  
+
+###### `cp` – copy  
+    cp fileA fileB  
+    cp -r dirA dirB   # recursive copy  
+
+###### `rm` – remove  
+`rm` does not use a trash bin.  
+    rm file.txt  
+    rm -rf dir/  
+`-r` = recursive  
+`-f` = force  
+
+###### Wildcards  
+    rm *.txt          # remove all .txt files  
+
+---
+
+##### 6. Getting Help
+
+###### Manual pages for utilities:
+    man ls  
+    man mkdir  
+
+###### Help for shell built-ins:
+    help test  
+    help cd  
+
+###### Search man pages:
+    man -k keyword  
+Example:
+
+    man -k user | grep create
+
+`|` pipes the output of one command to another.
+
+---
+
+##### 7. Git Review
+
+###### What is Git?  
+Git is a Distributed Version Control System, used to track changes and collaborate on projects.
+
+###### Installing Git  
+Linux (Debian/Ubuntu):
+
+    sudo apt install git
+
+
+###### Git Configuration  
+Git stores settings in:
+
+- **Global**: `~/.gitconfig`  
+- **Local (per repo)**: `.git/config`
+
+Set your info:
+
+    git config --global user.name "Your Name"
+    git config --global user.email your@example.com
+    git config --global init.defaultBranch main
+
+View your config:
+
+    git config --list --show-origin
+
+Minimal example:
+
+    [user]
+        name = Your Name
+        email = your@example.com
+    [core]
+        editor = vim
+        autocrlf = false
+    [init]
+        defaultBranch = main
+
+---
+
+##### 8. Essential Git Commands
+
+###### Initialize a repo
+    git init
+
+###### Add files to staging
+    git add file1 file2  
+    git add .             # add everything
+
+##### Commit changes
+    git commit -m "your message"
+
+###### Push to remote  
+Requires adding a remote first:
+
+    git remote add origin git@git.sr.ht:~username/project
+    git push -u origin main
+
+---
+
+##### 9. Git Workflow Summary
+
+1. Create project directory  
+2. Initialize:
+
+       git init
+
+3. Add/edit files  
+4. Stage files:
+
+       git add
+
+5. Commit:
+
+       git commit
+
+6. Push to remote repo:
+
+       git push
+
+---
+
+###### 10. Working With SourceHut (sr.ht)  
+Example project setup:
+
+    mkdir example
+    cd example
+    git init
+    echo "Hello world" > README.md
+    git add README.md
+    git commit -m "Initial commit"
+    git remote add origin git@git.sr.ht:~username/example
+    git push -u origin main
+
+###### When cloning a repo:
+
+    git clone git@git.sr.ht:~username/example
+    cd example
+    echo "Hello world" > README.md
+    git add README.md
+    git commit -m "add README.md"
+    git push
+
+###### SSH config for Sourcehut (`~/.ssh/config`)
+
+    Host *sr.ht
+      IdentityFile ~/.ssh/hut
+      PreferredAuthentications publickey
+
+Add SourceHut host keys to `~/.ssh/known_hosts` as provided.
+
+---
+
+##### 11. Markdown Basics
+
+###### Headings  
+    # h1  
+    ## h2  
+    ### h3  
+
+###### Links  
+    [text](https://example.com)
+
+###### Images  
+    ![description](./path/to/image.jpg)
+
+Use relative paths in Git repositories.
+
+##### Code Blocks  
+Three backticks before and after:
+
+    ```bash
+    echo "Hello world"
+    ```
+
+Markdown is plain text and easy to use, making it ideal for documentation.
+
+---
+
+#### Week 3
+
+##### 1. Symbolic Links (Symlinks)
+
+A symbolic link (or “symlink”) is a pointer to another file’s path.
+
+###### Advantages  
+- Can link to *directories*  
+- Flexible and easy to update  
+- Safer than hard links when linking across filesystems
+
+###### Create a symbolic link  
+    ln -s source_file symbolic_link
+
+Example:  
+    ln -s /usr/bin/python3 python
+
+###### Viewing symlinks with `ls`  
+    ls -l
+
+Output example:  
+    lrwxrwxrwx 1 root root   9 Jan 12 15:29 yes -> coreutils*
+
+The arrow (`->`) shows the link target.
+
+---
+
+##### 2. Finding Files with find
+
+The `find` utility searches based on **file properties** such as name, size, or modified time.
+
+###### Basic syntax  
+    find [options] [path...] [expression]
+
+###### Examples  
+- Find all regular files in home directory:  
+      find ~ -type f
+
+- Find all `.txt` files recursively:  
+      find . -type f -name "*.txt"
+
+- Find files modified in the last 10 minutes:  
+      find . -type f -mmin -10
+
+- Find files larger than 10 MB:  
+      find / -size +10M
+
+###### mtime vs ctime  
+- `-mtime` → change in **content**  
+- `-ctime` → change in **metadata** (permissions, owner, etc.)
+
+###### Running a command with `-exec`  
+    find . -type f -name "*.log" -exec rm {} \;
+
+- `{}` = matched file  
+- `\;` = run command once per file  
+- `+` = batch files together for fewer commands
+
+---
+
+##### 3. Searching Text With **grep**
+
+`grep` finds patterns of text in files.
+
+###### Basic syntax  
+    grep [OPTIONS] PATTERN [FILE...]
+
+###### Examples
+- Simple search:  
+      grep word file.txt
+
+- Ignore case + match whole words only:  
+      grep -iw word file.txt
+
+- Recursive search through directories:  
+      grep -r pattern directory/
+
+- Show 2 lines above and below match:  
+      grep -C 2 "error" logfile
+
+- Count occurrences:  
+      grep -c "set" ~/.bashrc
+
+- List only filenames that contain the pattern:  
+      grep -rl "TODO" .
+
+- Pipe example:  
+      fc-list | grep -i "nerd"
+
+`|` pipes output from one command into another.
+
+---
+
+##### 4. Regular Expressions (Regex)
+
+`grep` supports regex for pattern matching.
+
+Examples:
+
+- Find any 2-digit number:  
+      grep "[0-9]{2}" file
+
+- Phone number formats:  
+      grep -E '\(\d{3}\) \d{3}-\d{4}|\d{3}-\d{3}-\d{4}' file
+
+Notes:
+- `|` means OR **in regex**, not a pipe  
+- Some systems require `grep -E` or `grep -P` for advanced patterns  
+
+---
+
+##### 5. Pipelines and Advanced Command Combinations
+
+The **pipe** (`|`) sends output from one program into the next.
+
+Examples:
+- Search only in results of the first command:  
+      man -k user | grep create
+
+- Count occurrences from piped input:  
+      journalctl -b | grep -c "warning"
+
+Pipes make Linux extremely powerful by chaining commands.
+
+---
+
+
 
 
 ## Final exam preparation
