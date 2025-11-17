@@ -43,7 +43,7 @@ Host hostname
 The cloud-config file defines everything that should happen the first time a VM boots.  
 It uses YAML syntax and always starts with:
 
-    #cloud-config
+    \#cloud-config
 
 A minimal example for creating a user, adding an SSH key, and installing a package:
 
