@@ -1,4 +1,4 @@
-# Chapter 7 — k-Nearest Neighbor (Test Summary)
+# Chapter 7 
 
 ## Classification Task
 Classification most common data mining task:
