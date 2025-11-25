@@ -1,0 +1,20 @@
+Final:
+- steht noch nicht fest ( er hat noch nicht fertig geschrieben)
+- numpy and pandas questions wie slicing indexing usw werden kommen
+- ch04.pdf gibt gute übersicht
+- chapter 1-5 7,8,10 sind relevant.
+- outside vom buch:
+	- handling missing values
+	- feature selction
+	- no tableu
+	- case study angucken module 7
+	- chi sqaure mutual information etc. from chapter 10 
+- bring calc, paper , and pen
+- confidence intervall!!! 
+- bring t-table printout from book
+- all formulas need to be known 
+- confidence, normalization, z-score. mean, avg, precission, recall, accuracy, skewness, standartization, hypothesis testing
+- everything on D2L bring laptop!
+- room 410 for final deliv next week starting 8.30-13.30 5-7 mins max.
+- dont try to explain to much, more numbers and graphs!
+- if not all points showable selct some

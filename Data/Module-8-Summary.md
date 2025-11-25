@@ -82,11 +82,11 @@ Purpose: avoid spurious patterns and ensure **generalizability**.
 $$
    x = \frac{p \cdot records - rare}{1 - p}
    $$
-	$\text{where:}$
-	$x = \text{is the required number of resampled records}$
-	$p = \text{is the desired proportion of rare values in the balaced data}$
-	$\text{records} = \text{represents numer of records in the unbalanced data}$
-	$\text{rare} = \text{represents the current number of rare target values}$
+$\text{where:}$
+$x = \text{is the required number of resampled records}$
+$p = \text{is the desired proportion of rare values in the balaced data}$
+$\text{records} = \text{represents numer of records in the unbalanced data}$
+$\text{rare} = \text{represents the current number of rare target values}$
 
 
 
