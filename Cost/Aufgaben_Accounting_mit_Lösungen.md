@@ -2156,50 +2156,57 @@ and to explain the differences among these systems.
 
 ### Given Data
 
-| Department | Cost Component | Basic | Deluxe | Total |
-|-------------|----------------|--------|---------|--------|
-| **Forming** | Direct Materials | \$60,000 | \$35,000 | \$95,000 |
-|  | Direct Manufacturing Labour | 30,000 | 20,000 | 50,000 |
-|  | Setup Overhead | – | – | 48,000 |
-|  | General Overhead | – | – | 32,000 |
-| **Assembly** | Direct Materials | \$5,000 | \$10,000 | \$15,000 |
-|  | Direct Manufacturing Labour | 15,000 | 25,000 | 40,000 |
-|  | General Overhead | – | – | 40,000 |
-| **Production Units** |  | 10,000 basic trophies | 5,000 deluxe trophies |  |
-| **Batch Size** |  | 200 (basic) | 50 (deluxe) |  |
+| Department           | Cost Component              | Basic                 | Deluxe                | Total    |
+| -------------------- | --------------------------- | --------------------- | --------------------- | -------- |
+| **Forming**          | Direct Materials            | \$60,000              | \$35,000              | \$95,000 |
+|                      | Direct Manufacturing Labour | \$30,000              | \$20,000              | \$50,000 |
+|                      | Setup Overhead              | –                     | –                     | \$48,000 |
+|                      | General Overhead            | –                     | –                     | \$32,000 |
+| **Assembly**         | Direct Materials            | \$5,000               | \$10,000              | \$15,000 |
+|                      | Direct Manufacturing Labour | \$15,000              | \$25,000              | \$40,000 |
+|                      | General Overhead            | –                     | –                     | \$40,000 |
+| **Production Units** |                             | 10,000 basic trophies | 5,000 deluxe trophies |          |
+| **Batch Size**       |                             | 200 (basic)           | 50 (deluxe)           |          |
 
 ---
 
 ### Plantwide Overhead Rate (based on total direct costs)
 
 **Step 1:**  
-Total Overhead = 48,000 + 32,000 + 40,000 = **\$120,000**
+$\text{Total Overhead} = 48,000 + 32,000 + 40,000 = \$120,000$
 
 **Step 2:**  
-Total Direct Costs (DM + DL) = (95,000 + 50,000 + 15,000 + 40,000) = **\$200,000**
+$\text{Total Direct Costs (DM + DL)} = (95,000 + 50,000 + 15,000 + 40,000) = \$200,000$
 
 **Step 3:**  
-Plantwide Overhead Rate = \$120,000 ÷ \$200,000 = **60% of direct costs**
+$\text{Plantwide Overhead Rate} = \dfrac {\$120,000} {\$200,000} = 60\% \text{ of direct costs}$
+
+Based on Formula:
+
+$\dfrac {\text{Total Overhead}}  {\text{Cost-Allocation-Base}}$
 
 **Step 4:**  
+
 | Product | Direct Cost | OH (×60%) | Total Cost | Unit Cost |
-|----------|--------------|------------|-------------|------------|
+|---|--------------|------------|-------------|------------|
 | Basic | \$110,000 | \$66,000 | \$176,000 | **\$17.60/unit** |
 | Deluxe | \$90,000 | \$54,000 | \$144,000 | **\$28.80/unit** |
+
 
 ---
 
 ### Departmental Overhead Rates
 
 **Forming Department**  
-- OH = 48,000 + 32,000 = 80,000  
-- Base = Direct Labour (Forming) = 50,000  
-- Rate = 80,000 ÷ 50,000 = **160% of DL**
+- $\text{OH} = 48{,}000 + 32{,}000 = 80{,}000$  
+- $\text{Base} = \text{Direct Labour (Forming)} = 50{,}000$  
+- $\text{Rate} = \dfrac{80{,}000}{50{,}000} = 160\%\text{ of DL}$
 
 **Assembly Department**  
-- OH = 40,000  
-- Base = Direct Labour (Assembly) = 40,000  
-- Rate = 40,000 ÷ 40,000 = **100% of DL**
+- $\text{OH} = 40{,}000$  
+- $\text{Base} = \text{Direct Labour (Assembly)} = 40{,}000$  
+- $\text{Rate} = \dfrac{40{,}000}{40{,}000} = 100\%\text{ of DL}$
+
 
 **Overhead Applied per Product**
 
@@ -2219,25 +2226,36 @@ Identify cost pools and drivers:
 
 **Step 2:**  
 Batches:  
-- Basic: 10,000 ÷ 200 = **50 batches**  
-- Deluxe: 5,000 ÷ 50 = **100 batches**
+- $\text{Basic:} \dfrac{10,000}  {200} = 50 \text{ batches}$  
+- $\text{Deluxe:} \dfrac{5,000} {50} = 100 \text{ batches}$
 
 Total batches = 150  
-Setup cost per batch = 48,000 ÷ 150 = **\$320 per batch**
+Setup cost per batch = $\dfrac {48,000}  {150} = \$320 \text{ per batch}$
 
 **Step 3:**  
 Assign setup costs:  
-- Basic = 50 × 320 = 16,000  
-- Deluxe = 100 × 320 = 32,000  
+- $\text{Basic} = 50 \times 320 = 16,000$ 
+- $\text{Deluxe} = 100 \times 320 = 32,000$  
 
 **Step 4:**  
 General overhead allocation:  
-- Forming DL total = 50,000 → Deluxe share = 20,000/50,000 = 40% → 32,000 × 40% = 12,800  
-- Assembly DL total = 40,000 → Deluxe share = 25,000/40,000 = 62.5% → 40,000 × 62.5% = 25,000  
-- Basic gets remainder: 19,200 + 15,000 = 34,200  
+- Forming DL total = $50{,}000$  
+  → Deluxe share = $\dfrac{20{,}000}{50{,}000} = 0.40$  
+  → Deluxe forming-general OH = $32{,000} \times 0.40 = 12{,}800$
+
+- Assembly DL total = $40{,}000$  
+  → Deluxe share = $\dfrac{25{,}000}{40{,}000} = 0.625$
+  → Deluxe assembly OH = $40{,000} \times 0.625 = 25{,}000$
+
+- Basic forming-general OH = $32{,000} - 12{,}800 = 19{,}200$
+
+- Basic assembly OH = $40{,000} - 25{,}000 = 15{,}000$
+
+- Basic total (these two) = $19{,}200 + 15{,}000 = 34{,}200$
 
 **Step 5:**  
 Overhead summary  
+
 | Product | Setup OH | General OH | Total OH |
 |----------|-----------|-------------|-----------|
 | Basic | 16,000 | 34,200 | **50,200** |
@@ -2245,6 +2263,7 @@ Overhead summary
 
 **Step 6:**  
 Total cost and per-unit cost  
+
 | Product | Direct Cost | Total OH | Total Cost | Unit Cost |
 |----------|--------------|-----------|-------------|------------|
 | Basic | 110,000 | 50,200 | 160,200 | **\$16.02/unit** |
