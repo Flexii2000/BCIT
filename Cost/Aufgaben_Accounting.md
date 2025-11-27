@@ -42,7 +42,14 @@
 39. [Problem 6-33 – Skulas Inc. (Cash Budget and Budgeted Balance Sheet)](#6-33-Skulas-Inc-Cash-Budget-and-Budgeted-Balance-Sheet)
 40. [Problem 6-34 – Pet Transport Company (Activity-Based Costing Budgeting)](#6-34-Pet-Transport-Company-Activity-Based-Costing-Budgeting)
 41. [Problem 6-35 – Pet Transport Company (Cash Budget for April)](#6-35-Pet-Transport-Company-Cash-Budget-for-April)
-42. [Problem 7-15](#7-15)
+42. [Problem 7-17](#7-17)
+43. [Problem 7-18](#7-18)
+44. [Problem 7-19](#7-19)
+45. [Problem 7-21](#7-21)
+46. [Problem 7-22](#7-22)
+47. [Problem 7-24](#7-24)
+48. [Problem 7-25](#7-25)
+49. [Problem 7-31](#7-31)
 
 
 
@@ -409,5 +416,57 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 ![7-15-1](/images/accounting/7-15-1.png)
 
 ![7-15-2](/images/accounting/7-15-2.png)
+
+---
+
+## 7-17
+[Table of Contents](#Table-of-Contents)
+![7-17-1](/images/accounting/7-17-1.png)
+
+---
+
+## 7-18
+[Table of Contents](#Table-of-Contents)
+![7-18-1](/images/accounting/7-18-1.png)
+
+---
+
+## 7-19
+[Table of Contents](#Table-of-Contents)
+![7-19-1](/images/accounting/7-19-1.png)
+
+---
+
+## 7-21
+[Table of Contents](#Table-of-Contents)
+![7-21-1](/images/accounting/7-21-1.png)
+
+![7-21-2](/images/accounting/7-21-2.png)
+
+---
+
+## 7-22
+[Table of Contents](#Table-of-Contents)
+![7-22-1](/images/accounting/7-22-1.png)
+
+---
+
+## 7-24
+[Table of Contents](#Table-of-Contents)
+![7-24-1](/images/accounting/7-24-1.png)
+
+---
+
+## 7-25
+[Table of Contents](#Table-of-Contents)
+![7-25-1](/images/accounting/7-25-1.png)
+
+---
+
+## 7-31
+[Table of Contents](#Table-of-Contents)
+![7-31-1](/images/accounting/7-31-1.png)
+
+![7-31-2](/images/accounting/7-31-2.png)
 
 ---
