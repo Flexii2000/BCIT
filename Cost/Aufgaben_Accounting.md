@@ -50,6 +50,19 @@
 47. [Problem 7-24](#7-24)
 48. [Problem 7-25](#7-25)
 49. [Problem 7-31](#7-31)
+50. [Problem 8-16](#8-16)
+51. [Problem 8-17](#8-17)
+52. [Problem 8-19](#8-19)
+53. [Problem 8-20](#8-20)
+54. [Problem 8-22](#8-22)
+55. [Problem 8-25](#8-25)
+56. [Problem 8-26](#8-26)
+57. [Problem 8-27](#8-27)
+58. [Problem 8-35](#8-35)
+59. [Problem 9-15](#9-15)
+60. [Problem 9-16](#9-16)
+61. [Problem 9-17](#9-17)
+62. [Problem 9-18](#9-18)
 
 
 
@@ -468,5 +481,93 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 ![7-31-1](/images/accounting/7-31-1.png)
 
 ![7-31-2](/images/accounting/7-31-2.png)
+
+---
+
+## 8-16
+[Table of Contents](#Table-of-Contents)
+![8-16-1](/images/accounting/8-16-1.png)
+
+---
+
+## 8-17
+[Table of Contents](#Table-of-Contents)
+![8-17-1](/images/accounting/8-17-1.png)
+
+---
+
+## 8-19
+[Table of Contents](#Table-of-Contents)
+![8-19-1](/images/accounting/8-19-1.png)
+
+![8-19-2](/images/accounting/8-19-2.png)
+
+---
+
+## 8-20
+[Table of Contents](#Table-of-Contents)
+![8-20-1](/images/accounting/8-20-1.png)
+
+---
+
+## 8-22
+[Table of Contents](#Table-of-Contents)
+![8-22-1](/images/accounting/8-22-1.png)
+
+![8-22-2](/images/accounting/8-22-2.png)
+
+---
+
+## 8-25
+[Table of Contents](#Table-of-Contents)
+![8-25-1](/images/accounting/8-25-1.png)
+
+![8-25-2](/images/accounting/8-25-2.png)
+
+---
+
+## 8-26
+[Table of Contents](#Table-of-Contents)
+![8-26-1](/images/accounting/8-26-1.png)
+
+![8-26-2](/images/accounting/8-26-2.png)
+
+---
+
+## 8-27
+[Table of Contents](#Table-of-Contents)
+![8-27-1](/images/accounting/8-27-1.png)
+
+---
+
+## 8-35
+[Table of Contents](#Table-of-Contents)
+![8-35-1](/images/accounting/8-35-1.png)
+
+![8-35-2](/images/accounting/8-35-2.png)
+
+---
+
+## 9-15
+[Table of Contents](#Table-of-Contents)
+![9-15-1](/images/accounting/9-15-1.png)
+
+---
+
+## 9-16
+[Table of Contents](#Table-of-Contents)
+![9-16-1](/images/accounting/9-16-1.png)
+
+---
+
+## 9-17
+[Table of Contents](#Table-of-Contents)
+![9-17-1](/images/accounting/9-17-1.png)
+
+---
+
+## 9-18
+[Table of Contents](#Table-of-Contents)
+![9-18-1](/images/accounting/9-18-1.png)
 
 ---
