@@ -364,7 +364,7 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 
 ## 5-34-Radhikas-Radiology-Centre-ABC-in-Service-Sector
 [Table of Contents](#Table-of-Contents)
-![5-34](/images/accounting/5-34-1.jpeg)
+![5-34](/images/accounting/5-34-1.png)
 ![5-34](/images/accounting/5-34-2.jpeg)
 
 ---
@@ -484,6 +484,8 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 
 ---
 
+# Chapter 8
+
 ## 8-16
 [Table of Contents](#Table-of-Contents)
 ![8-16-1](/images/accounting/8-16-1.png)
@@ -547,6 +549,8 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 ![8-35-2](/images/accounting/8-35-2.png)
 
 ---
+
+# Chapter 9
 
 ## 9-15
 [Table of Contents](#Table-of-Contents)
