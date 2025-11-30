@@ -3202,7 +3202,9 @@ Each unit uses $5$ DML-hours:
 
 $MOH\ per\ unit = 5 \times 13.23 \approx 66.15$
 
-(Equivalently $172{,}000 / 2{,}600$ units.)
+Alternative to compute Budgeted manufacturing overhead cost per output unit:
+
+$\dfrac{\text{Total MOH}} {\text{Production Budget}}$ or $\dfrac{172{,}000}  {2{,}600} \approx 66.15$ units.
 
 #### 8. Cost of a snowboard manufactured in January
 
@@ -3305,7 +3307,7 @@ $OI \approx 240{,}430.77 - 44{,}500 = 195{,}930.77$
 Sales pattern: $40\%$ collected in month of sale, $60\%$ in following month.
 
 - December 2024 sales: \$1,650,000  
-- January 2025 sales: \$1,885,000
+- January 2025 sales: \$1,885,000 (from 6-32)
 
 January collections:
 
@@ -3441,262 +3443,275 @@ So the budgeted balance sheet at January 31, 2025 is:
 ![6-34](/images/accounting/6-34-1.jpeg)
 ![6-34](/images/accounting/6-34-2.jpeg)
 
-> The screenshots give all the physical data (input prices/quantities, inventories, activity rates, etc.), but some numbers are partially obscured. Below I show the **full calculation structure** and key numeric pieces that can be plugged directly with the table values from your PDF.
+---
 
-#### 1. Revenue budget
+#### 1. Revenue Budget (April)
 
-If expected sales are:
+Given expected sales:
+- Cat-allac: 500 units at $160
+- Dog-eriffic: 300 units at $250
 
-- Cat-allac: $Q_C$ units at price $P_C$  
-- Dog-errific: $Q_D$ units at price $P_D$
+Revenue calculations:
 
-then:
+$Revenue_C = 500 \times 160 = 80{,}000$
 
-$$
-Revenue_C = Q_C \times P_C,\quad
-Revenue_D = Q_D \times P_D
-$$
 
-From the screenshot: $Q_C = 500$, $P_C = 160$; $Q_D = 300$, $P_D = 250$.
+$Revenue_D = 300 \times 250 = 75{,}000$
 
-$$
-Revenue_C = 500 \times 160 = 80{,}000,\quad
-Revenue_D = 300 \times 250 = 75{,}000,\quad
-Revenue_{Total} = 155{,}000
-$$
+$Revenue_{Total} = 155{,}000$
+
 
 ---
 
-#### 2. Production budget (units)
+## 2. Production Budget (Units)
 
-Let:
+Beginning and ending finished goods:
+- Cat-allac: Beg 15, End 35  
+- Dog-eriffic: Beg 30, End 15  
 
-- $B_C, B_D$ = beginning finished goods (units)  
-- $E_C, E_D$ = target ending finished goods (units)
 
-Then:
+$Production_C = 500 + 35 - 15 = 520$
 
-$$
-Production_C = Q_C + E_C - B_C,\quad
-Production_D = Q_D + E_D - B_D
-$$
-
-From table: $B_C = 15$, $E_C = 35$; $B_D = 10$, $E_D = 15$:
-
-$$
-Production_C = 500 + 35 - 15 = 520,\quad
-Production_D = 300 + 15 - 10 = 305
-$$
+$Production_D = 300 + 15 - 30 = 285$
 
 ---
 
-#### 3. Direct material usage & purchases budgets
+#### 3. Direct Materials Budgets
+
+##### 3a. Direct Material Usage (Quantities and Dollars)
 
 Per-unit usage:
+- Cat-allac: 4 kg plastic, 0.5 kg metal
+- Dog-eriffic: 6 kg plastic, 1 kg metal
 
-- Cat-allac: $4$ kg plastic, $0.5$ kg metal  
-- Dog-errific: $6$ kg plastic, $1$ kg metal  
 
-Total usage:
+$Usage_{Plastic} = 4(520) + 6(285) = 3{,}790 \text{ kg}$
 
-$$
-\begin{aligned}
-Usage_{Plastic} &= 4(Production_C) + 6(Production_D) \\
-&= 4(520) + 6(305) = 3{,}910\ \text{kg}
-\\[4pt]
-Usage_{Metal} &= 0.5(Production_C) + 1(Production_D) \\
-&= 0.5(520) + 1(305) = 565\ \text{kg}
-\end{aligned}
-$$
 
-Let $Beg_{P}, End_{P}$ be beginning and ending plastic inventory (kg), and similarly $Beg_M, End_M$ for metal.
+$Usage_{Metal} = 0.5(520) + 1(285) = 545 \text{ kg}$
 
-Purchases (quantities):
 
-$$
-\begin{aligned}
-Purch_{Plastic} &= Usage_{Plastic} + End_{P} - Beg_{P} \\
-Purch_{Metal} &= Usage_{Metal} + End_{M} - Beg_{M}
-\end{aligned}
-$$
+FIFO and pricing:
+- Beginning plastic: 250 kg @ 3.80 = 950
+- Remaining plastic used: 3,540 kg @ 4 = 14,160
+- Beginning metal: 60 kg @ 3 = 180
+- Remaining metal used: 485 kg @ 3 = 1,455
 
-(From table: $Beg_P = 230$, $End_P = 380$; $Beg_M = 60$, $End_M = 55$  
-→ $Purch_{Plastic} = 4{,}060$ kg, $Purch_{Metal} = 560$ kg.)
+Totals:
 
-Valued at April prices (plastic \$4/kg, metal \$3/kg):
+$DM_{Plastic} = 15{,}110$
 
-$$
-Purch_{Plastic\$} = 4{,}060 \times 4,\quad
-Purch_{Metal\$} = 560 \times 3
-$$
 
----
+$DM_{Metal} = 1{,}635$
 
-#### 4. Direct manufacturing labour cost budget
 
-Per-unit DML:
+$DM_{Total} = 16{,}745$
 
-- Cat-allac: $3$ hours  
-- Dog-errific: $5$ hours  
-- Rate: \$10 per hour
 
-$$
-\begin{aligned}
-DMLH_C &= 3 \times Production_C,\quad DMLH_D = 5 \times Production_D \\
-DMLH_{Total} &= DMLH_C + DMLH_D \\
-DML\ cost &= DMLH_{Total} \times 10
-\end{aligned}
-$$
+##### 3b. Direct Material Purchases
 
-(Numerically: $DMLH_C = 1{,}560$, $DMLH_D = 1{,}525$, $DMLH_{Total} = 3{,}085$, $DML\ cost = 30{,}850$.)
+Ending inventories:
+- Plastic: 380 kg
+- Metal: 55 kg
 
----
+Beginning inventories:
+- Plastic: 250 kg
+- Metal: 60 kg
 
-#### 5. Manufacturing overhead budgets (ABC)
 
-Activity rates:
+$Purch_{Plastic,qty} = 3{,}790 + 380 - 250 = 3{,}920$
 
-- Setup: \$100 per setup-hour  
-- Processing: \$5 per machine-hour (MH)  
-- Inspection: \$16 per inspection-hour  
 
-Units per batch and time per batch:
+$Purch_{Metal,qty} = 545 + 55 - 60 = 540$
 
-- Cat-allac: 20 units/batch; setup $1.5$ hours/batch; inspection $0.5$ hours/batch  
-- Dog-errific: 15 units/batch; setup $1.75$ hours/batch; inspection $0.6$ hours/batch  
 
-Number of batches (can be fractional in a budget):
+Valued at April prices:
 
-$$
-Batches_C = \frac{Production_C}{20},\quad
-Batches_D = \frac{Production_D}{15}
-$$
+$Purch_{Plastic,\$} = 3{,}920 \times 4 = 15{,}680$
 
-Setup-hours:
 
-$$
-SetupH_C = 1.5 \times Batches_C,\quad
-SetupH_D = 1.75 \times Batches_D
-$$
+$Purch_{Metal,\$} = 540 \times 3 = 1{,}620$
 
-Inspection-hours:
 
-$$
-InspectH_C = 0.5 \times Batches_C,\quad
-InspectH_D = 0.6 \times Batches_D
-$$
+Total purchases:
 
-Machine-hours:
-
-- Cat-allac: $10$ MH per unit  
-- Dog-errific: $18$ MH per unit  
-
-$$
-MH_C = 10 \times Production_C,\quad MH_D = 18 \times Production_D
-$$
-
-Budgeted MOH:
-
-$$
-\begin{aligned}
-MOH_{Setup} &= 100 \times (SetupH_C + SetupH_D) \\
-MOH_{Proc}  &= 5   \times (MH_C + MH_D) \\
-MOH_{Insp}  &= 16  \times (InspectH_C + InspectH_D) \\
-MOH_{Total} &= MOH_{Setup} + MOH_{Proc} + MOH_{Insp}
-\end{aligned}
-$$
-
-You can then split these totals by product based on each product’s driver usage.
+$Purch_{Total} = 17{,}300$
 
 ---
 
-#### 6. Budgeted unit cost of ending finished goods & ending inventories
+#### 4. Direct Manufacturing Labour Budget
 
-1. **Per-unit manufacturing cost (April production):**
+Per-unit labour:
+- Cat-allac: 3 hours
+- Dog-eriffic: 5 hours
+- Rate: $10/hour
 
-For each product:
 
-$$
-Unit\ cost = DM\ per\ unit + DML\ per\ unit + MOH\ per\ unit
-$$
+$DMLH_C = 520 \times 3 = 1{,}560$
 
-- $DM\ per\ unit$ uses April prices and per-unit kg.  
-- $DML\ per\ unit$ uses hours × \$10.  
-- $MOH\ per\ unit$ is each activity’s product overhead divided by that product’s April production units.
+$DMLH_D = 285 \times 5 = 1{,}425$
 
-2. **Ending finished goods:**
+$DMLH_{Total} = 2{,}985$
 
-$$
-Ending\ FG\ value = Unit\ cost_{April}\times Ending\ FG\ units
-$$
-
-3. **Ending direct materials:**
-
-Given FIFO, ending DM inventory is assumed to be from the **latest purchases**, so value it at April prices:
-
-$$
-End_{DM\$} = End_P \times 4 + End_M \times 3
-$$
-
-FIFO affects how beginning DM and FG costs flow into COGS but not the mechanics of the budgets.
+$DML_{Cost} = 2{,}985 \times 10 = 29{,}850$
 
 ---
 
-#### 7. Cost of goods sold budget (April)
+#### 5. Manufacturing Overhead Budget (Activity-Based Costing)
 
-$$
-\begin{aligned}
-COGM &= DM\ used + DML + MOH \\
-COGS &= Beg\ FG\ value + COGM - End\ FG\ value
-\end{aligned}
-$$
+##### 5a. Setup Hours
+- Cat-allac: 20 units/batch, 1.5 h/batch  
+- Dog-eriffic: 15 units/batch, 1.75 h/batch
 
-Where:
 
-$$
-DM\ used = Beg\ DM\ value + Purch_{DM\$} - End_{DM\$}
-$$
+$Batches_C = 520/20 = 26$
 
-(Beg DM and FG values are given in the tables.)
+$Batches_D = 285/15 = 19$
+
+$SetupH_C = 26 \times 1.5 = 39$
+
+$SetupH_D = 19 \times 1.75 = 33.25$
+
+$SetupH_{Total} = 72.25$
+
+$MOH_{Setup} = 72.25 \times 100 = 7{,}225$
+
+##### 5b. Machine Hours
+- Cat-allac: 10 MH/unit  
+- Dog-eriffic: 18 MH/unit  
+
+
+$MH_C = 10(520) = 5{,}200$
+
+$MH_D = 18(285) = 5{,}130$
+
+$MH_{Total} = 10{,}330$
+
+$MOH_{Proc} = 10{,}330 \times 5 = 51{,}650$
+
+##### 5c. Inspection Hours
+- Cat-allac: 0.5 h/batch  
+- Dog-eriffic: 0.6 h/batch  
+
+
+$InspectH_C = 26 \times 0.5 = 13$
+
+$InspectH_D = 19 \times 0.6 = 11.4$
+
+$InspectH_{Total} = 24.4$
+
+$MOH_{Insp} = 24.4 \times 16 = 390$
+
+##### 5d. Total MOH
+
+$MOH_{Total} = 7{,}225 + 51{,}650 + 390 = 59{,}265$
+
+---
+
+#### 6. Unit Cost of Production and Ending Inventories
+
+##### 6a. Per-Unit Manufacturing Costs
+
+Cat-allac:
+- Plastic: 16.00  
+- Metal: 1.50  
+- DML: 30.00  
+- Setup: 7.50  
+- Processing: 50.00  
+- Inspection: 0.40  
+
+
+$UnitCost_C = 105.40$
+
+Dog-eriffic:
+- Plastic: 24.00  
+- Metal: 3.00  
+- DML: 50.00  
+- Setup: 11.67  
+- Processing: 90.00  
+- Inspection: 0.64  
+
+
+$UnitCost_D = 179.31$
+
+##### 6b. Ending Inventories
+
+Ending direct materials (April prices):
+
+$EndPlastic = 380 \times 4 = 1{,}520$
+
+$EndMetal = 55 \times 3 = 165$
+
+$EndDM = 1{,}685$
+
+Ending finished goods:
+
+$EndFG_C = 35 \times 105.40 = 3{,}689$
+
+$EndFG_D = 15 \times 179.31 = 2{,}690$
+
+$EndFG_{Total} = 6{,}379$
+
+Total ending inventories:
+
+$Inventory_{Total} = 1{,}685 + 6{,}379 = 8{,}064$
 
 ---
 
-#### 8. Non-manufacturing cost budget
+#### 7. Cost of Goods Sold Budget
 
-- Fixed nonproduction costs (March) = \$36,000, of which half are salaries.  
-  Salaries rise 5% in April → salary portion \$18,000 × 1.05 = \$18,900; other \$18,000 unchanged.  
-  So fixed nonproduction (before separating depreciation) = \$36,900.
-- Variable nonproduction: 1% of sales revenue:
+Beginning finished goods:
 
-$$
-Variable\ nonprod = 0.01 \times 155{,}000 = 1{,}550
-$$
+$BegFG = 1{,}500 + 5{,}580 = 7{,}080$
 
-Total nonproduction budget (before non-cash separation):
+Cost of goods manufactured:
 
-$$
-36{,}900 + 1{,}550 = 38{,}450
-$$
+$COGM = 16{,}745 + 29{,}850 + 59{,}265 = 105{,}860$
 
-The problem states a specific amount of nonproduction depreciation (e.g., \$10,000) to be excluded from cash-flow calculations.
+Cost of goods available:
+
+$COGA = 7{,}080 + 105{,}860 = 112{,}940$
+
+
+COGS:
+
+$COGS = 112{,}940 - 6{,}379 = 106{,}561$
+
+---
+
+## 8. Non-Manufacturing Cost Budget
+
+Fixed costs:
+- March fixed nonproduction = 36,000  
+- Half are salaries = 18,000  
+- Salaries increase 5% = 18,900  
+- Other fixed costs = 18,000  
+
+Variable selling:
+
+$0.01 \times 155{,}000 = 1{,}550$
+
+Total nonproduction:
+
+$Total = 18{,}900 + 18{,}000 + 1{,}550 = 38{,}450$
 
 ---
 
-#### 9. Budgeted income statement (ignore income taxes)
+## 9. Budgeted Operating Income Statement (Before Tax)
 
-$$
-\begin{aligned}
-Sales\ revenue &= 155{,}000 \\
-COGS          &= \text{from step 7} \\
-Gross\ margin &= Sales - COGS \\
-Nonprod\ costs&= \text{from step 8} \\
-Operating\ income &= Gross\ margin - Nonprod\ costs
-\end{aligned}
-$$
 
-Plug your computed dollar COGS and nonproduction totals from the earlier steps.
+$Sales = 155{,}000$
+
+$COGS = 106{,}561$
+
+$GrossMargin = 48{,}439$
+
+$NonproductionCosts = 38{,}450$
+
+$OperatingIncome = 48{,}439 - 38{,}450 = 9{,}989$
 
 ---
+
 
 ## 6-35-Pet-Transport-Company-Cash-Budget-for-April
 [Table of Contents](#Table-of-Contents)
@@ -3706,14 +3721,17 @@ Plug your computed dollar COGS and nonproduction totals from the earlier steps.
 
 This is a continuation of 6-34. Use:
 
-- **Sales** from 6-34: \$155,000
-- **Sales mix:** PT sells only for cash and credit cards (no receivables).
+- **Sales** from 6-34: $155,000  
+- **Sales mix:** PT sells only for cash and credit cards (no receivables).  
 - 90% of sales are on credit cards; PT gets cash immediately, less a 3% fee.  
 - 10% of sales are cash.  
 - **Purchases of materials**: on account; 50% paid in month of purchase, 50% next month.  
-- End of March payables: \$8,500.  
-- Planned machine purchase in April: \$13,700 (cash).  
-- For April production & nonproduction costs, certain amounts (e.g., \$20,000 and \$10,000 respectively) are depreciation (non-cash).
+- End of March payables: $8,500.  
+- Planned machine purchase in April: $13,700 (cash).  
+- For April production & nonproduction costs, certain amounts ($20,000 and $10,000 respectively) are depreciation (non-cash).  
+- From 6-34: $Purch_{DM\$}{April} = 17{,}300$, $ProdCost_{Total} = 105{,}860$, $Nonprod_{Total} = 38{,}450$.
+
+---
 
 #### 1. Cash receipts (April)
 
@@ -3725,11 +3743,14 @@ Total\ receipts &= Cash_{cards} + Cash_{sales}
 \end{aligned}
 $$
 
-With \$155,000 sales:
+With $155{,}000$ sales:
 
 $$
-Cash_{cards} = 0.90 \times 155{,}000 \times 0.97,\quad
-Cash_{sales} = 0.10 \times 155{,}000
+\begin{aligned}
+Cash_{cards} &= 0.90 \times 155{,}000 \times 0.97 = 135{,}315 \\
+Cash_{sales} &= 0.10 \times 155{,}000 = 15{,}500 \\
+Total\ receipts &= 135{,}315 + 15{,}500 = 150{,}815
+\end{aligned}
 $$
 
 ---
@@ -3739,10 +3760,17 @@ $$
 1. **Materials payments:**
 
 $$
-Payments_{DM} = 0.5 \times Purch_{DM\$}^{April} + March\ payables
+Payments_{DM} = 0.5 \times Purch_{DM\$}{April} + March\ payables
 $$
 
-(Where $Purch_{DM\$}^{April}$ is from 6-34 and March payables \$8,500 are given.)
+With $Purch_{DM\$}{April} = 17{,}300$ and March payables $8{,}500$:
+
+$$
+\begin{aligned}
+Payments_{DM} &= 0.5 \times 17{,}300 + 8{,}500 \\
+&= 8{,}650 + 8{,}500 = 17{,}150
+\end{aligned}
+$$
 
 2. **Cash production costs:**
 
@@ -3752,45 +3780,76 @@ $$
 Cash\ prod = ProdCost_{Total} - Depreciation_{prod}
 $$
 
+With $ProdCost_{Total} = 105{,}860$ and $Depreciation_{prod} = 20{,}000$:
+
+$$
+\begin{aligned}
+Cash\ prod &= 105{,}860 - 20{,}000 \\
+&= 85{,}860
+\end{aligned}
+$$
+
 3. **Cash nonproduction costs:**
 
 $$
 Cash\ nonprod = Nonprod_{Total} - Depreciation_{nonprod}
 $$
 
-4. **Machine purchase:** \$13,700  
+With $Nonprod_{Total} = 38{,}450$ and $Depreciation_{nonprod} = 10{,}000$:
 
-5. **Loan interest:** PT has a \$2,000 loan at 12% annually, interest paid monthly:
+$$
+\begin{aligned}
+Cash\ nonprod &= 38{,}450 - 10{,}000 \\
+&= 28{,}450
+\end{aligned}
+$$
+
+4. **Machine purchase:** $13{,}700$ (all cash).  
+
+5. **Loan interest:** PT has a $2{,}000$ loan at 12% annually, interest paid monthly:
 
 $$
 Interest = 2{,}000 \times 0.12 / 12 = 20
 $$
 
-6. **Income tax payment:** \$5,000 remitted in April (given).
+6. **Income tax payment:** $5{,}000$ remitted in April (given).
 
-Total cash payments are the sum of all six components.
+Total cash payments are the sum of all six components:
+
+$$
+\begin{aligned}
+Payments &= Payments_{DM} + Cash\ prod + Cash\ nonprod + Cash_{machine} + Interest + Tax \\
+&= 17{,}150 + 85{,}860 + 28{,}450 + 13{,}700 + 20 + 5{,}000 \\
+&= 150{,}180
+\end{aligned}
+$$
 
 ---
 
 #### 3. Ending cash and loan repayment
 
-Beginning cash (end of March): \$5,360.
+Beginning cash (end of March): $5{,}360$.
 
 $$
 \begin{aligned}
 Cash_{before\ loan} &= Beg\ cash + Receipts - Payments \\
+&= 5{,}360 + 150{,}815 - 150{,}180 \\
+&= 5{,}360 + 635 \\
+&= 5{,}995
 \end{aligned}
 $$
 
-If $Cash_{before\ loan} > 10{,}000$, PT repays the \$2,000 loan principal:
+If $Cash_{before\ loan} > 10{,}000$, PT repays the $2{,}000$ loan principal.  
+Here, $5{,}995 < 10{,}000$, so no principal repayment occurs.
+
+Ending cash is therefore:
 
 $$
-Ending\ cash = Cash_{before\ loan} - 2{,}000
+Ending\ cash = Cash_{before\ loan} = 5{,}995
 $$
 
-The final answer is that PT ends April with a positive cash balance **above the \$10,000 threshold**, and the \$2,000 loan is repaid.
+The final answer is that PT ends April with a positive cash balance **below the $10{,}000 threshold**, so the $2{,}000$ loan principal is **not** repaid.
 
----
 
 # Chapter 7
 
@@ -3801,11 +3860,81 @@ The final answer is that PT ends April with a positive cash balance **above the 
 
 ![7-15-2](/images/accounting/7-15-2.png)
 
+
+
+
+1. The question is whether or not the actual results met expectations, exceeded expectations, or failed to meet expectations and a **variance analysis** will respond to this question. A **variance** is the result of subtracting the budgeted or predicted outcome from the actual outcome.
+
+2. A **favourable (F) variance** means the effect of the variance is to increase operating income. An **unfavourable (U) variance** means the effect of the variance is to decrease operating income.
+
+3. A **static budget variance** simply fails to reflect the routine effect of changes in quantity produced and sold on the revenue and the variable costs.
+
+4. A **flexible budget** does reflect the routine changes to be expected when the quantity produced and sold fluctuates from what was predicted. The **flexible budget** permits more **fineness** in the report of non-routine variances and **management by exception**. The **flexible-budget variance** plus the **sales-volume variance** equals the **static budget variance**.
+
+5. When quantities of direct materials purchased and used differ from budget, the variance can be the result of either a **rate variance** (or **input rate variance**) arising in an unexpected difference in the cost/unit or an **efficiency variance** arising from an unexpected difference in the quantity of the input used, or a combination of both.
+
+6. When a direct materials **input mix** has **substitutable inputs**, both the **direct materials mix variance** and the **direct materials yield variance** become important.
+
+7. These elements of a Level 4 analysis permit the managers to assess how changes from what was expected affected the **yield**.
+
 ---
 
 ## 7-17
 [Table of Contents](#Table-of-Contents)
 ![7-17-1](/images/accounting/7-17-1.png)
+
+### 7-17 – Connor Company – Flexible Budget Performance Report
+
+Connor Company’s budgeted variable cost per attaché case:
+
+- Direct materials: $40 per case  
+- Direct manufacturing labour: $8 per case  
+- Direct marketing (distribution) labour: $12 per case  
+
+Static budget is based on $10{,}000$ cases:
+
+- Direct materials: $10{,}000 \times 40 = 400{,}000$  
+- Direct manufacturing labour: $10{,}000 \times 8 = 80{,}000$  
+- Direct marketing labour: $10{,}000 \times 12 = 120{,}000$  
+
+Actual output is $8{,}800$ cases, so the **flexible budget** is:
+
+- Direct materials: $8{,}800 \times 40 = 352{,}000$  
+- Direct manufacturing labour: $8{,}800 \times 8 = 70{,}400$  
+- Direct marketing labour: $8{,}800 \times 12 = 105{,}600$  
+
+---
+
+#### Revised performance report (Level 2: flexible vs. static budget)
+
+All amounts in $.
+
+|                         | Actual Results (1) | Flexible-Budget Variance (2) = (1)-(3) | Flexible Budget (3) | Sales-Volume Variance (4) = (3)-(5) | Static Budget (5) |
+|-------------------------|-------------------:|----------------------------------------:|--------------------:|-------------------------------------:|------------------:|
+| Output units            | 8,800             | 0                                       | 8,800               | 1,200 U                              | 10,000            |
+| Direct materials        | 364,000           | 12,000 U                                | 352,000             | 48,000 F                             | 400,000           |
+| Direct manuf. labour    | 78,000            | 7,600 U                                 | 70,400              | 9,600 F                              | 80,000            |
+| Direct marketing labour | 110,000           | 4,400 U                                 | 105,600             | 14,400 F                             | 120,000           |
+| **Total direct costs**  | **552,000**       | **24,000 U**                            | **528,000**         | **72,000 F**                         | **600,000**       |
+
+- **Flexible-budget variance (total direct costs):** $24{,}000$ U  
+- **Sales-volume variance (total direct costs):** $72{,}000$ F  
+- **Static-budget variance (total direct costs):** $48{,}000$ F  
+
+(Static-budget variance = $552{,}000 - 600{,}000 = 48{,}000$ F.)
+
+---
+
+### Interpretation – Is the president’s pleasure justified?
+
+- The original Level 1 report (static budget vs. actual) shows a **$48{,}000 favourable** variance in total direct costs, which is why the president is pleased.  
+- However, once we adjust for the lower output (use the **flexible budget** at 8,800 units), we see that:
+  - Each direct cost category (materials, manuf. labour, marketing labour) has an **unfavourable flexible-budget variance**.
+  - Total flexible-budget variance is **$24{,}000 U**, meaning costs were **higher than expected for the actual level of activity**.
+  - The overall $48{,}000 F static-budget variance is driven entirely by the **$72{,}000 F sales-volume variance** (producing and selling 1,200 fewer units than planned).
+
+Therefore, the president’s pleasure is **not justified**. The company appears more “favourable” only because it produced fewer units; conditional on producing 8,800 units, its direct costs were actually **worse than budgeted**.
+
 
 ---
 
@@ -3813,11 +3942,205 @@ The final answer is that PT ends April with a positive cash balance **above the 
 [Table of Contents](#Table-of-Contents)
 ![7-18-1](/images/accounting/7-18-1.png)
 
+### 7-18 – Blakes Construction Trailers  
+Rate, Efficiency, and Flexible-Budget Variances  
+(All amounts in dollars)
+
+We use the standard variance decomposition:
+
+- **Rate variance** = (Actual inputs × actual rates) − (Actual inputs × standard rates)  
+- **Efficiency variance** = (Actual inputs × standard rates) − (Standard inputs allowed × standard rates)  
+- **Flexible-budget variance** = (Actual inputs × actual rates) − (Standard inputs allowed × standard rates)
+
+---
+
+## Direct Materials
+
+Given:
+- Actual inputs × actual rates = 210,000  
+- Actual inputs × standard rates = 200,000  
+- Standard inputs allowed × standard rates = 220,000  
+
+### 1. Rate variance
+$$
+Rate\ variance = 210{,}000 - 200{,}000 = 10{,}000\ U
+$$
+
+### 2. Efficiency variance
+$$
+Efficiency\ variance = 200{,}000 - 220{,}000 = 20{,}000\ F
+$$
+
+### 3. Flexible-budget variance
+$$
+Flexible\text{-}budget\ variance = 210{,}000 - 220{,}000 = 10{,}000\ F
+$$
+
+---
+
+## Direct Manufacturing Labour
+
+Given:
+- Actual inputs × actual rates = 96,000  
+- Actual inputs × standard rates = 90,000  
+- Standard inputs allowed × standard rates = 90,000  
+
+#### 1. Rate variance
+$$
+Rate\ variance = 96{,}000 - 90{,}000 = 6{,}000\ U
+$$
+
+#### 2. Efficiency variance
+$$
+Efficiency\ variance = 90{,}000 - 90{,}000 = 0
+$$
+
+#### 3. Flexible-budget variance
+$$
+Flexible\text{-}budget\ variance = 96{,}000 - 90{,}000 = 6{,}000\ U
+$$
+
+---
+
+#### Final Summary Table
+
+| Variance Type            | Direct Materials | Direct Labour |
+|--------------------------|-----------------:|--------------:|
+| Rate variance            | 10,000 U         | 6,000 U       |
+| Efficiency variance      | 20,000 F         | 0             |
+| Flexible-budget variance | 10,000 F         | 6,000 U       |
+
+
+
 ---
 
 ## 7-19
 [Table of Contents](#Table-of-Contents)
 ![7-19-1](/images/accounting/7-19-1.png)
+
+Budgeted data (standards):
+
+- Budgeted kale: 20,000 kg at $1.18 per kg  
+- Budgeted output: 70,000 salads  
+
+Actual data:
+
+- Actual kale used: 21,000 kg at $1.10 per kg  
+- Actual output: 71,400 salads  
+
+First compute the standard quantity per salad:
+
+$$
+SQ_{per\ salad} = \frac{20{,}000\ \text{kg}}{70{,}000\ \text{salads}}
+= 0.285714\ \text{kg/salad}
+$$
+
+Standard quantity allowed for the actual output:
+
+$$
+SQ = 0.285714 \times 71{,}400 = 20{,}400\ \text{kg}
+$$
+
+Standard price:
+
+$$
+SP = \$1.18 \quad\text{per kg}
+$$
+
+Actual price:
+
+$$
+AP = \$1.10 \quad\text{per kg}
+$$
+
+Actual quantity:
+
+$$
+AQ = 21{,}000\ \text{kg}
+$$
+
+---
+
+## 1. Flexible-budget variance (for direct materials)
+
+Actual cost:
+
+$$
+AC = AQ \times AP = 21{,}000 \times 1.10 = \$23{,}100
+$$
+
+Flexible-budget cost:
+
+$$
+FB = SQ \times SP = 20{,}400 \times 1.18 = \$24{,}072
+$$
+
+Flexible-budget variance:
+
+$$
+FBV = AC - FB = 23{,}100 - 24{,}072 = -972
+$$
+
+So the flexible-budget variance is:
+
+$$
+\$972\ \text{Favourable (F)}
+$$
+
+---
+
+## 2. Price and efficiency variances
+
+### Price variance (rate variance)
+
+Using the formula $Price\ variance = (AP - SP) \times AQ$:
+
+$$
+Price\ variance = (1.10 - 1.18) \times 21{,}000 = -0.08 \times 21{,}000 = -1{,}680
+$$
+
+So:
+
+$$
+Price\ variance = \$1{,}680\ \text{F}
+$$
+
+(Actual price was lower than the standard price.)
+
+### Efficiency variance
+
+Using the formula $Efficiency\ variance = (AQ - SQ) \times SP$:
+
+$$
+Efficiency\ variance = (21{,}000 - 20{,}400) \times 1.18
+= 600 \times 1.18
+= 708
+$$
+
+So:
+
+$$
+Efficiency\ variance = \$708\ \text{Unfavourable (U)}
+$$
+
+Check:
+
+$$
+Price\ variance + Efficiency\ variance
+= (-1{,}680) + 708 = -972 = FBV
+$$
+
+which reconciles with the flexible-budget variance in requirement 1.
+
+---
+
+## 3. Comment on the results
+
+- Overall, the company has a **\$972 F flexible-budget variance**, meaning it spent less on kale than expected for the actual level of output.
+- This favourable result is driven by a **\$1,680 F price variance**: Doux Dulce paid **less per kilogram** of kale than the standard cost.
+- However, there is a **\$708 U efficiency variance**: the company used **more kilograms of kale** than the standard quantity allowed for 71,400 salads (21,000 kg actual vs. 20,400 kg standard).
+- In words: the purchasing department did well in obtaining a lower price, but production was less efficient in its use of kale, partially offsetting the savings.
+
 
 ---
 
@@ -3827,11 +4150,275 @@ The final answer is that PT ends April with a positive cash balance **above the 
 
 ![7-21-2](/images/accounting/7-21-2.png)
 
+
+---
+
+#### Given (Operating Budget for September)
+
+- Budgeted number of chequebooks: 15,000  
+- Budgeted selling price per book: $20  
+- Budgeted variable cost per book: $8  
+- Budgeted total fixed costs for the month: $145,000  
+
+So the **static budget** (15,000 units) is:
+
+- Revenue: $15{,}000 \times 20 = 300{,}000$  
+- Variable costs: $15{,}000 \times 8 = 120{,}000$  
+- Contribution margin: $300{,}000 - 120{,}000 = 180{,}000$  
+- Fixed costs: $145,000$  
+- Operating income: $35,000$  
+
+---
+
+Actual results for September:
+
+- Actual units sold: 10,000  
+- Actual average selling price: $25.20  
+- Actual variable cost per unit: $7  
+- Actual fixed costs: $150,000  
+
+So:
+
+- Revenue: $10{,}000 \times 25.20 = 252{,}000$  
+- Variable costs: $10{,}000 \times 7 = 70{,}000$  
+- Contribution margin: $252{,}000 - 70{,}000 = 182{,}000$  
+- Operating income: $182{,}000 - 150{,}000 = 32{,}000$  
+
+---
+
+## 1. Level 1 Analysis (Static-Budget Variance)
+
+Compare **actual results** with the **static budget**.
+
+All amounts in dollars.
+$U=Unfavorable$
+$F=Favorable$
+
+|                         | Actual Results | Static Budget | Variance (Actual − Static) |
+|-------------------------|--------------:|--------------:|---------------------------:|
+| Units sold              | 10,000        | 15,000        | 5,000 U                    |
+| Revenue                 | 252,000       | 300,000       | 48,000 U                   |
+| Variable costs          | 70,000        | 120,000       | 50,000 F                   |
+| Contribution margin     | 182,000       | 180,000       | 2,000 F                    |
+| Fixed costs             | 150,000       | 145,000       | 5,000 U                    |
+| Operating income        | 32,000        | 35,000        | 3,000 U                    |
+
+- Overall **static-budget variance in operating income**: **$3,000 U**.
+
+Level 1 shows only that actual operating income is slightly **worse** than budget (3,000 U), with no breakdown into causes.
+
+---
+
+## 2. Level 2 Analysis (Flexible-Budget and Sales-Volume Variances)
+
+Step 1: Construct the **flexible budget** at the **actual units (10,000)** but at **budgeted per-unit amounts**.
+
+- Flexible-budget revenue: $10{,}000 \times 20 = 200{,}000$  
+- Flexible-budget variable costs: $10{,}000 \times 8 = 80{,}000$  
+- Flexible-budget contribution margin: $200{,}000 - 80{,}000 = 120{,}000$  
+- Flexible-budget fixed costs: $145,000$  
+- Flexible-budget operating income: $120{,}000 - 145{,}000 = -25{,}000$  
+
+Step 2: Prepare the Level 2 table.
+$U=Unfavorable$
+$F=Favorable$
+
+
+|                         | Actual Results (1) | Flexible-Budget Variance (2) = (1) − (3) | Flexible Budget (3) | Sales-Volume Variance (4) = (3) − (5) | Static Budget (5) |
+|-------------------------|------------------:|-----------------------------------------:|--------------------:|--------------------------------------:|------------------:|
+| Units sold              | 10,000            | 0                                        | 10,000              | 5,000 U                               | 15,000            |
+| Revenue                 | 252,000           | 52,000 F                                 | 200,000             | 100,000 U                             | 300,000           |
+| Variable costs          | 70,000            | 10,000 F                                 | 80,000              | 40,000 F                              | 120,000           |
+| Contribution margin     | 182,000           | 62,000 F                                 | 120,000             | 60,000 U                              | 180,000           |
+| Fixed costs             | 150,000           | 5,000 U                                  | 145,000             | 0                                     | 145,000           |
+| Operating income        | 32,000            | 57,000 F                                 | -25,000             | 60,000 U                              | 35,000            |
+
+Checks:
+
+- Flexible-budget variance in operating income: $32{,}000 - (-25{,}000) = 57{,}000$ F.  
+- Sales-volume variance in operating income: $-25{,}000 - 35{,}000 = 60{,}000$ U.  
+- Static-budget variance: $57{,}000 F + 60{,}000 U = 3{,}000 U$ (agrees with Level 1).
+
+Interpretation of Level 2:
+
+- For the **actual volume of 10,000 units**, performance was **much better than budget**:
+  - Revenue per unit was higher than planned (25.20 vs. 20).  
+  - Variable costs per unit were lower (7 vs. 8).  
+  - This yields a **57,000 F flexible-budget variance** in operating income.
+- However, the company sold **5,000 fewer units** than planned, which—at the budgeted contribution margin per unit of $(20 - 8) = 12$—produces a **60,000 U sales-volume variance**:
+  $$5{,}000 \times 12 = 60{,}000\ U$$
+- Net effect: **3,000 U static-budget variance**, as seen in Level 1.
+
+---
+
+## 3. Why Level 2 Is More Informative than Level 1
+
+- **Level 1** only shows that operating income is $3,000 U overall, which looks mildly disappointing and does not explain the reasons.
+- **Level 2** separates:
+  - The impact of **operating performance at the actual volume** (flexible-budget variance), and  
+  - The impact of **selling fewer units than planned** (sales-volume variance).
+- Trustex learns that:
+  - Its **per-unit performance was excellent** (higher selling price, lower variable cost → 57,000 F).  
+  - The **main problem is lower volume** (fewer chequebooks sold → 60,000 U).
+- This distinction is crucial for management:
+  - Pricing and cost-control decisions look good.  
+  - The concern should be on **demand/volume** (for example, did the higher price reduce the number of units sold? Are there market or capacity constraints?).
+
+Therefore, Trustex finds the **Level 2 analysis more informative** because it reveals that the disappointing operating income is driven primarily by **reduced sales volume**, not by poor cost control or pricing at the actual level of activity.
+
+
 ---
 
 ## 7-22
 [Table of Contents](#Table-of-Contents)
 ![7-22-1](/images/accounting/7-22-1.png)
+
+
+
+We reconstruct the missing performance report and variances.
+
+Given:
+
+- Actual units sold: 130,000  
+- Static-budget units: 120,000  
+
+Static-budget amounts:
+
+- Revenues: $420,000  
+- Variable costs: $240,000  
+- Contribution margin: $180,000  
+- Fixed costs: $120,000  
+- Operating income: $60,000  
+
+Actual results:
+
+- Revenues: $715,000  
+- Variable costs: $515,000  
+- Contribution margin: $200,000  
+- Fixed costs: $140,000  
+- Operating income: $60,000  
+
+---
+
+## 1. All required variances
+
+### Step 1 – Flexible budget (at 130,000 units, using budgeted per-unit amounts)
+
+Budgeted selling price per unit:
+
+$$
+SP = \frac{420{,}000}{120{,}000} = 3.50
+$$
+
+Budgeted variable cost per unit:
+
+$$
+VC = \frac{240{,}000}{120{,}000} = 2.00
+$$
+
+Flexible budget:
+
+- Revenues: $130{,}000 \times 3.50 = 455{,}000$  
+- Variable costs: $130{,}000 \times 2.00 = 260{,}000$  
+- Contribution margin: $455{,}000 - 260{,}000 = 195{,}000$  
+- Fixed costs: $120,000$  
+- Operating income: $195{,}000 - 120{,}000 = 75{,}000$  
+
+### Step 2 – Level 2 performance report
+
+All variances are computed as:
+
+- Flexible-budget variance = Actual − Flexible budget  
+- Sales-volume variance = Flexible budget − Static budget  
+
+|                           | Actual Results (1) | Flexible-Budget Variance (2) | Flexible Budget (3) | Sales-Volume Variance (4) | Static Budget (5) |
+|---------------------------|------------------:|-----------------------------:|--------------------:|--------------------------:|------------------:|
+| Units sold                | 130,000           | 0                            | 130,000             | 10,000 F                  | 120,000           |
+| Revenues                  | 715,000           | 260,000 F                    | 455,000             | 35,000 F                  | 420,000           |
+| Variable costs            | 515,000           | 255,000 U                    | 260,000             | 20,000 U                  | 240,000           |
+| Contribution margin       | 200,000           | 5,000 F                      | 195,000             | 15,000 F                  | 180,000           |
+| Fixed costs               | 140,000           | 20,000 U                     | 120,000             | 0                         | 120,000           |
+| Operating income          | 60,000            | 15,000 U                     | 75,000              | 15,000 F                  | 60,000            |
+
+Check on operating income:
+
+- Flexible-budget variance: $60{,}000 - 75{,}000 = 15{,}000\ U$  
+- Sales-volume variance: $75{,}000 - 60{,}000 = 15{,}000\ F$  
+- Static-budget variance: $60{,}000 - 60{,}000 = 0$  
+
+So the **total static-budget variance is $0** as indicated.
+
+---
+
+## 2. Actual and budgeted selling prices and variable costs per unit
+
+### Budgeted per-unit amounts
+
+Budgeted selling price:
+
+$$
+SP_{budget} = \frac{420{,}000}{120{,}000} = \$3.50 \text{ per unit}
+$$
+
+Budgeted variable cost:
+
+$$
+VC_{budget} = \frac{240{,}000}{120{,}000} = \$2.00 \text{ per unit}
+$$
+
+Budgeted contribution margin:
+
+$$
+CM_{budget} = 3.50 - 2.00 = \$1.50 \text{ per unit}
+$$
+
+### Actual per-unit amounts
+
+Actual selling price:
+
+$$
+SP_{actual} = \frac{715{,}000}{130{,}000} = \$5.50 \text{ per unit}
+$$
+
+Actual variable cost:
+
+$$
+VC_{actual} = \frac{515{,}000}{130{,}000} \approx \$3.96 \text{ per unit}
+$$
+
+Actual contribution margin:
+
+$$
+CM_{actual} = 5.50 - 3.96 \approx \$1.54 \text{ per unit}
+$$
+
+---
+
+## 3. Discussion and lessons
+
+Key observations from the variances:
+
+1. **Revenue side**  
+   - Large **$260,000 F flexible-budget variance** in revenue: the actual selling price ($5.50) is far higher than the budgeted $3.50, and units sold (130,000) exceed the budgeted 120,000.  
+   - This is also reflected in a **$35,000 F sales-volume variance** for revenue due to selling 10,000 more units than planned.
+
+2. **Cost side**  
+   - Variable costs show a very large **$255,000 U flexible-budget variance**: actual VC/unit ($3.96) is much higher than the budgeted $2.00.  
+   - There is also a **$20,000 U sales-volume variance** for variable costs from higher volume.  
+   - Fixed costs are **$20,000 U** relative to both the flexible and static budgets.
+
+3. **Net effect**  
+   - Despite these large, offsetting variances, the **overall static-budget variance in operating income is zero**.  
+   - At the actual volume, operating income is **$15,000 worse than expected** (flexible-budget variance), but the higher volume adds **$15,000 of extra profit**, netting to zero.
+
+**Important lesson:**  
+A zero static-budget variance does not mean “everything is on target.” Large favourable and unfavourable variances in prices, costs, and volumes can cancel out. Managers need the **full Level 2 variance analysis** (and per-unit comparisons) to see that Clarkson:
+
+- Raised selling prices substantially and sold more units,  
+- But also incurred much higher variable and fixed costs than planned.
+
+Without this deeper analysis, serious pricing and cost issues (or strategic shifts) could be hidden behind an apparently “perfect” overall income result.
+
 
 ---
 
@@ -3839,11 +4426,399 @@ The final answer is that PT ends April with a positive cash balance **above the 
 [Table of Contents](#Table-of-Contents)
 ![7-24-1](/images/accounting/7-24-1.png)
 
+
+#### Standards per chair
+
+- Direct materials: $2$ square metres per chair at $5$ per sq. m  
+- Direct manufacturing labour: $0.5$ hours per chair at $10$ per hour  
+
+Actual August data:
+
+- Output: $2{,}000$ chairs  
+- Materials purchased and used: $3{,}700$ sq. m at $5.10$ per sq. m  
+- Direct manufacturing labour: $900$ hours, total cost $8{,}820$ → $9.80$ per hour  
+
+---
+
+#### 1. Direct materials and direct manufacturing labour variances
+
+##### 1a. Direct materials
+
+Key quantities and prices:
+
+- $AQ = 3{,}700$ sq. m  
+- $SQ = 2{,}000 \times 2 = 4{,}000$ sq. m  
+- $AP = 5.10$ per sq. m  
+- $SP = 5.00$ per sq. m  
+
+Actual cost:
+
+$$
+AC = AQ \times AP = 3{,}700 \times 5.10 = 18{,}870
+$$
+
+Actual input at standard rate:
+
+$$
+AQ \times SP = 3{,}700 \times 5.00 = 18{,}500
+$$
+
+Flexible-budget cost (standard input allowed for actual output at standard rate):
+
+$$
+FB = SQ \times SP = 4{,}000 \times 5.00 = 20{,}000
+$$
+
+**Rate (price) variance:**
+
+$$
+Rate\ variance
+= AC - (AQ \times SP)
+= 18{,}870 - 18{,}500
+= 370\ U
+$$
+
+**Efficiency variance:**
+
+$$
+Efficiency\ variance
+= (AQ \times SP) - FB
+= 18{,}500 - 20{,}000
+= 1{,}500\ F
+$$
+
+**Flexible-budget variance:**
+
+$$
+FBV
+= AC - FB
+= 18{,}870 - 20{,}000
+= 1{,}130\ F
+$$
+
+So for direct materials:
+
+- Rate (price) variance: **$370\ U$**  
+- Efficiency variance: **$1{,}500\ F$**  
+- Flexible-budget variance: **$1{,}130\ F$**
+
+---
+
+##### 1b. Direct manufacturing labour
+
+Key quantities and prices:
+
+- $AQ = 900$ hours  
+- $SQ = 2{,}000 \times 0.5 = 1{,}000$ hours  
+- $AP = 8{,}820 / 900 = 9.80$ per hour  
+- $SP = 10.00$ per hour  
+
+Actual cost:
+
+$$
+AC = AQ \times AP = 8{,}820
+$$
+
+Actual hours at standard rate:
+
+$$
+AQ \times SP = 900 \times 10 = 9{,}000
+$$
+
+Flexible-budget cost:
+
+$$
+FB = SQ \times SP = 1{,}000 \times 10 = 10{,}000
+$$
+
+**Rate variance:**
+
+$$
+Rate\ variance
+= AC - (AQ \times SP)
+= 8{,}820 - 9{,}000
+= 180\ F
+$$
+
+**Efficiency variance:**
+
+$$
+Efficiency\ variance
+= (AQ \times SP) - FB
+= 9{,}000 - 10{,}000
+= 1{,}000\ F
+$$
+
+**Flexible-budget variance:**
+
+$$
+FBV
+= AC - FB
+= 8{,}820 - 10{,}000
+= 1{,}180\ F
+$$
+
+So for direct manufacturing labour:
+
+- Rate variance: **$180\ F$**  
+- Efficiency variance: **$1{,}000\ F$**  
+- Flexible-budget variance: **$1{,}180\ F$**
+
+---
+
+##### 1c. Plausible explanation of the variances
+
+- **Materials:** The company paid **more** than the standard price ($370\ U$ rate variance) but used **less** material than the standard ($1{,}500\ F$ efficiency variance). One plausible story is that higher-quality materials were purchased at a higher price per sq. m, and because of the higher quality, less material was required per chair (less waste, fewer defects).
+
+- **Labour:** Both the rate and efficiency variances for labour are favourable. This could reflect:
+  - Actual wage rates being slightly lower than the standard (for example, a wage reduction or use of lower-seniority workers).
+  - Workers or the production process being more efficient than anticipated (better training, improved layout, better materials making assembly easier).
+
+The note “suppose 6,000 square metres of materials were purchased (at $5.10 per sq. m) even though only 3,700 sq. m were used” fits this story: Keats might have bought a large quantity of higher-quality material at a premium price, using only part of it this month but benefiting from lower usage per unit.
+
+---
+
+#### 2. Variances traced to control points (purchasing vs. production)
+
+Now assume:
+
+- The purchasing department controls the *materials price* decision and is evaluated on **all** purchases.
+- The production department controls *usage* and is evaluated on **materials used in production**.
+- In August, **6,000 sq. m** of materials were purchased at $5.10, but only **3,700 sq. m** were used.
+
+##### 2a. Direct materials price (rate) variance – purchasing department
+
+Here we use **purchased quantity**:
+
+- Purchased quantity: $6{,}000$ sq. m  
+- $AP = 5.10$, $SP = 5.00$
+
+Actual purchase cost:
+
+$$
+AC_{purch} = 6{,}000 \times 5.10 = 30{,}600
+$$
+
+Standard cost of the quantity purchased:
+
+$$
+6{,}000 \times 5.00 = 30{,}000
+$$
+
+Price (rate) variance – purchasing:
+
+$$
+Price\ variance
+= AC_{purch} - 6{,}000 \times SP
+= 30{,}600 - 30{,}000
+= 600\ U
+$$
+
+So the purchasing department has a **$600\ U$ materials price variance**.
+
+##### 2b. Direct materials efficiency variance – production department
+
+The production department is evaluated on usage:
+
+- $AQ_{used} = 3{,}700$ sq. m  
+- $SQ = 4{,}000$ sq. m  
+- $SP = 5.00$
+
+Actual quantity used at standard price:
+
+$$
+AQ_{used} \times SP = 3{,}700 \times 5 = 18{,}500
+$$
+
+Flexible-budget cost (for actual output):
+
+$$
+FB = 4{,}000 \times 5 = 20{,}000
+$$
+
+Efficiency variance – production:
+
+$$
+Efficiency\ variance
+= (AQ_{used} \times SP) - FB
+= 18{,}500 - 20{,}000
+= 1{,}500\ F
+$$
+
+So the production department has a **$1{,}500\ F$ materials efficiency variance**.
+
+##### 2c. Labour variances under this approach
+
+The control-point assumption does **not** change how labour is measured, so the labour variances remain:
+
+- Labour rate variance: **$180\ F$**  
+- Labour efficiency variance: **$1{,}000\ F$**
+
+---
+
+#### Summary
+
+- Under the standard “single department” view (requirement 1), direct materials have:
+  - $370\ U$ rate variance, $1{,}500\ F$ efficiency variance, $1{,}130\ F$ flexible-budget variance.
+- Under the control-point view (requirement 2):
+  - Purchasing is responsible for **$600\ U$** materials price variance (on 6,000 sq. m purchased).
+  - Production is responsible for **$1{,}500\ F$** materials efficiency variance (on 3,700 sq. m used).
+- Direct manufacturing labour variances are unchanged and are **favourable for both rate and efficiency**.
+
+
 ---
 
 ## 7-25
 [Table of Contents](#Table-of-Contents)
 ![7-25-1](/images/accounting/7-25-1.png)
+
+### 7-25 – Journal Entries and T-Accounts (continuation of 7-24)
+
+Below are the standard-costing journal entries and T-accounts for all transactions in Exercise 7-24, including requirement 2. At the end there is a short comparison with normal-costing entries.
+
+---
+
+## 1. Requirement 1 from 7-24  
+(3,700 sq. m of materials purchased and used)
+
+### 1.1 Journal entries
+
+a. Record purchase of direct materials at standard cost and recognize materials rate variance  
+
+Dr Direct Materials Control ...................... $18,500  
+Dr Direct Materials Rate Variance ............ $   370  
+&nbsp;&nbsp;&nbsp;&nbsp;Cr Accounts Payable Control ............... $18,870  
+
+b. Record direct materials used in production and recognize efficiency variance  
+
+Dr Work-in-Process Control ..................... $20,000  
+Cr Direct Materials Control ..................... $18,500  
+Cr Direct Materials Efficiency Variance ..... $ 1,500  
+
+c. Record direct manufacturing labour and recognize labour rate and efficiency variances  
+
+Dr Work-in-Process Control ........................ $10,000  
+Cr Direct Manufacturing Labour Rate Variance ......... $   180  
+Cr Direct Manufacturing Labour Efficiency Variance ... $ 1,000  
+Cr Wages Payable Control ............................. $ 8,820  
+
+---
+
+### 1.2 T-accounts (requirement 1)
+
+**Direct Materials Control**
+
+- Debit: $18,500 (entry a)$  
+- Credit: $18,500 (entry b)$  
+- Ending balance: $0$
+
+**Direct Materials Rate Variance**
+
+- Debit: $370 (entry a)$ → $370 U$
+
+**Direct Materials Efficiency Variance**
+
+- Credit: $1,500 (entry b)$ → $1,500 F$
+
+**Work-in-Process Control**
+
+- Debit: $20,000 (entry b)$  
+- Debit: $10,000 (entry c)$  
+- Ending balance: $30,000$
+
+**Direct Manufacturing Labour Rate Variance**
+
+- Credit: $180 (entry c)$ → $180 F$
+
+**Direct Manufacturing Labour Efficiency Variance**
+
+- Credit: $1,000 (entry c)$ → $1,000 F$
+
+**Accounts Payable Control**
+
+- Credit: $18,870 (entry a)$
+
+**Wages Payable Control**
+
+- Credit: $8,820 (entry c)$
+
+---
+
+## 2. Requirement 2 from 7-24  
+(6,000 sq. m of materials purchased; 3,700 sq. m used)
+
+Now variances are assigned to their control points:  
+- Purchasing department: price variance on **6,000 sq. m** bought  
+- Production department: efficiency variance on **3,700 sq. m** used  
+
+### 2.1 Journal entries
+
+a1. Record direct materials purchased (6,000 sq. m) at standard cost and recognize price variance  
+
+Dr Direct Materials Control .......................... $30,000  
+Dr Direct Materials Rate Variance ................. $   600  
+&nbsp;&nbsp;&nbsp;&nbsp;Cr Accounts Payable Control ................ $30,600  
+
+a2. Record direct materials used in production and recognize efficiency variance  
+
+Dr Work-in-Process Control .......................... $20,000  
+Cr Direct Materials Control .......................... $18,500  
+Cr Direct Materials Efficiency Variance .......... $ 1,500  
+
+(The direct manufacturing labour entry is the same as in requirement 1.)
+
+### 2.2 T-accounts (requirement 2)
+
+**Direct Materials Control**
+
+- Debit: $30,000 (entry a1)$  
+- Credit: $18,500 (entry a2)$  
+- Ending balance in materials inventory: $11,500$
+
+**Direct Materials Rate Variance (Purchasing Department)**
+
+- Debit: $600 (entry a1)$ → $600 U$
+
+**Direct Materials Efficiency Variance (Production Department)**
+
+- Credit: $1,500 (entry a2)$ → $1,500 F$
+
+**Work-in-Process Control**
+
+- Debit: $20,000 (entry a2)$  
+- Debit: $10,000 (labour, entry c from above)$  
+- Ending balance: $30,000$
+
+**Accounts Payable Control**
+
+- Credit: $30,600 (entry a1)$
+
+(Direct labour T-accounts are unchanged from requirement 1.)
+
+---
+
+## 3. How these entries differ from normal-costing entries
+
+Under **standard costing** (as above):
+
+- **Work-in-Process Control** is debited at **standard cost**:
+  - Standard price × standard input allowed for the actual output.
+- **Direct Materials Control** is carried at **standard unit prices**, not actual prices.
+- Separate **variance accounts** are created for:
+  - Direct Materials Rate (Price) Variance  
+  - Direct Materials Efficiency Variance  
+  - Direct Manufacturing Labour Rate Variance  
+  - Direct Manufacturing Labour Efficiency Variance  
+
+Under **normal costing**:
+
+- Direct materials and direct manufacturing labour are charged to Work-in-Process at **actual** prices and quantities:
+  - Actual price × actual quantity.
+- **No variance accounts** appear; any difference between budget and actual is not recorded via standard-cost variances.
+- Direct Materials Control is carried at **actual** acquisition cost, and Work-in-Process reflects the **actual** direct costs incurred.
+
+In short, standard costing replaces actual direct-cost flows into Work-in-Process with standard-cost flows and records the differences as **price and efficiency variances**; normal costing records only **actual** direct costs and does not show these variances explicitly.
+
 
 ---
 
@@ -3852,6 +4827,494 @@ The final answer is that PT ends April with a positive cash balance **above the 
 ![7-31-1](/images/accounting/7-31-1.png)
 
 ![7-31-2](/images/accounting/7-31-2.png)
+
+
+### 7-31 – Terra Company – Solving for Missing DM and DML Data
+
+**Standard costs per unit of Flare**
+
+- Direct materials: $3 \text{ kg} \times \$5 = \$15$
+- Direct manufacturing labour: $0.5 \text{ h} \times \$20 = \$10$
+
+Actual data/variances for May (from the table):
+
+- Production: $4{,}000$ units
+- Sales: $2{,}500$ units (not needed for these requirements)
+- Direct materials rate variance: $3{,}250\ \text{U}$
+- Direct materials efficiency variance: $2{,}500\ \text{U}$
+- Direct manufacturing labour rate variance: $1{,}900\ \text{U}$
+- Direct manufacturing labour efficiency variance: $2{,}000\ \text{F}$
+- Accounts payable control (materials purchases): $68{,}250$
+- No beginning materials inventory
+
+---
+
+#### 1. Standard direct manufacturing labour-hours (DMLH) allowed for actual output
+
+Standard hours per unit:
+
+$$
+0.5\ \text{hours/unit}
+$$
+
+For $4{,}000$ units:
+
+$$
+\text{Standard DMLH allowed} = 4{,}000 \times 0.5 = 2{,}000\ \text{hours}
+$$
+
+---
+
+#### 2. Actual direct manufacturing labour-hours (DMLH) worked
+
+DML efficiency variance formula:
+
+$$
+\text{Efficiency variance}
+= (\text{Actual hours} \times SP) - (\text{Standard hours} \times SP)
+$$
+
+Given a **$2{,}000\ \text{F}$** efficiency variance and $SP = \$20$ per hour:
+
+$$
+(\text{Actual hours} \times 20) - (2{,}000 \times 20) = -2{,}000
+$$
+
+So:
+
+$$
+\text{Actual hours} \times 20 = 40{,}000 - 2{,}000 = 38{,}000
+$$
+
+$$
+\text{Actual DMLH} = \frac{38{,}000}{20} = 1{,}900\ \text{hours}
+$$
+
+---
+
+#### 3. Actual direct manufacturing labour wage rate
+
+DML rate variance formula:
+
+$$
+\text{Rate variance}
+= AC - (\text{Actual hours} \times SP)
+$$
+
+Given a **$1{,}900\ \text{U}$** rate variance:
+
+$$
+AC - (1{,}900 \times 20) = 1{,}900
+$$
+
+$$
+AC - 38{,}000 = 1{,}900 \Rightarrow AC = 39{,}900
+$$
+
+Actual wage rate:
+
+$$
+\text{Actual rate} = \frac{39{,}900}{1{,}900} = \$21\ \text{per hour}
+$$
+
+---
+
+#### 4. Standard quantity of direct materials allowed (kg)
+
+Standard kg per unit:
+
+$$
+3\ \text{kg/unit}
+$$
+
+For $4{,}000$ units:
+
+$$
+\text{Standard quantity allowed}
+= 4{,}000 \times 3 = 12{,}000\ \text{kg}
+$$
+
+---
+
+#### 5. Actual quantity of direct materials used (kg)
+
+DM efficiency variance formula:
+
+$$
+\text{Efficiency variance}
+= (\text{Actual kg used} \times SP) - (\text{Standard kg} \times SP)
+$$
+
+Given a **$2{,}500\ \text{U}$** variance and $SP = \$5$ per kg:
+
+$$
+(\text{Actual kg used} \times 5) - (12{,}000 \times 5) = 2{,}500
+$$
+
+$$
+\text{Actual kg used} \times 5 - 60{,}000 = 2{,}500
+$$
+
+$$
+\text{Actual kg used} \times 5 = 62{,}500
+\Rightarrow \text{Actual kg used} = \frac{62{,}500}{5} = 12{,}500\ \text{kg}
+$$
+
+---
+
+#### 6. Actual quantity of direct materials purchased (kg)
+
+DM rate variance formula (variance given applies to purchases):
+
+$$
+\text{Rate variance}
+= AC - (\text{Actual kg purchased} \times SP)
+$$
+
+Given:
+
+- Rate variance: $3{,}250\ \text{U}$
+- $AC$ (purchases) = $68{,}250$
+- $SP = \$5$ per kg
+
+So:
+
+$$
+68{,}250 - (\text{Actual kg purchased} \times 5) = 3{,}250
+$$
+
+$$
+\text{Actual kg purchased} \times 5 = 68{,}250 - 3{,}250 = 65{,}000
+$$
+
+$$
+\text{Actual kg purchased} = \frac{65{,}000}{5} = 13{,}000\ \text{kg}
+$$
+
+---
+
+#### 7. Actual direct materials rate per kilogram
+
+Using total purchase cost and quantity purchased:
+
+$$
+\text{Actual DM rate} = \frac{68{,}250}{13{,}000} = \$5.25\ \text{per kg}
+$$
+
+---
+
+### Final answers (summary)
+
+1. Standard DMLH allowed: **2,000 hours**  
+2. Actual DMLH worked: **1,900 hours**  
+3. Actual labour wage rate: **\$21 per hour**  
+4. Standard DM quantity allowed: **12,000 kg**  
+5. Actual DM quantity used: **12,500 kg**  
+6. Actual DM quantity purchased: **13,000 kg**  
+7. Actual DM rate: **\$5.25 per kg**
+
+
+---
+# Chapter 7 Variance & Flexible-Budget Problems – Step-by-Step Cheat Sheet
+
+---
+
+## 0. Always pull out these four basics
+
+From the problem text, write down:
+
+- $Q_{bud}$ = budgeted output units  
+- $Q_{act}$ = actual output units  
+- $SP$ = standard price (or wage rate)  
+- $AP$ = actual price (or wage rate)  
+- $SQ_{per}$ = standard quantity of input per unit of output  
+- $AQ$ = actual quantity of input (used, and/or purchased)
+
+Then compute:
+
+- $SQ = SQ_{per} \times Q_{act}$  (standard quantity allowed for *actual* output)
+
+This $SQ$ shows up **everywhere**.
+
+---
+
+## 1. Static vs Flexible Budget Problems (Level 1 vs Level 2)
+
+### 1.1 Build the static budget (if not already given)
+
+For each line (revenue, variable costs, contribution margin, fixed costs, operating income):
+
+- At **budgeted units** $Q_{bud}$ and **budgeted per-unit amounts**.
+
+Example:
+- Revenue: $Q_{bud} \times SP_{rev}$
+- Variable costs: $Q_{bud} \times VC_{per}$
+- Contribution margin: Revenue − Variable
+- Operating income: CM − Fixed
+
+Static-budget variance (Level 1):
+
+$$
+Static\text{-}budget\ variance = Actual\ amount - Static\ budget\ amount
+$$
+
+---
+
+### 1.2 Build the flexible budget (Level 2)
+
+Same **standard per-unit amounts**, but at **actual units** $Q_{act}$:
+
+- Flexible revenue: $Q_{act} \times SP_{rev}$  
+- Flexible variable cost: $Q_{act} \times VC_{per}$  
+- Flexible CM, OI as usual.
+
+Then:
+
+- **Flexible-budget variance** (also called *spending variance* for costs):
+
+$$
+Flexible\text{-}budget\ variance =
+Actual\ amount - Flexible\ budget\ amount
+$$
+
+- **Sales-volume variance**:
+
+$$
+Sales\text{-}volume\ variance =
+Flexible\ budget\ amount - Static\ budget\ amount
+$$
+
+Check:
+
+$$
+Static\text{-}budget\ variance
+= Flexible\text{-}budget\ variance
++ Sales\text{-}volume\ variance
+$$
+
+Use this structure for problems like **7-17, 7-19 (for materials cost), 7-21, 7-22**.
+
+---
+
+## 2. Direct Materials & Direct Labour Variances
+
+Almost every input variance question boils down to:
+
+- **Price (rate) variance**  
+- **Efficiency variance**  
+- **Flexible-budget variance** = Price + Efficiency
+
+### 2.1 Core formulas
+
+Let:
+
+- $AC = AQ \times AP$ = actual cost  
+- $SC_A = AQ \times SP$ = actual quantity at standard price  
+- $FB = SQ \times SP$ = flexible-budget cost for that input  
+
+Then:
+
+1. **Price variance (rate variance)**
+
+If the problem says “based on quantity purchased” → use purchased $AQ\_{purch}$.  
+If it says “based on quantity used” → use used $AQ\_{used}$.
+
+Formula:
+
+$$
+Price\ variance = AC - (AQ \times SP)
+= (AP - SP) \times AQ
+$$
+
+Interpretation:
+- Positive = **unfavourable (U)** (paid more than standard).
+- Negative = **favourable (F)** (paid less).
+
+2. **Efficiency variance**
+
+$$
+Efficiency\ variance = (AQ \times SP) - (SQ \times SP)
+= (AQ - SQ) \times SP
+$$
+
+Interpretation:
+- Positive = **U** (used more input than standard for this output).
+- Negative = **F** (used less).
+
+3. **Flexible-budget variance** (for the input)
+
+$$
+FBV = AC - FB = AC - (SQ \times SP)
+= Price\ variance + Efficiency\ variance
+$$
+
+This is exactly what you used in **7-18, 7-19, 7-24, 7-31**.
+
+---
+
+### 2.2 “Standard hours allowed” / “Standard quantity allowed”
+
+When the question asks:
+
+- “Standard direct manufacturing labour-hours allowed for actual output”:
+
+$$
+Standard\ hours\ allowed = SQ\_{per\ hour} \times Q_{act}
+$$
+
+(Example: $0.5$ h per unit, $4{,}000$ units → $2{,}000$ hours.)
+
+Same pattern for materials (in kg, meters, etc.).
+
+---
+
+### 2.3 Solving for *actual* hours or quantities from variances
+
+Sometimes (like **7-18, 7-31**) you’re given the variances and must back-solve.
+
+Use the same formulas as equations.
+
+Example for labour efficiency variance:
+
+$$
+Efficiency = (AH - SH) \times SP
+$$
+
+Given efficiency variance and $SH$, $SP$:
+
+1. Solve for $AH$ (actual hours).  
+2. Then, if you also know $AC$, you can solve for $AP$:
+
+$$
+AP = \frac{AC}{AH}
+$$
+
+Similarly, for materials:
+
+- From efficiency variance, solve $AQ\_{used}$.
+- From rate variance and total purchase cost, solve $AQ\_{purch}$ and $AP$.
+
+---
+
+## 3. Revenue Variances (Selling Price vs Volume)
+
+Same idea as for inputs, but “quantity” is units sold and “price” is selling price.
+
+Let:
+
+- $P\_S$ = standard selling price; $P\_A$ = actual selling price  
+- $Q\_{act}, Q\_{bud}$ as before.
+
+Then:
+
+1. **Selling price variance** (a type of flexible-budget variance):
+
+$$
+Selling\ price\ variance
+= Actual\ revenue - (Q_{act} \times P_S)
+= (P_A - P_S) \times Q_{act}
+$$
+
+2. **Sales-volume variance in revenue**:
+
+$$
+Sales\ volume\ variance\ (revenue)
+= (Q_{act} - Q_{bud}) \times P_S
+$$
+
+Total revenue static-budget variance:
+
+$$
+= Selling\ price\ variance + Sales\ volume\ variance
+$$
+
+You used this logic inside the Level 2 tables for **7-17, 7-21, 7-22**.
+
+---
+
+## 4. When materials purchased ≠ materials used
+
+Typical pattern: they tell you “$X$ kg purchased, $Y$ kg used” (7-24, 7-31).
+
+1. **Price variance**  
+   Use **purchased quantity** $AQ\_{purch}$:
+
+   $$
+   Price\ variance = (AP - SP) \times AQ_{purch}
+   $$
+
+   → This variance is usually assigned to the **purchasing department**.
+
+2. **Efficiency variance**  
+   Use **used quantity** $AQ\_{used}$ and $SQ$:
+
+   $$
+   Efficiency\ variance = (AQ_{used} - SQ) \times SP
+   $$
+
+   → Assigned to the **production department**.
+
+3. Inventory of materials at standard cost:
+
+   $$
+   Ending\ DM\ inventory
+   = (AQ_{purch} - AQ_{used}) \times SP
+   $$
+
+---
+
+## 5. Interpreting variances (what to say in words)
+
+Whenever a question asks “comment” or “is the president’s pleasure justified?”:
+
+1. Look at **flexible-budget variances** (performance at actual volume).
+   - Are costs at actual volume higher or lower than expected?
+   - Are revenues per unit higher or lower than expected?
+
+2. Look at **sales-volume variances**.
+   - Did they sell more or fewer units than planned?
+   - Use contribution margin per unit for volume impact.
+
+3. Translate to plain language:
+   - “Costs per unit were higher because wage rate was higher,” or
+   - “Materials usage per unit improved, offsetting the higher price,” etc.
+
+This is the pattern in **7-17, 7-19(3), 7-21(3), 7-22(3), 7-24(1c)**.
+
+---
+
+## 6. Quick “If they ask X, use Y” Summary
+
+- “Static-budget variance of ___?”  
+  → $Actual - Static$
+
+- “Flexible-budget variance of ___?”  
+  → $Actual - Flexible$
+
+- “Sales-volume variance of ___?”  
+  → $Flexible - Static$
+
+- “Standard quantity/hours allowed for actual output?”  
+  → $SQ = SQ_{per} \times Q_{act}$
+
+- “Price (rate) variance (materials or labour)?”  
+  → $(AP - SP) \times AQ$
+
+- “Efficiency variance (materials or labour)?”  
+  → $(AQ - SQ) \times SP$
+
+- “Flexible-budget variance for an input?”  
+  → $AC - (SQ \times SP)$  
+  → or “price variance + efficiency variance”
+
+- “Selling price variance?”  
+  → $(P_A - P_S) \times Q_{act}$
+
+- “Sales-volume variance in revenue?”  
+  → $(Q_{act} - Q_{bud}) \times P_S$
+
+- “Solve for missing hours/quantities/rates given variances?”  
+  → Take the relevant formula above and treat it as an equation in the unknown.
 
 ---
 
