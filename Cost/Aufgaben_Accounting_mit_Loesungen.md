@@ -5324,6 +5324,93 @@ This is the pattern in **7-17, 7-19(3), 7-21(3), 7-22(3), 7-24(1c)**.
 [Table of Contents](#Table-of-Contents)
 ![8-16-1](/images/accounting/8-16-1.png)
 
+### 8-16 – Young Clothing – VMOH Variances
+
+Given:
+
+- Budgeted DMLH per suit: $4$ hours  
+- Budgeted VMOH rate: $12$ per DMLH  
+- Budgeted suits for June: $1{,}040$  
+- Actual suits in June: $1{,}080$  
+- Actual VMOH: $53{,}298$  
+- Actual DMLH: $4{,}536$  
+
+First compute:
+
+- Standard hours allowed for actual output  
+  $$
+  SH = 1{,}080 \times 4 = 4{,}320 \text{ DMLH}
+  $$
+- Standard rate  
+  $$
+  SR = 12 \text{ per DMLH}
+  $$
+- Actual rate  
+  $$
+  AR = \frac{53{,}298}{4{,}536} = 11.75 \text{ per DMLH}
+  $$
+
+---
+
+## 1. Flexible-budget variance, rate variance, efficiency variance (VMOH)
+
+### Flexible-budget variance (for VMOH)
+
+Use $AC - (SH \times SR)$:
+
+$$
+\begin{aligned}
+FBV
+&= 53{,}298 - (4{,}320 \times 12) \\
+&= 53{,}298 - 51{,}840 \\
+&= 1{,}458\ \text{U}
+\end{aligned}
+$$
+
+### Rate variance (spending variance)
+
+Use $(AR - SR) \times AH$ or $AC - (AH \times SR)$:
+
+$$
+\begin{aligned}
+Rate\ variance
+&= 53{,}298 - (4{,}536 \times 12) \\
+&= 53{,}298 - 54{,}432 \\
+&= -1{,}134 \\
+&= 1{,}134\ \text{F}
+\end{aligned}
+$$
+
+### Efficiency variance
+
+Use $(AH - SH) \times SR$:
+
+$$
+\begin{aligned}
+Efficiency\ variance
+&= (4{,}536 - 4{,}320) \times 12 \\
+&= 216 \times 12 \\
+&= 2{,}592\ \text{U}
+\end{aligned}
+$$
+
+Check:
+
+$$
+Rate\ variance + Efficiency\ variance
+= 1{,}134\ \text{F} + 2{,}592\ \text{U}
+= 1{,}458\ \text{U} = FBV
+$$
+
+---
+
+## 2. Comment on the results
+
+- The **rate variance is $1{,}134\ \text{F}$**: actual VMOH rate ($11.75$ per hour) was **below** the standard $12$, so each labour-hour cost less than expected.
+- The **efficiency variance is $2{,}592\ \text{U}$**: Young Clothing used **more DMLH than the standard** for the actual number of suits (4,536 hours vs 4,320 hours), indicating lower efficiency in using the labour-hours that drive VMOH.
+- Overall, the **flexible-budget variance is $1{,}458\ \text{U}$**: even though the hourly overhead rate was better than budget, the extra hours more than offset that benefit, so total VMOH cost was higher than expected for the actual output.
+
+
 ---
 
 ## 8-17
