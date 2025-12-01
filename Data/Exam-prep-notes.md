@@ -2,7 +2,7 @@ Final:
 - steht noch nicht fest ( er hat noch nicht fertig geschrieben)
 - numpy and pandas questions wie slicing indexing usw werden kommen
 - ch04.pdf gibt gute übersicht
-- chapter 1-5 7,8,10 sind relevant.
+- chapter 1-6, 8, 11 sind relevant.
 - outside vom buch:
 	- handling missing values
 	- feature selction
