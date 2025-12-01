@@ -5417,6 +5417,95 @@ $$
 [Table of Contents](#Table-of-Contents)
 ![8-17-1](/images/accounting/8-17-1.png)
 
+From 8-16:
+
+- Budgeted suits: 1,040  
+- Actual suits: 1,080  
+- Budgeted DMLH per suit: 4 hours  
+- So:
+  - Budgeted DMLH = $1{,}040 \times 4 = 4{,}160$ hours  
+  - Standard hours allowed for actual output = $1{,}080 \times 4 = 4{,}320$ hours  
+
+Given here:
+
+- Budgeted FMOH for June: $62{,}400  
+- Actual FMOH for June: $63{,}916$
+
+---
+
+#### 1. Rate (spending) variance for FMOH
+
+For fixed overhead, the **flexible budget = static budget** (same total, independent of hours), so:
+
+$$
+\text{FMOH spending (rate) variance}
+= Actual\ FMOH - Budgeted\ FMOH
+$$
+
+$$
+= 63{,}916 - 62{,}400 = 1{,}516\ \text{U}
+$$
+
+Comment: Young Clothing spent \$1,516 more on fixed overhead than planned (for items such as factory rent, salaried supervision, depreciation, etc.).
+
+---
+
+#### 2. Production-volume variance for June
+
+First find the predetermined FMOH rate per DMLH:
+
+$$
+\text{FMOH rate} = \frac{Budgeted\ FMOH}{Budgeted\ DMLH}
+= \frac{62{,}400}{4{,}160} = \$15 \text{ per DMLH}
+$$
+
+FMOH **allocated** to production (based on standard hours for actual output):
+
+$$
+FMOH_{allocated} = SH \times \text{rate}
+= 4{,}320 \times 15 = 64{,}800
+$$
+
+Production-volume variance:
+
+$$
+\text{Prod-volume variance}
+= Budgeted\ FMOH - FMOH_{allocated}
+= 62{,}400 - 64{,}800 = -2{,}400
+$$
+
+So the production-volume variance is:
+
+$$
+2{,}400\ \text{F}
+$$
+
+Interpretation: A favourable production-volume variance means Young Clothing produced **more suits (and DMLH)** than the denominator level (1,080 vs 1,040 suits). Fixed costs were spread over more units than planned, reducing fixed cost per suit and indicating good capacity utilization.
+
+---
+
+#### 3. Over- or underallocated FMOH
+
+Over/underapplied FMOH is:
+
+$$
+\text{Over(under)allocated FMOH}
+= FMOH_{allocated} - Actual\ FMOH
+= 64{,}800 - 63{,}916 = 884
+$$
+
+So FMOH is **\$884 overallocated** (overapplied).
+
+This also equals:
+
+$$
+\text{Production-volume variance (F)} + \text{Spending variance (U)}
+= 2{,}400F + 1{,}516U = 884F
+$$
+
+Interpretation: Overall, despite spending \$1,516 more on fixed overhead than budgeted, the higher production volume more than offset this overspending, so \$884 more fixed overhead was allocated to suits than was actually incurred. From a June performance perspective, fixed overhead costs were slightly better than expected once volume is considered.
+
+
 ---
 
 ## 8-19
@@ -5425,11 +5514,413 @@ $$
 
 ![8-19-2](/images/accounting/8-19-2.png)
 
+Given (June):
+
+- Budgeted assembly time per centrifuge: 2 hours  
+- Static-budget output: 200 units  
+- Actual output: 216 units  
+- Actual assembly-hours: 411 hours  
+
+Budgeted:
+
+- Variable MOH rate: $30 per assembly-hour  
+- Fixed MOH: $19,200  
+
+Actual:
+
+- Variable MOH costs: $12,420  
+- Fixed MOH costs: $20,560  
+
+---
+
+#### 1. Columnar analysis of all VMOH and FMOH variances
+
+##### 1.1 Preliminaries
+
+Standard hours allowed for actual output:
+
+$$
+SH = 216 \times 2 = 432\ \text{hours}
+$$
+
+Budgeted hours (denominator volume):
+
+$$
+H_{bud} = 200 \times 2 = 400\ \text{hours}
+$$
+
+Variable MOH standard rate:
+
+$$
+SR_V = 30 \ \text{per hour}
+$$
+
+Fixed MOH standard rate:
+
+$$
+SR_F = \frac{19{,}200}{400} = 48 \ \text{per hour}
+$$
+
+Actual VMOH rate:
+
+$$
+AR_V = \frac{12{,}420}{411} \approx 11.75\ \text{per hour?} \quad\text{(not needed explicitly)}
+$$
+
+---
+
+##### 1.2 Variable MOH
+
+Flexible-budget VMOH at actual hours:
+
+$$
+FB_V = 411 \times 30 = 12{,}330
+$$
+
+Flexible-budget VMOH at standard hours (for flexible-budget variance):
+
+$$
+FB_V^{SH} = 432 \times 30 = 12{,}960
+$$
+
+But the standard decomposition is:
+
+- **Spending (rate) variance – VMOH**
+
+$$
+Spending_V = AC_V - (AH \times SR_V)
+= 12{,}420 - (411 \times 30)
+= 12{,}420 - 12{,}330 = 90\ U
+$$
+
+- **Efficiency variance – VMOH**
+
+$$
+Efficiency_V = (AH - SH) \times SR_V
+= (411 - 432) \times 30
+= (-21) \times 30 = 630\ F
+$$
+
+- **Flexible-budget variance – VMOH**
+
+$$
+FBV_V = AC_V - (SH \times SR_V)
+= 12{,}420 - 12{,}960
+= 540\ F
+$$
+
+Check:
+
+$$
+Spending_V + Efficiency_V
+= 90\ U + 630\ F
+= 540\ F = FBV_V
+$$
+
+---
+
+##### 1.3 Fixed MOH
+
+Allocated FMOH to actual output (using standard hours allowed):
+
+$$
+FMOH_{allocated} = SH \times SR_F
+= 432 \times 48 = 20{,}736
+$$
+
+- **Spending variance – FMOH**
+
+For fixed overhead, the flexible budget = static budget = $19,200$.
+
+$$
+Spending_F = AC_F - Budgeted\ FMOH
+= 20{,}560 - 19{,}200
+= 1{,}360\ U
+$$
+
+- **Production-volume variance – FMOH**
+
+$$
+Prod\_vol_F = Budgeted\ FMOH - FMOH_{allocated}
+= 19{,}200 - 20{,}736 = 1{,}536\ F
+$$
+
+- **Net over/underallocated FMOH**
+
+$$
+Over(under)allocated\ FMOH
+= FMOH_{allocated} - AC_F
+= 20{,}736 - 20{,}560
+= 176\ F
+$$
+
+Check:
+
+$$
+Spending_F + Prod\_vol_F
+= 1{,}360\ U + 1{,}536\ F
+= 176\ F
+$$
+
+---
+
+##### 1.4 Summary in column form
+
+|                        | Actual Costs | Spending (Rate) Var. | Flexible Budget (at AH) | Efficiency Var. (VMOH) | Allocated/FB at SH | Prod-Volume Var. (FMOH) | Static Budget |
+|------------------------|------------:|---------------------:|------------------------:|-----------------------:|-------------------:|-------------------------:|-------------:|
+| Variable MOH           | 12,420      | 90 U                 | 12,330                  | 630 F                  | 12,960             | –                       | –           |
+| Fixed MOH              | 20,560      | 1,360 U              | 19,200                  | –                      | 20,736             | 1,536 F                 | 19,200       |
+
+Total overhead flexible-budget variance:
+
+- VMOH: $540 F$  
+- FMOH net: $176 F$  
+- Total OH variance: $716 F$ (overhead slightly overallocated).
+
+---
+
+#### 2. Journal entries for June VMOH and FMOH (and writing off variances to COGS)
+
+##### 2.1 Record actual overhead costs
+
+- Variable MOH:
+
+$$
+\begin{aligned}
+\text{Dr Variable MOH Control} &\quad 12{,}420 \\
+\text{Cr Accounts Payable / Accrued Liabilities} &\quad 12{,}420
+\end{aligned}
+$$
+
+- Fixed MOH:
+
+$$
+\begin{aligned}
+\text{Dr Fixed MOH Control} &\quad 20{,}560 \\
+\text{Cr Accounts Payable / Accrued Liabilities} &\quad 20{,}560
+\end{aligned}
+$$
+
+##### 2.2 Apply overhead to Work in Process (using standard hours allowed)
+
+- Apply variable OH:
+
+$$
+\begin{aligned}
+\text{Dr Work-in-Process} &\quad 12{,}960 \\
+\text{Cr Variable MOH Allocated} &\quad 12{,}960
+\end{aligned}
+$$
+
+- Apply fixed OH:
+
+$$
+\begin{aligned}
+\text{Dr Work-in-Process} &\quad 20{,}736 \\
+\text{Cr Fixed MOH Allocated} &\quad 20{,}736
+\end{aligned}
+$$
+
+##### 2.3 Record overhead variances (June)
+
+One simple summary entry for each overhead pool:
+
+- Variable MOH variances:
+
+  - Spending variance: $90 U$  
+  - Efficiency variance: $630 F$
+
+  We want:
+
+  $$
+  AC_V = Spending_V + Efficiency_V + Allocated_V
+  $$
+
+  So:
+
+  $$
+  12{,}420 = 90U + (-630F) + 12{,}960
+  $$
+
+  Journal (one way to show):
+
+  $$
+  \begin{aligned}
+  \text{Dr Variable MOH Allocated} &\quad 12{,}960 \\
+  \text{Cr Variable MOH Control} &\quad 12{,}420 \\
+  \text{Cr Variable MOH Efficiency Variance (F)} &\quad 630 \\
+  \text{Dr Variable MOH Spending Variance (U)} &\quad 90
+  \end{aligned}
+  $$
+
+- Fixed MOH variances:
+
+  - Spending variance: $1,360 U$  
+  - Production-volume variance: $1,536 F$
+
+  Relationship:
+
+  $$
+  AC_F = Spending_F + (-Prod\_vol_F) + Allocated_F
+  $$
+
+  $$
+  20{,}560 = 1{,}360U + (-1{,}536F) + 20{,}736
+  $$
+
+  Journal:
+
+  $$
+  \begin{aligned}
+  \text{Dr Fixed MOH Allocated} &\quad 20{,}736 \\
+  \text{Cr Fixed MOH Control} &\quad 20{,}560 \\
+  \text{Cr Fixed MOH Production-Volume Variance (F)} &\quad 1{,}536 \\
+  \text{Dr Fixed MOH Spending Variance (U)} &\quad 1{,}360
+  \end{aligned}
+  $$
+
+After these entries, the control and allocated accounts have been closed to variance accounts.
+
+##### 2.4 Write overhead variances off to COGS (quarter end)
+
+Net variance:
+
+- VMOH: $540 F$  
+- FMOH: $176 F$  
+- Total: $716 F$ (overall favourable)
+
+To write off:
+
+$$
+\begin{aligned}
+\text{Dr Variable MOH Spending Variance} &\quad 90 \\
+\text{Cr Variable MOH Efficiency Variance} &\quad 630 \\
+\text{Dr Fixed MOH Spending Variance} &\quad 1{,}360 \\
+\text{Cr Fixed MOH Production-Volume Variance} &\quad 1{,}536 \\
+\text{Cr Cost of Goods Sold} &\quad 716
+\end{aligned}
+$$
+
+(Overall $716 F$ reduces COGS.)
+
+---
+
+#### 3. Planning and control: VMOH vs FMOH
+
+- **Variable MOH (VMOH):**
+  - Varies with activity (assembly-hours).  
+  - Planning focuses on choosing efficient cost drivers and setting a realistic rate per hour.  
+  - Control uses **spending** and **efficiency** variances:
+    - Spending variance: price of indirect materials, indirect labour rates, utility rates, etc.
+    - Efficiency variance: how well activity drivers (hours) are used relative to output.
+
+- **Fixed MOH (FMOH):**
+  - Total is (in the short run) independent of activity level.  
+  - Planning is about capacity choice (how much equipment, space, salaried staff to acquire).  
+  - Control uses:
+    - **Spending variance**: difference between actual and budgeted fixed costs (unexpected repairs, insurance, salaries).  
+    - **Production-volume variance**: difference between budgeted and allocated fixed overhead; this is really a **capacity utilization** measure:
+      - Favourable: produced more than normal capacity (spreading fixed costs over more units).  
+      - Unfavourable: underused plant capacity.
+
+In short, VMOH variances mainly tell managers about **day-to-day operating efficiency and price control**, whereas FMOH variances mainly tell them about **capacity planning and utilization**.
+
+
 ---
 
 ## 8-20
 [Table of Contents](#Table-of-Contents)
 ![8-20-1](/images/accounting/8-20-1.png)
+
+
+Given (August):
+
+- **Variable OH**
+  - Actual costs incurred: $35,000
+  - Costs allocated to products: $33,900
+  - Flexible budget (budgeted input allowed × budgeted rate): $33,900
+  - Actual input × budgeted rate: $34,100
+
+- **Fixed OH**
+  - Actual costs incurred: $18,200
+  - Costs allocated to products: $17,400
+  - Flexible budget (budgeted FMOH): $17,900
+  - Actual input × budgeted rate: $17,900
+
+---
+
+#### Formulas
+
+- Rate (spending) variance (V and F):
+  - Variable: $AC - (Actual\ input \times SR)$
+  - Fixed: $AC - Budgeted\ FMOH$
+- Efficiency variance (V only): $(Actual\ input \times SR) - Flexible\ budget$
+- Production-volume variance (F only): $Budgeted\ FMOH - Allocated\ FMOH$
+- Flexible-budget variance: $AC - Flexible\ budget$
+- Under/overallocated OH: $Allocated\ OH - AC$
+
+---
+
+### 1. Rate variance
+
+- Variable:  
+  $35{,}000 - 34{,}100 = 900\ U$
+- Fixed:  
+  $18{,}200 - 17{,}900 = 300\ U$
+
+---
+
+### 2. Efficiency variance
+
+- Variable:  
+  $34{,}100 - 33{,}900 = 200\ U$
+- Fixed:  
+  $17{,}900 - 17{,}900 = 0$
+
+---
+
+### 3. Production-volume variance
+
+- Variable:  
+  Not applicable (0).
+- Fixed:  
+  $17{,}900 - 17{,}400 = 500\ U$
+
+---
+
+### 4. Flexible-budget variance
+
+- Variable:  
+  $35{,}000 - 33{,}900 = 1{,}100\ U$
+- Fixed:  
+  $18{,}200 - 17{,}900 = 300\ U$
+
+(check: $900U + 200U = 1{,}100U$ for variable)
+
+---
+
+### 5. Underallocated (overallocated) manufacturing overhead
+
+- Variable (Allocated − Actual):  
+  $33{,}900 - 35{,}000 = -1{,}100 \Rightarrow 1{,}100\ U$  
+  → Variable OH is **underallocated by $1,100**.
+
+- Fixed (Allocated − Actual):  
+  $17{,}400 - 18{,}200 = -800 \Rightarrow 800\ U$  
+  → Fixed OH is **underallocated by $800**.
+
+---
+
+#### Final table
+
+|                                    | Variable | Fixed |
+|------------------------------------|---------:|------:|
+| 1. Rate variance                   | 900 U   | 300 U |
+| 2. Efficiency variance             | 200 U   | 0     |
+| 3. Production-volume variance      | 0       | 500 U |
+| 4. Flexible-budget variance        | 1,100 U | 300 U |
+| 5. Under(Over)allocated OH         | 1,100 U | 800 U |
+
 
 ---
 
@@ -5439,6 +5930,251 @@ $$
 
 ![8-22-2](/images/accounting/8-22-2.png)
 
+
+Given:
+
+- Variable MOH incurred: $186{,}120  
+- Fixed MOH incurred: $481{,}200  
+- Fixed MOH budgeted: $468{,}000  
+- Denominator level in MH: 15,600 MH  
+- Standard MH per unit: 0.30 MH  
+- Units of output: 49,200  
+- Actual MH used: 15,960 MH  
+- Ending WIP: 0  
+
+---
+
+#### 1. Four-variance analysis (VMOH and FMOH)
+
+##### 1.1 Preliminaries
+
+Standard machine-hours allowed for actual output:
+
+$$
+SH = 49{,}200 \times 0.30 = 14{,}760 \text{ MH}
+$$
+
+**Variable MOH**
+
+Variable MOH rate (standard):
+
+They tell us that VMOH is allocated at $14.40 per standard machine-hour, so
+
+$$
+SR_V = 14.40 \text{ per MH}
+$$
+
+- Actual VMOH cost:
+
+$$
+AC_V = 186{,}120
+$$
+
+- Actual input × standard rate:
+
+$$
+AH \times SR_V = 15{,}960 \times 14.40 = 229{,}824
+$$
+
+- Flexible-budget VMOH (for actual output):
+
+$$
+FB_V = SH \times SR_V = 14{,}760 \times 14.40 = 212{,}544
+$$
+
+- VMOH allocated to production:
+
+$$
+VMOH_{allocated} = SH \times SR_V = 212{,}544
+$$
+
+(allocated and flexible-budget amounts are the same for VMOH).
+
+---
+
+##### 1.2 Variable MOH variances
+
+1. **Spending (rate) variance – VMOH**
+
+$$
+Spending_V = AC_V - (AH \times SR_V)
+= 186{,}120 - 229{,}824
+= -43{,}704 = 43{,}704\ F
+$$
+
+2. **Efficiency variance – VMOH**
+
+$$
+Efficiency_V = (AH \times SR_V) - FB_V
+= 229{,}824 - 212{,}544
+= 17{,}280\ U
+$$
+
+3. **Flexible-budget variance – VMOH**
+
+$$
+FBV_V = AC_V - FB_V
+= 186{,}120 - 212{,}544
+= -26{,}424 = 26{,}424\ F
+$$
+
+Check:
+
+$$
+Spending_V + Efficiency_V
+= 43{,}704 F - 17{,}280 U
+= 26{,}424 F = FBV_V
+$$
+
+---
+
+##### 1.3 Fixed MOH
+
+Fixed MOH rate per MH (denominator rate):
+
+$$
+SR_F = \frac{Budgeted\ FMOH}{Denominator\ MH}
+= \frac{468{,}000}{15{,}600}
+= 30 \text{ per MH}
+$$
+
+- Fixed MOH flexible budget (same as static budget):
+
+$$
+FB_F = 468{,}000
+$$
+
+- Fixed MOH allocated to production:
+
+$$
+FMOH_{allocated} = SH \times SR_F
+= 14{,}760 \times 30
+= 442{,}800
+$$
+
+---
+
+##### 1.4 Fixed MOH variances
+
+1. **Spending (budget) variance – FMOH**
+
+$$
+Spending_F = AC_F - FB_F
+= 481{,}200 - 468{,}000
+= 13{,}200\ U
+$$
+
+2. **Production-volume variance – FMOH**
+
+$$
+Prod\text{-}volume_F = FB_F - FMOH_{allocated}
+= 468{,}000 - 442{,}800
+= 25{,}200\ U
+$$
+
+3. **Over/underallocated FMOH**
+
+$$
+Over(under)allocated\ FMOH
+= FMOH_{allocated} - AC_F
+= 442{,}800 - 481{,}200
+= -38{,}400 = 38{,}400\ U
+$$
+
+---
+
+##### 1.5 Summary of the four overhead variances
+
+- Variable MOH spending variance: **$43,704 F**  
+- Variable MOH efficiency variance: **$17,280 U**  
+- Fixed MOH spending variance: **$13,200 U**  
+- Fixed MOH production-volume variance: **$25,200 U**
+
+Total overhead flexible-budget variance:
+
+- VMOH: $26,424 F$  
+- FMOH: $13,200 U$  
+- Net: $13,224 F$
+
+Overall, however, total overhead is **underallocated** by $11,976$:
+
+$$
+Total\ AC = 186{,}120 + 481{,}200 = 667{,}320 \\
+Total\ allocated = 212{,}544 + 442{,}800 = 655{,}344 \\
+Underallocation = 667{,}320 - 655{,}344 = 11{,}976\ U
+$$
+
+---
+
+#### 2. Journal entries for manufacturing overhead (no explanations)
+
+```text
+1. Record actual overhead incurred
+Dr Variable MOH Control                         186,120
+Dr Fixed MOH Control                            481,200
+    Cr Accounts Payable / Accrued Liabilities           667,320
+
+
+2. Record overhead allocated to production (standard MH allowed × rates)
+Dr Work-in-Process Control                      655,344
+    Cr Variable MOH Allocated                           212,544
+    Cr Fixed MOH Allocated                              442,800
+
+
+3. Close VMOH Control and VMOH Allocated to variance accounts
+Dr Variable MOH Allocated                       212,544
+    Cr Variable MOH Control                            186,120
+    Cr VMOH Spending (Rate) Variance (F)                43,704
+    Dr VMOH Efficiency Variance (U)                     17,280
+
+
+4. Close FMOH Control and FMOH Allocated to variance accounts
+Dr Fixed MOH Allocated                          442,800
+    Cr Fixed MOH Control                               481,200
+    Dr FMOH Spending (Budget) Variance (U)              13,200
+    Dr FMOH Production-Volume Variance (U)              25,200
+
+
+5. Close all overhead variance accounts to Cost of Goods Sold
+Dr Cost of Goods Sold                           11,976
+    Cr VMOH Spending Variance (F)                       43,704
+    Dr VMOH Efficiency Variance (U)                     17,280
+    Dr FMOH Spending Variance (U)                       13,200
+    Dr FMOH Production-Volume Variance (U)              25,200
+    
+```
+
+#### 3. Planning and Control of VMOH vs FMOH
+
+##### Variable MOH (VMOH)
+
+- Examples: indirect materials, indirect manufacturing labour paid by the hour, power usage, small factory supplies.  
+- VMOH changes **proportionally with activity** (machine-hours in this problem).  
+- Day-to-day control focuses on:
+  - Keeping actual input prices close to standard → monitored through **spending variances**.
+  - Using machine-hours efficiently relative to output → monitored through **efficiency variances**.
+- Managers can respond quickly:
+  - Adjust labour scheduling.
+  - Improve machine maintenance to reduce energy use.
+  - Reduce overtime.
+  - Optimize production runs.
+
+##### Fixed MOH (FMOH)
+
+- Examples: factory rent, depreciation, salaried production supervisors, property taxes, insurance.  
+- FMOH does **not** change with actual machine-hours in the short run.  
+- Planning and control are long-term:
+  - Capacity planning (size of facility, capital investment, fixed staffing levels).
+  - Monitoring spending vs. budget → **spending (budget) variance**.
+  - Monitoring use of planned capacity → **production-volume variance**.
+- Short-run adjustments are limited; major corrections occur via future budgeting and capacity decisions.
+
+##### Summary
+
+- **VMOH** is controlled through **operational efficiency and price management** each period.  
+- **FMOH** is controlled through **long-term planning and capacity utilization**, not short-run activity levels.
+
+
 ---
 
 ## 8-25
@@ -5446,6 +6182,254 @@ $$
 ![8-25-1](/images/accounting/8-25-1.png)
 
 ![8-25-2](/images/accounting/8-25-2.png)
+
+
+##### Standards per doorknob
+
+- Direct materials: 0.3 kg @ $10/kg → $3.00
+- Direct manufacturing labour: 1.2 h @ $17/h → $20.40
+- Variable MOH: $5/kg × 0.3 kg → $1.50
+- Fixed MOH: $15/kg × 0.3 kg → $4.50
+
+Budgeted annual output: 420,000 doorknobs  
+
+→ Denominator level for fixed OH in kg:
+
+$$
+\text{Denominator kg per year} = 420{,}000 \times 0.3 = 126{,}000\ \text{kg}
+$$
+
+Assume **even production over 12 months**:
+
+$$
+\text{Denominator kg for April} = \frac{126{,}000}{12} = 10{,}500\ \text{kg}
+$$
+
+Budgeted fixed OH for April:
+
+$$
+\text{FOH rate} = 15\ \$/\text{kg},\quad
+\text{Budgeted FOH} = 10{,}500 \times 15 = 157{,}500
+$$
+
+---
+
+##### Actual April data
+
+- Output: 29,000 doorknobs  
+- Direct materials purchased: 12,400 kg @ $11/kg  
+- Direct materials used: 8,500 kg  
+- Direct manufacturing labour: 29,200 h for $671,600  
+- Variable MOH: $65,100  
+- Fixed MOH: $158,000  
+
+---
+
+##### Step 1 – Useful “standard” quantities for April
+
+Standard kg allowed for actual output:
+
+$$
+SQ_{DM} = 0.3 \times 29{,}000 = 8{,}700\ \text{kg}
+$$
+
+Standard labour-hours allowed:
+
+$$
+SH_{DL} = 1.2 \times 29{,}000 = 34{,}800\ \text{h}
+$$
+
+Standard prices/rates:
+
+$$
+SP_{DM} = 10\ \$/\text{kg},\quad
+SP_{DL} = 17\ \$/\text{h}
+$$
+
+Actual labour rate:
+
+$$
+AP_{DL} = \frac{671{,}600}{29{,}200} = 23\ \$/\text{h}
+$$
+
+Variable MOH rate:
+
+$$
+SR_{VOH} = 5\ \$/\text{kg (driver is kg of materials used)}
+$$
+
+---
+
+#### 1. Required variances
+
+###### a. Direct materials price variance (based on purchases)
+
+Use purchased quantity (12,400 kg):
+
+$$
+DM\ price\ variance
+= (AP_{DM} - SP_{DM}) \times AQ_{purch}
+= (11 - 10) \times 12{,}400
+= 12{,}400\ U
+$$
+
+---
+
+###### b. Direct materials efficiency variance
+
+Use quantity **used** (8,500 kg) vs standard for output (8,700 kg):
+
+$$
+DM\ efficiency\ variance
+= (AQ_{used} - SQ_{DM}) \times SP_{DM}
+= (8{,}500 - 8{,}700) \times 10
+= -200 \times 10
+= 2{,}000\ F
+$$
+
+---
+
+###### c. Direct manufacturing labour price (rate) variance
+
+$$
+DL\ price\ variance
+= (AP_{DL} - SP_{DL}) \times AH
+= (23 - 17) \times 29{,}200
+= 6 \times 29{,}200
+= 175{,}200\ U
+$$
+
+---
+
+###### d. Direct manufacturing labour efficiency variance
+
+$$
+DL\ efficiency\ variance
+= (AH - SH_{DL}) \times SP_{DL}
+= (29{,}200 - 34{,}800) \times 17
+= (-5{,}600) \times 17
+= 95{,}200\ F
+$$
+
+---
+
+###### e. Variable manufacturing overhead spending variance
+
+First compute “actual input × standard rate”:
+
+$$
+Actual\ input\ (kg) = 8{,}500,\quad
+Actual\ input \times SR_{VOH} = 8{,}500 \times 5 = 42{,}500
+$$
+
+Spending variance:
+
+$$
+VOH\ spending\ variance
+= Actual\ VOH - (Actual\ input \times SR_{VOH})
+= 65{,}100 - 42{,}500
+= 22{,}600\ U
+$$
+
+---
+
+###### f. Variable manufacturing overhead efficiency variance
+
+Flexible-budget VOH for actual output:
+
+$$
+FB_{VOH} = SQ_{DM} \times SR_{VOH}
+= 8{,}700 \times 5 = 43{,}500
+$$
+
+Efficiency variance:
+
+$$
+VOH\ efficiency\ variance
+= (Actual\ input \times SR_{VOH}) - FB_{VOH}
+= 42{,}500 - 43{,}500
+= -1{,}000
+= 1{,}000\ F
+$$
+
+(Equivalently $(AQ_{used} - SQ_{DM}) \times SR_{VOH} = (8{,}500 - 8{,}700)\times 5$.)
+
+---
+
+###### g. Production-volume variance (fixed manufacturing overhead)
+
+Allocated FOH to actual output:
+
+$$
+FOH_{allocated} = SQ_{DM} \times 15
+= 8{,}700 \times 15 = 130{,}500
+$$
+
+Production-volume variance:
+
+$$
+Prod\text{-}volume\ variance
+= Budgeted\ FOH - FOH_{allocated}
+= 157{,}500 - 130{,}500
+= 27{,}000\ U
+$$
+
+(Underutilization of capacity: actual kg < denominator kg.)
+
+---
+
+###### h. Fixed manufacturing overhead spending variance
+
+$$
+FOH\ spending\ variance
+= Actual\ FOH - Budgeted\ FOH
+= 158{,}000 - 157{,}500
+= 500\ U
+$$
+
+Check on total FOH underallocation:
+
+$$
+Total\ underallocated\ FOH
+= Actual\ FOH - FOH_{allocated}
+= 158{,}000 - 130{,}500
+= 27{,}500\ U
+$$
+
+and
+
+$$
+Spending\ variance\ (500U) + Production\text{-}volume\ variance\ (27{,}000U)
+= 27{,}500U
+$$
+
+---
+
+#### 2. Using variances to help explain other variances
+
+Yes, some variances are clearly related:
+
+1. **DM efficiency variance and VOH efficiency variance**
+
+   - Both use **kilograms of materials** as their activity measure.
+   - The **$2,000 F DM efficiency variance** arises because only 8,500 kg were used versus 8,700 kg allowed.
+   - The **$1,000 F VOH efficiency variance** comes from the same 200 kg saving:
+     $$(8{,}500 - 8{,}700)\times 5 = 1{,}000 F.$$
+   - So, Williams can argue that better-than-expected material usage directly caused a favourable VOH efficiency variance.
+
+2. **DL price vs DL efficiency variances**
+
+   - The **large $175,200 U DL price variance** suggests workers were paid much more than the $17 standard (actual $23/h).
+   - The **$95,200 F DL efficiency variance** shows they used **5,600 fewer hours** than standard.
+   - This pattern is consistent with using **more-skilled, higher-paid workers** who work faster: higher wage rate (unfavourable price variance) but fewer hours (favourable efficiency variance).
+
+3. **Production-volume variance and capacity utilization**
+
+   - The **$27,000 U production-volume variance** reflects producing fewer doorknobs than the denominator level for April (based on 35,000 doorknobs or 10,500 kg).
+   - This underutilization explains why FOH is significantly underallocated overall ($27,500 U).
+
+In summary, some variances (like VOH efficiency and DM efficiency) move together because they share the same driver, while others (like labour price and labour efficiency) may offset each other and hint at changes in worker skill mix or wage policies.
+
 
 ---
 
@@ -5455,11 +6439,189 @@ $$
 
 ![8-26-2](/images/accounting/8-26-2.png)
 
+Given:
+
+- Budgeted output units: 888  
+- Planned allocation rate: 2 machine-hours (MH) per unit  
+- Actual MH used: 1,824  
+- Static-budget variable MOH: $71,040  
+- Overhead table (for context):
+  - Variable MOH: Actual $76,608; Flexible Budget $76,800; Amount Allocated $76,800  
+  - Fixed MOH: Actual $350,208; Flexible Budget $348,096; Amount Allocated $376,320  
+
+---
+
+#### 1. Budgeted number of machine-hours planned
+
+Budgeted MH $= \text{budgeted units} \times \text{planned MH per unit}$
+
+$MH_{\text{bud}} = 888 \times 2 = 1{,}776 \text{ MH}$
+
+---
+
+#### 2. Budgeted FMOH costs per machine-hour
+
+Use the fixed MOH flexible budget and budgeted MH:
+
+$\text{FMOH rate} = \dfrac{348{,}096}{1{,}776} = 196 \text{ per MH}$
+
+So:
+
+**Budgeted FMOH cost per MH = $196**
+
+---
+
+#### 3. Budgeted VMOH costs per machine-hour
+
+$$
+\text{VMOH rate} = \dfrac{\text{Static-budget VMOH}}{MH_{\text{bud}}}
+= \dfrac{71{,}040}{1{,}776} = 40 \text{ per MH} 
+$$
+
+So:
+
+**Budgeted VMOH cost per MH = $40**
+
+---
+
+#### 4. Budgeted number of machine-hours allowed for actual output achieved
+
+VMOH amount allocated is at standard hours allowed:
+
+$76{,}800 = 40 \times MH_{\text{allowed}}$
+
+$MH_{\text{allowed}} = \dfrac{76{,}800}{40} = 1{,}920 \text{ MH}$
+
+So:
+
+**Budgeted MH allowed for actual output = 1,920 MH**
+
+---
+
+#### 5. Actual number of output units
+
+Standard MH per unit is 2, so:
+
+$$
+\text{Units}_{\text{actual}} = \dfrac{MH_{\text{allowed}}}{2}
+= \dfrac{1{,}920}{2} = 960 \text{ units} 
+$$
+
+So:
+
+**Actual output = 960 units**
+
+---
+
+#### 6. Actual number of machine-hours used per output unit
+
+$$ 
+\text{Actual MH per unit}
+= \dfrac{MH_{\text{actual}}}{\text{Units}_{\text{actual}}}
+= \dfrac{1{,}824}{960} = 1.9 \text{ MH per unit} 
+$$
+
+So:
+
+**Actual MH used per unit = 1.9 MH**
+
+
 ---
 
 ## 8-27
 [Table of Contents](#Table-of-Contents)
 ![8-27-1](/images/accounting/8-27-1.png)
+
+### 8-27 – Journal Entries for VMOH and FMOH (based on 8-26)
+
+First compute the variances (needed for the entries).
+
+VMOH:
+- Standard rate = $40 per MH
+- Actual MH (AH) = 1,824
+- Standard MH allowed for actual output (SH) = 1,920
+- Actual VMOH = $76,608
+- Flexible-budget / Allocated VMOH = $76,800
+
+AH × SR = 1,824 × 40 = 72,960
+
+VMOH spending variance (unfavourable):
+76,608 − 72,960 = 3,648 U
+
+VMOH efficiency variance (favourable):
+72,960 − 76,800 = 3,840 F
+
+Net VMOH variance (flexible-budget variance):
+3,840 F − 3,648 U = 192 F
+
+FMOH:
+- Standard rate = $196 per MH
+- Budgeted MH (denominator) = 1,776
+- SH = 1,920
+- Budgeted FMOH (static and flexible) = $348,096
+- Actual FMOH = $350,208
+- Allocated FMOH = $376,320
+
+FMOH spending variance (unfavourable):
+350,208 − 348,096 = 2,112 U
+
+Production-volume variance (favourable):
+348,096 − 376,320 = 28,224 F
+
+Net FMOH variance (overallocated):
+28,224 F − 2,112 U = 26,112 F
+
+Total overhead variance (VMOH + FMOH):
+192 F + 26,112 F = 26,304 F
+
+
+Journal entries
+
+```text
+
+1. Record actual overhead incurred
+
+Dr Variable MOH Control                           76,608  
+Dr Fixed MOH Control                              350,208  
+    Cr Accounts Payable / Accrued Liabilities             426,816  
+
+
+2. Record overhead allocated to production (standard MH allowed × rates)
+
+Dr Work-in-Process Control                         76,800  
+    Cr Variable MOH Allocated                               76,800  
+
+Dr Work-in-Process Control                        376,320  
+    Cr Fixed MOH Allocated                                  376,320  
+
+
+3. Close VMOH Control to VMOH Allocated and the VMOH variances
+
+Dr Variable MOH Allocated                          76,800  
+Dr VMOH Spending Variance (U)                       3,648  
+    Cr VMOH Efficiency Variance (F)                          3,840  
+    Cr Variable MOH Control                                  76,608  
+
+
+4. Close FMOH Control to FMOH Allocated and the FMOH variances
+
+Dr Fixed MOH Allocated                            376,320  
+Dr FMOH Spending Variance (U)                      2,112  
+    Cr FMOH Production-Volume Variance (F)                  28,224  
+    Cr Fixed MOH Control                                    350,208  
+
+
+5. Close all overhead variances to Cost of Goods Sold (COGS)
+
+Dr VMOH Efficiency Variance (F)                     3,840  
+Dr FMOH Production-Volume Variance (F)             28,224  
+    Cr VMOH Spending Variance (U)                            3,648  
+    Cr FMOH Spending Variance (U)                            2,112  
+    Cr Cost of Goods Sold                                   26,304  
+
+(Net effect: COGS is reduced by the net favourable overhead variance of $26,304.)
+
+```
 
 ---
 
@@ -5469,6 +6631,130 @@ $$
 
 ![8-35-2](/images/accounting/8-35-2.png)
 
+
+Annual budget (given):
+
+- Budgeted output: 672,000 units  
+- Budgeted DLH: 3,360,000 DLH  
+
+From this:
+
+- Standard DLH per unit:  
+  $SH_{\text{per unit}} = \dfrac{3{,}360{,}000}{672{,}000} = 5 \text{ DLH/unit}$
+
+Annual MOH totals:
+
+- Variable MOH:  
+  Indirect labour $1{,}008{,}000$  
+  Supplies $672{,}000$  
+  Total variable MOH $= 1{,}680{,}000$
+- Fixed MOH:  
+  Supervision $571{,}200$  
+  Utilities $369{,}600$  
+  Depreciation $705{,}600$  
+  Total fixed MOH $= 1{,}646{,}400$
+- Total MOH $= 3{,}326{,}400$
+
+Per-DLH standard rates:
+
+- Variable MOH rate:  
+  $SR_V = \dfrac{1{,}680{,}000}{3{,}360{,}000} = 0.50 \text{ per DLH}$
+- Fixed MOH rate:  
+  $SR_F = \dfrac{1{,}646{,}400}{3{,}360{,}000} = 0.49 \text{ per DLH}$
+
+Monthly (May) budgeted MOH (from table) $= 277{,}200$,  
+with budgeted **fixed** MOH for May:  
+$47{,}600 + 30{,}800 + 58{,}800 = 137{,}200$
+
+---
+
+### May actual data
+
+- Output: 72,000 units  
+- Actual DLH (AH): 321,000 DLH  
+- Actual total MOH: 355,800  
+  - Actual variable MOH:  
+    Indirect labour $84{,}000$ + supplies $117{,}000 = 201{,}000$  
+  - Actual fixed MOH:  
+    Supervision $41{,}000$ + utilities $55{,}000$ + depreciation $58{,}800 = 154{,}800$
+
+Standard hours allowed for actual output:
+
+$SH = 72{,}000 \times 5 = 360{,}000 \text{ DLH}$
+
+---
+
+## 1. Total manufacturing overhead costs allocated
+
+Allocated VMOH:  
+$VMOH_{\text{allocated}} = SH \times SR_V = 360{,}000 \times 0.50 = 180{,}000$
+
+Allocated FMOH:  
+$FMOH_{\text{allocated}} = SH \times SR_F = 360{,}000 \times 0.49 = 176{,}400$
+
+Total MOH allocated:
+
+$\boxed{MOH_{\text{allocated}} = 180{,}000 + 176{,}400 = 356{,}400}$
+
+---
+
+## 2. Variable manufacturing overhead spending variance
+
+Spending variance (variable) compares actual VMOH with AH at standard rate:
+
+$AH \times SR_V = 321{,}000 \times 0.50 = 160{,}500$
+
+$VMOH_{\text{spending}} = \text{Actual VMOH} - (AH \times SR_V)$  
+$= 201{,}000 - 160{,}500 = 40{,}500\ U$
+
+$\boxed{VMOH\ \text{spending variance} = 40{,}500\ U}$
+
+---
+
+## 3. Fixed manufacturing overhead spending variance
+
+Compare actual fixed MOH with budgeted fixed MOH for May:
+
+$FMOH_{\text{spending}} = 154{,}800 - 137{,}200 = 17{,}600\ U$
+
+$\boxed{FMOH\ \text{spending variance} = 17{,}600\ U}$
+
+---
+
+## 4. Variable manufacturing overhead efficiency variance
+
+Efficiency variance (variable):
+
+$VMOH_{\text{efficiency}} = (AH - SH) \times SR_V$  
+
+$= (321{,}000 - 360{,}000) \times 0.50$  
+$= (-39{,}000) \times 0.50 = -19{,}500$  
+
+So:
+
+$\boxed{VMOH\ \text{efficiency variance} = 19{,}500\ F}$
+
+---
+
+## 5. Production-volume variance (fixed MOH)
+
+Use fixed MOH budget for May and fixed MOH allocated:
+
+$FMOH_{\text{allocated}} = 176{,}400$ (from above)  
+$FMOH_{\text{budget}} = 137{,}200$
+
+Production-volume variance:
+
+$Prod\text{-}volume = FMOH_{\text{budget}} - FMOH_{\text{allocated}}$  
+$= 137{,}200 - 176{,}400 = -39{,}200$
+
+So:
+
+$\boxed{\text{Production-volume variance} = 39{,}200\ F}$
+
+(Allocated fixed MOH exceeded budgeted fixed MOH because actual output and standard DLH exceeded the denominator level for a typical month.)
+
+
 ---
 
 # Chapter 9
@@ -5477,11 +6763,269 @@ $$
 [Table of Contents](#Table-of-Contents)
 ![9-15-1](/images/accounting/9-15-1.png)
 
+
+Terms available:
+
+- absorption costing  
+- super-variable costing  
+- theoretical capacity  
+- practical capacity  
+- normal capacity  
+- master-budget capacity  
+- non-productive idle capacity  
+- off-limits idle capacity  
+
+---
+
+#### 1.
+When the full costs of production are included, this is called **absorption costing**,  
+but it is sometimes more appropriate to use either variable costing or to include only direct materials called throughput or **super-variable costing**.
+
+---
+
+#### 2.
+The two types of demand capacity that can be used in the denominator to calculate a unitized fixed cost rate are long-term demand **normal capacity**  
+or short-term demand called **master-budget capacity**.
+
+---
+
+#### 3.
+The only acceptable measure for CRA is **normal capacity**,  
+while the only ASPE/IFRS-compliant measure to value inventory and COGS is **absorption costing**.
+
+---
+
+#### 4.
+The two supply-side measures that may be used in the denominator to calculate a unitized fixed cost rate are long-term measures.
+
+The first is unrealistic and excludes any allowance for **maintenance**.  
+It is a 24/7/365 measure called **theoretical capacity**.
+
+The second includes allowance for scheduled maintenance but not for **non-productive idle capacity**.  
+It is called **practical capacity**.
+
+
 ---
 
 ## 9-16
 [Table of Contents](#Table-of-Contents)
 ![9-16-1](/images/accounting/9-16-1.png)
+
+
+
+Given (per month unless noted):
+- Selling price per vehicle: $26,000
+- Variable manufacturing cost per unit: $10,000
+- Variable operating (marketing) cost per unit sold: $3,000
+- Fixed manufacturing costs: $2,000,000
+- Fixed operating (marketing) costs: $600,000
+- Budgeted production volume for fixed-cost rate: 500 units
+
+Fixed manufacturing cost rate (for absorption costing):
+$ \text{FMOH rate} = 2{,}000{,}000 / 500 = 4{,}000 \text{ per unit} $
+
+Absorption manufacturing cost per unit:
+$ 10{,}000 + 4{,}000 = 14{,}000 $
+
+---
+
+#### 1. Income statements – Variable costing
+
+##### April
+
+Units:
+- Beginning inventory: 0
+- Production: 500
+- Sales: 350
+- Ending inventory: 150
+
+Revenue:
+- $350 \times 26{,}000 = 9{,}100{,}000$
+
+Variable costs:
+- Variable COGS: $350 \times 10{,}000 = 3{,}500{,}000$
+- Variable marketing: $350 \times 3{,}000 = 1{,}050{,}000$
+- Total variable costs: $4{,}550{,}000$
+
+Contribution margin:
+- $9{,}100{,}000 - 4{,}550{,}000 = 4{,}550{,}000$
+
+Fixed costs:
+- Fixed manufacturing: $2{,}000{,}000$
+- Fixed marketing: $600{,}000$
+- Total fixed: $2{,}600{,}000$
+
+**Operating income (variable costing, April)**  
+$4{,}550{,}000 - 2{,}600{,}000 = 1{,}950{,}000$
+
+Ending inventory under variable costing:
+- $150 \times 10{,}000 = 1{,}500{,}000$
+
+---
+
+##### May
+
+Units:
+- Beginning inventory: 150
+- Production: 400
+- Sales: 520
+- Ending inventory: 30
+
+Revenue:
+- $520 \times 26{,}000 = 13{,}520{,}000$
+
+Variable costs:
+- Variable COGS: $520 \times 10{,}000 = 5{,}200{,}000$
+- Variable marketing: $520 \times 3{,}000 = 1{,}560{,}000$
+- Total variable: $6{,}760{,}000$
+
+Contribution margin:
+- $13{,}520{,}000 - 6{,}760{,}000 = 6{,}760{,}000$
+
+Fixed costs (same each month):
+- Total fixed: $2{,}600{,}000$
+
+**Operating income (variable costing, May)**  
+$6{,}760{,}000 - 2{,}600{,}000 = 4{,}160{,}000$
+
+Ending inventory under variable costing:
+- $30 \times 10{,}000 = 300{,}000$
+
+---
+
+#### 1b. Income statements – Absorption costing
+
+Remember: production-volume variance each month is written off to COGS.
+
+##### April
+
+- Production: 500 units (equals budgeted level 500)  
+  ⇒ no production-volume variance.
+
+Inventory and COGS at $14{,}000$ per unit:
+
+- Beginning inventory: 0  
+- Cost of goods manufactured: $500 \times 14{,}000 = 7{,}000{,}000$  
+- Ending inventory: $150 \times 14{,}000 = 2{,}100{,}000$  
+
+COGS (no PV variance):
+- $7{,}000{,}000 - 2{,}100{,}000 = 4{,}900{,}000$
+
+Revenue:
+- $9{,}100{,}000$ (same as above)
+
+Gross margin:
+- $9{,}100{,}000 - 4{,}900{,}000 = 4{,}200{,}000$
+
+Operating (marketing) costs:
+- Variable: $1{,}050{,}000$
+- Fixed: $600{,}000$
+- Total: $1{,}650{,}000$
+
+**Operating income (absorption costing, April)**  
+$4{,}200{,}000 - 1{,}650{,}000 = 2{,}550{,}000$
+
+Ending inventory under absorption costing:
+- $150 \times 14{,}000 = 2{,}100{,}000$
+
+---
+
+##### May
+
+- Production: 400 units  
+- Fixed manufacturing budget: $2{,}000{,}000$  
+- Fixed manufacturing allocated to production: $400 \times 4{,}000 = 1{,}600{,}000$
+
+Production-volume variance (written off to COGS in May):
+
+$ \text{PV variance} = 2{,}000{,}000 - 1{,}600{,}000 = 400{,}000\ \text{U} $
+
+Inventory and COGS at $14{,}000$ per unit (before PV variance):
+
+- Beginning inventory: 150 units @ $14,000 = 2,100,000$
+- Cost of goods manufactured: $400 \times 14{,}000 = 5,600,000$
+- Goods available: $7,700,000$
+- Ending inventory: $30 \times 14{,}000 = 420,000$
+- COGS before PV variance: $7,700,000 - 420,000 = 7,280,000$
+
+Add under-allocated fixed manufacturing (PV variance):
+
+Total COGS (after PV variance):
+- $7,280,000 + 400,000 = 7,680,000$
+
+Revenue:
+- $13,520,000$
+
+Gross margin:
+- $13,520,000 - 7,680,000 = 5,840,000$
+
+Operating (marketing) costs:
+- Variable: $1,560,000$
+- Fixed: $600,000$
+- Total: $2,160,000$
+
+**Operating income (absorption costing, May)**  
+$5,840,000 - 2,160,000 = 3,680,000$
+
+Ending inventory under absorption costing:
+- $30 \times 14{,}000 = 420,000$
+
+---
+
+#### 2. Reconciliation of operating income: variable vs absorption
+
+##### April
+
+- Operating income (absorption): $2,550,000$  
+- Operating income (variable): $1,950,000$  
+- Difference: $600,000$ (absorption higher)
+
+Inventory change (April):  
+- Ending inventory 150 units  
+- Beginning inventory 0  
+- Increase: 150 units
+
+Fixed manufacturing cost deferred in inventory (per unit $4,000$):
+
+$150 \times 4,000 = 600,000$
+
+So:
+
+$ \text{Absorption income} = \text{Variable income} + 600,000 $
+
+Interpretation: under absorption costing, part of April’s fixed manufacturing cost ($600,000$) is stored in inventory instead of being expensed, raising income relative to variable costing.
+
+---
+
+##### May
+
+- Operating income (variable): $4,160,000$  
+- Operating income (absorption): $3,680,000$  
+- Difference: $480,000$ (absorption lower)
+
+Inventory change (May):  
+- Beginning inventory 150 units  
+- Ending inventory 30 units  
+- Decrease: 120 units
+
+Fixed manufacturing cost released from inventory:
+
+$120 \times 4,000 = 480,000$
+
+So:
+
+$ \text{Absorption income} = \text{Variable income} - 480,000 $
+
+Interpretation: when inventory decreases, fixed manufacturing cost previously deferred in inventory flows into COGS under absorption costing, reducing income relative to variable costing.
+
+---
+
+##### Overall explanation
+
+- **Variable costing** expenses all fixed manufacturing costs in the period incurred, so operating income depends only on **sales volume**.
+- **Absorption costing** attaches fixed manufacturing cost to units produced; when inventory increases, some fixed cost is deferred to future periods (income goes up). When inventory decreases, that cost is released from inventory (income goes down).
+- The difference in operating income each month equals the change in inventory units multiplied by the fixed manufacturing cost per unit ($4,000).
+
 
 ---
 
@@ -5489,10 +7033,341 @@ $$
 [Table of Contents](#Table-of-Contents)
 ![9-17-1](/images/accounting/9-17-1.png)
 
+
+Only **direct material (DM)** is treated as a variable cost.
+All other manufacturing costs (direct labour, MOH, fixed mfg) and all
+marketing costs (variable and fixed) are treated as **operating expenses**.
+
+From 9-16:
+
+- Selling price per unit: $26{,}000$
+- Units:
+
+  - April: beginning $0$, production $500$, sales $350$, ending $150$
+  - May: beginning $150$, production $400$, sales $520$, ending $30$
+
+- Variable mfg cost per unit (now split):
+
+  - Direct material: $6{,}700$
+  - Direct labour: $1{,}500$
+  - Mfg overhead: $1{,}800$
+
+- Variable marketing cost: $3{,}000$ per unit sold  
+- Fixed manufacturing costs: $2{,}000{,}000$ per month  
+- Fixed marketing costs: $600{,}000$ per month  
+
+---
+
+#### 1. Throughput income statements
+
+##### April (throughput costing)
+
+Revenue  
+$350 \times 26{,}000 = 9{,}100{,}000$
+
+Direct material cost of goods sold  
+$350 \times 6{,}700 = 2{,}345{,}000$
+
+Throughput contribution  
+$9{,}100{,}000 - 2{,}345{,}000 = 6{,}755{,}000$
+
+Operating expenses (all non-DM costs for the month)
+
+- Direct labour: $500 \times 1{,}500 = 750{,}000$
+- Mfg overhead: $500 \times 1{,}800 = 900{,}000$
+- Variable marketing: $350 \times 3{,}000 = 1{,}050{,}000$
+- Fixed manufacturing: $2{,}000{,}000$
+- Fixed marketing: $600{,}000$
+
+Total operating expenses  
+$750{,}000 + 900{,}000 + 1{,}050{,}000 + 2{,}000{,}000 + 600{,}000 = 5{,}300{,}000$
+
+Operating income (throughput) – April  
+$6{,}755{,}000 - 5{,}300{,}000 = 1{,}455{,}000$
+
+Ending inventory (throughput) – April  
+$150 \times 6{,}700 = 1{,}005{,}000$
+
+---
+
+##### May (throughput costing)
+
+Revenue  
+$520 \times 26{,}000 = 13{,}520{,}000$
+
+Direct material cost of goods sold  
+$520 \times 6{,}700 = 3{,}484{,}000$
+
+Throughput contribution  
+$13{,}520{,}000 - 3{,}484{,}000 = 10{,}036{,}000$
+
+Operating expenses
+
+- Direct labour: $400 \times 1{,}500 = 600{,}000$
+- Mfg overhead: $400 \times 1{,}800 = 720{,}000$
+- Variable marketing: $520 \times 3{,}000 = 1{,}560{,}000$
+- Fixed manufacturing: $2{,}000{,}000$
+- Fixed marketing: $600{,}000$
+
+Total operating expenses  
+$600{,}000 + 720{,}000 + 1{,}560{,}000 + 2{,}000{,}000 + 600{,}000 = 5{,}480{,}000$
+
+Operating income (throughput) – May  
+$10{,}036{,}000 - 5{,}480{,}000 = 4{,}556{,}000$
+
+Ending inventory (throughput) – May  
+$30 \times 6{,}700 = 201{,}000$
+
+---
+
+#### 2. Contrast with 9-16 (variable and absorption costing)
+
+From 9-16:
+
+- Variable costing operating income:
+
+  - April: $1{,}950{,}000$
+  - May: $4{,}160{,}000$
+
+- Absorption costing operating income:
+
+  - April: $2{,}550{,}000$
+  - May: $3{,}680{,}000$
+
+Comparison:
+
+- **April**
+
+  - Throughput: $1{,}455{,}000$  
+  - Variable: $1{,}950{,}000$  
+  - Absorption: $2{,}550{,}000$
+
+  April is a **build-up of inventory** (production $>$ sales).  
+  Absorption costing defers the most cost (all mfg costs per unit) into inventory,
+  so it gives the highest income.  
+  Variable costing defers DM + variable mfg; throughput defers **only DM**, so
+  April income is lowest under throughput.
+
+- **May**
+
+  - Throughput: $4{,}556{,}000$  
+  - Variable: $4{,}160{,}000$  
+  - Absorption: $3{,}680{,}000$
+
+  May is a **draw-down of inventory** (sales $>$ production).  
+  Absorption costing releases the most past fixed costs from inventory into COGS,
+  giving the lowest income.  
+  Throughput carries only DM in inventory, so less past cost is released; income
+  is highest under throughput, and it tracks sales volume most strongly.
+
+Overall, under throughput costing income depends **almost entirely on sales**, not on
+how much is produced.
+
+---
+
+#### 3. Motivation for adopting throughput costing
+
+One key motivation for Mingan Motors to adopt throughput costing:
+
+- It **discourages overproduction** as a way to increase reported income.  
+  Because only direct materials are inventoried, producing more units without
+  selling them does not hide current-period labour, overhead, or fixed mfg costs
+  in inventory. Managers are thus pushed to focus on:
+  - increasing **throughput** (sales dollars minus DM), and  
+  - managing operating expenses at the system’s bottlenecks,
+
+rather than building unwanted inventory to improve short-term accounting profits.
+
+
 ---
 
 ## 9-18
 [Table of Contents](#Table-of-Contents)
 ![9-18-1](/images/accounting/9-18-1.png)
+
+Data per month
+
+- Selling price per TV: $3,000
+- Variable manufacturing cost per unit: $900
+- Variable marketing cost per unit sold: $600
+- Fixed manufacturing costs: $400,000 per month
+- Fixed marketing costs: $140,000 per month
+- Budgeted production volume: 1,000 units/month
+
+Fixed manufacturing cost rate for absorption costing  
+$\text{F rate} = 400{,}000 / 1{,}000 = 400 \text{ per unit}$
+
+Absorption manufacturing cost per unit  
+$900 + 400 = 1{,}300$
+
+Production-volume variance each month (written off to COGS):
+
+$\text{PVV} = (400{,}000 - \text{units produced} \times 400)$
+
+- January: produced 1,000 → PVV $= 0$
+- February: produced 800 → PVV $= 400{,}000 - 320{,}000 = 80{,}000\ \text{U}$
+- March: produced 1,250 → PVV $= 400{,}000 - 500{,}000 = 100{,}000\ \text{F}$
+
+---
+
+#### 1. Variable-costing income statements
+
+##### January
+
+Units: beginning 0, produced 1,000, sold 700, ending 300.
+
+- Revenue: $700 \times 3{,}000 = 2{,}100{,}000$
+- Variable COGS: $700 \times 900 = 630{,}000$
+- Variable marketing: $700 \times 600 = 420{,}000$
+- Total variable costs: $1{,}050{,}000$
+- Contribution margin: $2{,}100{,}000 - 1{,}050{,}000 = 1{,}050{,}000$
+- Fixed mfg + marketing: $400{,}000 + 140{,}000 = 540{,}000$
+
+**Operating income (variable, Jan)**  
+$1{,}050{,}000 - 540{,}000 = 510{,}000$
+
+---
+
+##### February
+
+Units: beginning 300, produced 800, sold 800, ending 300.
+
+- Revenue: $800 \times 3{,}000 = 2{,}400{,}000$
+- Variable COGS: $800 \times 900 = 720{,}000$
+- Variable marketing: $800 \times 600 = 480{,}000$
+- Total variable costs: $1{,}200{,}000$
+- Contribution margin: $1{,}200{,}000$
+- Fixed mfg + marketing: $540{,}000$
+
+**Operating income (variable, Feb)**  
+$1{,}200{,}000 - 540{,}000 = 660{,}000$
+
+---
+
+##### March
+
+Units: beginning 300, produced 1,250, sold 1,500, ending 50.
+
+- Revenue: $1{,}500 \times 3{,}000 = 4{,}500{,}000$
+- Variable COGS: $1{,}500 \times 900 = 1{,}350{,}000$
+- Variable marketing: $1{,}500 \times 600 = 900{,}000$
+- Total variable costs: $2{,}250{,}000$
+- Contribution margin: $2{,}250{,}000$
+- Fixed mfg + marketing: $540{,}000$
+
+**Operating income (variable, Mar)**  
+$2{,}250{,}000 - 540{,}000 = 1{,}710{,}000$
+
+---
+
+#### 1b. Absorption-costing income statements
+(COGS includes production-volume variance each month.)
+
+##### January (PVV = 0)
+
+Inventory and COGS at $1{,}300$ per unit:
+
+- COGM: $1{,}000 \times 1{,}300 = 1{,}300{,}000$
+- Ending inventory: $300 \times 1{,}300 = 390{,}000$
+- COGS before PVV: $1{,}300{,}000 - 390{,}000 = 910{,}000$
+- PVV: $0$ → COGS = $910{,}000$
+
+Income statement:
+
+- Revenue: $2{,}100{,}000$
+- COGS: $910{,}000$
+- Gross margin: $1{,}190{,}000$
+- Marketing costs: variable $420{,}000$; fixed $140{,}000$; total $560{,}000$
+
+**Operating income (absorption, Jan)**  
+$1{,}190{,}000 - 560{,}000 = 630{,}000$
+
+---
+
+##### February (PVV = $80{,}000$ U)
+
+Standard COGS (at $1{,}300$ per unit):
+
+- Beginning inventory: $300 \times 1{,}300 = 390{,}000$
+- COGM: $800 \times 1{,}300 = 1{,}040{,}000$
+- Ending inventory: $300 \times 1{,}300 = 390{,}000$
+- COGS before PVV: $1{,}040{,}000$ (800 units)
+
+Add PVV (unfavourable):
+
+- COGS: $1{,}040{,}000 + 80{,}000 = 1{,}120{,}000$
+
+Income statement:
+
+- Revenue: $2{,}400{,}000$
+- COGS: $1{,}120{,}000$
+- Gross margin: $1{,}280{,}000$
+- Marketing costs: variable $480{,}000$; fixed $140{,}000$; total $620{,}000$
+
+**Operating income (absorption, Feb)**  
+$1{,}280{,}000 - 620{,}000 = 660{,}000$
+
+---
+
+##### March (PVV = $100{,}000$ F)
+
+Standard COGS (at $1{,}300$ per unit):
+
+- Beginning inventory: $300 \times 1{,}300 = 390{,}000$
+- COGM: $1{,}250 \times 1{,}300 = 1{,}625{,}000$
+- Ending inventory: $50 \times 1{,}300 = 65{,}000$
+- COGS before PVV: $1{,}950{,}000$ (1,500 units)
+
+Subtract PVV (favourable):
+
+- COGS: $1{,}950{,}000 - 100{,}000 = 1{,}850{,}000$
+
+Income statement:
+
+- Revenue: $4{,}500{,}000$
+- COGS: $1{,}850{,}000$
+- Gross margin: $2{,}650{,}000$
+- Marketing costs: variable $900{,}000$; fixed $140{,}000$; total $1{,}040{,}000$
+
+**Operating income (absorption, Mar)**  
+$2{,}650{,}000 - 1{,}040{,}000 = 1{,}610{,}000$
+
+---
+
+#### 2. Explaining differences between variable and absorption income
+
+Summary of operating income:
+
+| Month   | Variable costing | Absorption costing |
+|---------|-----------------:|-------------------:|
+| January | $510,000         | $630,000           |
+| February| $660,000         | $660,000           |
+| March   | $1,710,000       | $1,610,000         |
+
+Key points:
+
+1. Fixed manufacturing costs are:
+   - Entirely expensed in the period under **variable costing**.
+   - Attached to units and flow with inventory under **absorption costing** (plus PV variance written off).
+
+2. The difference in operating income each month equals:
+   - Change in inventory units × fixed manufacturing cost per unit ($400).
+
+   - January: inventory increases from 0 to 300 units  
+     Income difference $= 300 \times 400 = 120{,}000$  
+     → Absorption income is $120,000$ higher than variable (630k vs 510k).
+
+   - February: inventory stays at 300 units  
+     Change $= 0$ → incomes are the same (660k vs 660k).
+
+   - March: inventory decreases from 300 to 50 units (drop of 250 units)  
+     Income difference $= 250 \times 400 = 100{,}000$  
+     → Absorption income is $100,000$ lower than variable (1,610k vs 1,710k).
+
+3. Interpretation:
+
+   - When production exceeds sales (inventory builds up, as in January), absorption costing defers some fixed manufacturing cost into inventory, increasing income.
+   - When sales exceed production (inventory is drawn down, as in March), absorption costing releases fixed costs from inventory into COGS, reducing income.
+   - When inventory is unchanged (February), the timing differences disappear and both methods report the same operating income.
 
 ---
