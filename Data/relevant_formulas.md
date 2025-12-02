@@ -78,3 +78,30 @@ $R^2 = 1 - \frac{unexplained Variance}{total Variance} = 1 - \frac{SSE}{SST}$
 5. Adjusted $R^2$ Score
 
 $\text{Adjusted } R^2 = 1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$
+
+## Evaluation metrics for Classifications
+
+1. Sensitiviy (also called Recall or True Positive Rate)
+
+$\text{Sensitivity} = \frac{TP}{TP + FN}$
+
+2. Specificity (also called True Negative Rate)
+
+$\text{Specificity} = \frac{TP}{TP + FN}$
+
+3. False Positive Rate (FPR, needed for ROC curves)
+
+$\text{FPR} = \frac{FP}{FP + TN}$
+
+4. Accuracy
+
+$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$
+
+5. Precision
+
+$\text{Precision} = \frac{TP}{TP + FP}$
+
+6. F1-Score
+
+$\text{F1-Score} = 2 * \frac{Precision * Recall}{Precision + Recall}
+
