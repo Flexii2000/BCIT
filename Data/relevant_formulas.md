@@ -103,5 +103,5 @@ $\text{Precision} = \frac{TP}{TP + FP}$
 
 6. F1-Score
 
-$\text{F1-Score} = 2 * \frac{Precision * Recall}{Precision + Recall}
+$\text{F1-Score} = 2 * \frac{Precision * Recall}{Precision + Recall}$
 
