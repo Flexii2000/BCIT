@@ -7195,9 +7195,11 @@ Data per month
 - Budgeted production volume: 1,000 units/month
 
 Fixed manufacturing cost rate for absorption costing  
+
 $\text{F rate} = 400{,}000 / 1{,}000 = 400 \text{ per unit}$
 
 Absorption manufacturing cost per unit  
+
 $900 + 400 = 1{,}300$
 
 Production-volume variance each month (written off to COGS):
