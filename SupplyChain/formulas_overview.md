@@ -15,18 +15,18 @@ Annual Carrying Costs (Average Inventory * Carrying Cost):
 $\frac{Q}{2} * i * c$
 
 Economic Order Quantity (EOQ): 
-$\sqrt{\frac{2 * A * S}{i * c}}
+$\sqrt{\frac{2 * A * S}{i * c}}$
 
 **Monetary** Unit Lot Size: 
 $\sqrt{\frac{2 * A * c * S}{i}}$
 
 Period Order Quantity (POQ) in weeks: 
-$\frac{EOQ}{average weekly usage}$
+$\frac{EOQ}{\text{average weekly usage}}$
 
 K constant fr POQ: 
-$\sqrt{\frac{2 * S}{i}}
+$\sqrt{\frac{2 * S}{i}}$
 
-$K * \sqrt{A_D} = \frac{Annual Demand A_D}{Orders per year N}$
+$K * \sqrt{A_D} = \frac{\text{Annual Demand A_D}}{\text{Orders per year N}}$
 
 $K * \sqrt{A_D} = \frac{A_D}{N}$
 
@@ -38,13 +38,13 @@ Order Point:
 $OP = \text{Demand during Lead Time DDLT} + \text{Safety Stock SS}$
 
 Average Inventory: 
-$\frac{Order Quantity Q}{2} * SS$
+$\frac{\text{Order Quantity Q}}{2} * SS$
 
 Safety Stock Items: 
-$SS = \sigma * \text{Safety Factor}
+$SS = \sigma * \text{Safety Factor}$
 
 Lead Time Intervals and Forecast Intervals:
-$\sigma_LTI = \sigma_FI * \sqrt{\frac{LTI}{FI}}$
+$\sigma_\text{LTI} = \sigma_\text{FI} * \sqrt{\frac{LTI}{FI}}$
 
 Target Level T: 
 $T = \text{Demand during Review} + \text{Demand during Lead Time} + \text{SS} = D(R + L) + SS$
