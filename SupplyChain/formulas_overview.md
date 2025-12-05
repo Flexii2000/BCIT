@@ -26,7 +26,7 @@ $\frac{EOQ}{\text{average weekly usage}}$
 K constant fr POQ: 
 $\sqrt{\frac{2 * S}{i}}$
 
-$K * \sqrt{A_D} = \frac{\text{Annual Demand A_D}}{\text{Orders per year N}}$
+$K * \sqrt{A_D} = \frac{\text{Annual Demand }A_D}{\text{Orders per year N}}$
 
 $K * \sqrt{A_D} = \frac{A_D}{N}$
 
