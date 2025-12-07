@@ -5428,7 +5428,7 @@ From 8-16:
 
 Given here:
 
-- Budgeted FMOH for June: $62{,}400  
+- Budgeted FMOH for June: $62{,}400$  
 - Actual FMOH for June: $63{,}916$
 
 ---
@@ -5933,9 +5933,9 @@ Given (August):
 
 Given:
 
-- Variable MOH incurred: $186{,}120  
-- Fixed MOH incurred: $481{,}200  
-- Fixed MOH budgeted: $468{,}000  
+- Variable MOH incurred: $186{,}120$  
+- Fixed MOH incurred: $481{,}200$  
+- Fixed MOH budgeted: $468{,}000$  
 - Denominator level in MH: 15,600 MH  
 - Standard MH per unit: 0.30 MH  
 - Units of output: 49,200  
@@ -6822,10 +6822,10 @@ Given (per month unless noted):
 - Budgeted production volume for fixed-cost rate: 500 units
 
 Fixed manufacturing cost rate (for absorption costing):
-$ \text{FMOH rate} = 2{,}000{,}000 / 500 = 4{,}000 \text{ per unit} $
+$\text{FMOH rate} = \dfrac {2{,}000{,}000}  {500} = 4{,}000 \text{ per unit}$
 
 Absorption manufacturing cost per unit:
-$ 10{,}000 + 4{,}000 = 14{,}000 $
+$10{,}000 + 4{,}000 = 14{,}000$
 
 ---
 
@@ -6900,7 +6900,7 @@ Remember: production-volume variance each month is written off to COGS.
 ##### April
 
 - Production: 500 units (equals budgeted level 500)  
-  ⇒ no production-volume variance.
+  => no production-volume variance.
 
 Inventory and COGS at $14{,}000$ per unit:
 
@@ -6938,7 +6938,7 @@ Ending inventory under absorption costing:
 
 Production-volume variance (written off to COGS in May):
 
-$ \text{PV variance} = 2{,}000{,}000 - 1{,}600{,}000 = 400{,}000\ \text{U} $
+$\text{PV variance} = 2{,}000{,}000 - 1{,}600{,}000 = 400{,}000\ \text{U}$
 
 Inventory and COGS at $14{,}000$ per unit (before PV variance):
 
