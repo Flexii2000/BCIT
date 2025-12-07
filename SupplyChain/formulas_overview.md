@@ -9,26 +9,34 @@
 - `Q` Order quantity in units, number of items per single order
 
 Annual Ordering Costs (Number of Orders * Cost per Order): 
-$\frac{A}{Q} * S$ 
+$\frac {A} {Q} \times S$ 
 
 Annual Carrying Costs (Average Inventory * Carrying Cost): 
-$\frac{Q}{2} * i * c$
+$\frac {Q} {2} \times i \times c$
 
 Economic Order Quantity (EOQ): 
-$\sqrt{\frac{2 * A * S}{i * c}}$
+$\sqrt{\frac{2 \times A \times S}{i \times c}}$
 
 **Monetary** Unit Lot Size: 
-$\sqrt{\frac{2 * A * c * S}{i}}$
+$\sqrt{\frac{2 \times A \times c \times S}{i}}$
 
 Period Order Quantity (POQ) in weeks: 
 $\frac{EOQ}{\text{average weekly usage}}$
 
 K constant fr POQ: 
-$\sqrt{\frac{2 * S}{i}}$
+$\sqrt{\frac{2 \times S}{i}}$
 
-$K * \sqrt{A_D} = \frac{\text{Annual Demand }A_D}{\text{Orders per year N}}$
+$K \times \sqrt{A_D} = \frac{\text{Annual Demand }A_D}{\text{Orders per year N}}$
 
-$K * \sqrt{A_D} = \frac{A_D}{N}$
+$K \times \sqrt{A_D} = \frac{A_D}{N}$
+
+**for finding k**
+
+$k = \dfrac {\sqrt {A_D}} {N}$
+
+*if multiple items*
+
+$k = \dfrac {\sum \sqrt {A_D}} {\sum N}$
 
 ---
 
