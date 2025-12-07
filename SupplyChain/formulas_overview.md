@@ -36,7 +36,7 @@ $k = \dfrac {\sqrt {A_D}} {N}$
 
 *if multiple items*
 
-$k = \dfrac {\sum \sqrt {A_D}} {\sum N}$
+$k = \dfrac {\sum_i \sqrt {A_{D},_i}} {\sum_i N_i}$
 
 ---
 
