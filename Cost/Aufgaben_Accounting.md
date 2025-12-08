@@ -35,34 +35,35 @@
 32. [Problem 5-32 – Halifax Test Laboratories (ABC Analysis and Cost Drivers)](#5-32-Halifax-Test-Laboratories-ABC-Analysis-and-Cost-Drivers)
 33. [Problem 5-33 – Family Supermarkets (ABC Product-Line Profitability)](#5-33-Family-Supermarkets-ABC-Product-Line-Profitability)
 34. [Problem 5-34 – Radhika’s Radiology Centre (ABC in Service Sector)](#5-34-Radhikas-Radiology-Centre-ABC-in-Service-Sector)
-35. [Problem 6-20 – Westing Company (Direct Materials Purchases Budget)](#6-20-Westing-Company-Direct-Materials-Purchases-Budget)
-36. [Problem 6-25 – TabComp Inc. (Cash Collections and Inventory Orders)](#6-25-TabComp-Inc-Cash-Collections-and-Inventory-Orders)
-37. [Problem 6-28 – Fraser Corporation (Comprehensive Master Budget)](#6-28-Fraser-Corporation-Comprehensive-Master-Budget)
-38. [Problem 6-32 – Skulas Inc. (January Master Budget – Snowboards)](#6-32-Skulas-Inc-January-Master-Budget-Snowboards)
-39. [Problem 6-33 – Skulas Inc. (Cash Budget and Budgeted Balance Sheet)](#6-33-Skulas-Inc-Cash-Budget-and-Budgeted-Balance-Sheet)
-40. [Problem 6-34 – Pet Transport Company (Activity-Based Costing Budgeting)](#6-34-Pet-Transport-Company-Activity-Based-Costing-Budgeting)
-41. [Problem 6-35 – Pet Transport Company (Cash Budget for April)](#6-35-Pet-Transport-Company-Cash-Budget-for-April)
-42. [Problem 7-17](#7-17)
-43. [Problem 7-18](#7-18)
-44. [Problem 7-19](#7-19)
-45. [Problem 7-21](#7-21)
-46. [Problem 7-22](#7-22)
-47. [Problem 7-24](#7-24)
-48. [Problem 7-25](#7-25)
-49. [Problem 7-31](#7-31)
-50. [Problem 8-16](#8-16)
-51. [Problem 8-17](#8-17)
-52. [Problem 8-19](#8-19)
-53. [Problem 8-20](#8-20)
-54. [Problem 8-22](#8-22)
-55. [Problem 8-25](#8-25)
-56. [Problem 8-26](#8-26)
-57. [Problem 8-27](#8-27)
-58. [Problem 8-35](#8-35)
-59. [Problem 9-15](#9-15)
-60. [Problem 9-16](#9-16)
-61. [Problem 9-17](#9-17)
-62. [Problem 9-18](#9-18)
+35. [5-35](#5-35)
+36. [Problem 6-20 – Westing Company (Direct Materials Purchases Budget)](#6-20-Westing-Company-Direct-Materials-Purchases-Budget)
+37. [Problem 6-25 – TabComp Inc. (Cash Collections and Inventory Orders)](#6-25-TabComp-Inc-Cash-Collections-and-Inventory-Orders)
+38. [Problem 6-28 – Fraser Corporation (Comprehensive Master Budget)](#6-28-Fraser-Corporation-Comprehensive-Master-Budget)
+39. [Problem 6-32 – Skulas Inc. (January Master Budget – Snowboards)](#6-32-Skulas-Inc-January-Master-Budget-Snowboards)
+40. [Problem 6-33 – Skulas Inc. (Cash Budget and Budgeted Balance Sheet)](#6-33-Skulas-Inc-Cash-Budget-and-Budgeted-Balance-Sheet)
+41. [Problem 6-34 – Pet Transport Company (Activity-Based Costing Budgeting)](#6-34-Pet-Transport-Company-Activity-Based-Costing-Budgeting)
+42. [Problem 6-35 – Pet Transport Company (Cash Budget for April)](#6-35-Pet-Transport-Company-Cash-Budget-for-April)
+43. [Problem 7-17](#7-17)
+44. [Problem 7-18](#7-18)
+45. [Problem 7-19](#7-19)
+46. [Problem 7-21](#7-21)
+47. [Problem 7-22](#7-22)
+48. [Problem 7-24](#7-24)
+49. [Problem 7-25](#7-25)
+50. [Problem 7-31](#7-31)
+51. [Problem 8-16](#8-16)
+52. [Problem 8-17](#8-17)
+53. [Problem 8-19](#8-19)
+54. [Problem 8-20](#8-20)
+55. [Problem 8-22](#8-22)
+56. [Problem 8-25](#8-25)
+57. [Problem 8-26](#8-26)
+58. [Problem 8-27](#8-27)
+59. [Problem 8-35](#8-35)
+60. [Problem 9-15](#9-15)
+61. [Problem 9-16](#9-16)
+62. [Problem 9-17](#9-17)
+63. [Problem 9-18](#9-18)
 
 
 
@@ -364,10 +365,19 @@ Break-even (sales $) = \sum (BEP_i \times P_i)$
 
 ## 5-34-Radhikas-Radiology-Centre-ABC-in-Service-Sector
 [Table of Contents](#Table-of-Contents)
-![5-34](/images/accounting/5-34-1.png)
+![5-34](/images/accounting/5-34-1.jpeg)
 ![5-34](/images/accounting/5-34-2.jpeg)
 
 ---
+
+## 5-35
+[Table of Contents](#Table-of-Contents)
+![5-35](/images/accounting/5-35-1.jpeg)
+![5-35](/images/accounting/5-35-2.jpeg)
+![5-35](/images/accounting/5-35-3.jpeg)
+
+---
+
 
 # Chapter 6
 

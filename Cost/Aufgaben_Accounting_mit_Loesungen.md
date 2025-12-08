@@ -35,34 +35,35 @@
 32. [Problem 5-33 – Family Supermarkets (ABC Product-Line Profitability)](#5-33-Family-Supermarkets-ABC-Product-Line-Profitability)
 33. [Problem 5-34 – Radhika’s Radiology Centre (ABC in Service Sector)](#5-34-Radhikas-Radiology-Centre-ABC-in-Service-Sector)
 34. [Problem 5-32 – Halifax Test Laboratories (ABC Analysis and Cost Drivers)](#5-32-Halifax-Test-Laboratories-ABC-Analysis-and-Cost-Drivers)
-35. [Problem 6-20 – Westing Company (Direct Materials Purchases Budget)](#6-20-Westing-Company-Direct-Materials-Purchases-Budget)
-36. [Problem 6-25 – TabComp Inc. (Cash Collections and Inventory Orders)](#6-25-TabComp-Inc-Cash-Collections-and-Inventory-Orders)
-37. [Problem 6-28 – Fraser Corporation (Comprehensive Master Budget)](#6-28-Fraser-Corporation-Comprehensive-Master-Budget)
-38. [Problem 6-32 – Skulas Inc. (January Master Budget – Snowboards)](#6-32-Skulas-Inc-January-Master-Budget-Snowboards)
-39. [Problem 6-33 – Skulas Inc. (Cash Budget and Budgeted Balance Sheet)](#6-33-Skulas-Inc-Cash-Budget-and-Budgeted-Balance-Sheet)
-40. [Problem 6-34 – Pet Transport Company (Activity-Based Costing Budgeting)](#6-34-Pet-Transport-Company-Activity-Based-Costing-Budgeting)
-41. [Problem 6-35 – Pet Transport Company (Cash Budget for April)](#6-35-Pet-Transport-Company-Cash-Budget-for-April)
-42. [Problem 7-17](#7-17)
-43. [Problem 7-18](#7-18)
-44. [Problem 7-19](#7-19)
-45. [Problem 7-21](#7-21)
-46. [Problem 7-22](#7-22)
-47. [Problem 7-24](#7-24)
-48. [Problem 7-25](#7-25)
-49. [Problem 7-31](#7-31)
-50. [Problem 8-16](#8-16)
-51. [Problem 8-17](#8-17)
-52. [Problem 8-19](#8-19)
-53. [Problem 8-20](#8-20)
-54. [Problem 8-22](#8-22)
-55. [Problem 8-25](#8-25)
-56. [Problem 8-26](#8-26)
-57. [Problem 8-27](#8-27)
-58. [Problem 8-35](#8-35)
-59. [Problem 9-15](#9-15)
-60. [Problem 9-16](#9-16)
-61. [Problem 9-17](#9-17)
-62. [Problem 9-18](#9-18)
+35. [5-35](#5-35)
+36. [Problem 6-20 – Westing Company (Direct Materials Purchases Budget)](#6-20-Westing-Company-Direct-Materials-Purchases-Budget)
+37. [Problem 6-25 – TabComp Inc. (Cash Collections and Inventory Orders)](#6-25-TabComp-Inc-Cash-Collections-and-Inventory-Orders)
+38. [Problem 6-28 – Fraser Corporation (Comprehensive Master Budget)](#6-28-Fraser-Corporation-Comprehensive-Master-Budget)
+39. [Problem 6-32 – Skulas Inc. (January Master Budget – Snowboards)](#6-32-Skulas-Inc-January-Master-Budget-Snowboards)
+40. [Problem 6-33 – Skulas Inc. (Cash Budget and Budgeted Balance Sheet)](#6-33-Skulas-Inc-Cash-Budget-and-Budgeted-Balance-Sheet)
+41. [Problem 6-34 – Pet Transport Company (Activity-Based Costing Budgeting)](#6-34-Pet-Transport-Company-Activity-Based-Costing-Budgeting)
+42. [Problem 6-35 – Pet Transport Company (Cash Budget for April)](#6-35-Pet-Transport-Company-Cash-Budget-for-April)
+43. [Problem 7-17](#7-17)
+44. [Problem 7-18](#7-18)
+45. [Problem 7-19](#7-19)
+46. [Problem 7-21](#7-21)
+47. [Problem 7-22](#7-22)
+48. [Problem 7-24](#7-24)
+49. [Problem 7-25](#7-25)
+50. [Problem 7-31](#7-31)
+51. [Problem 8-16](#8-16)
+52. [Problem 8-17](#8-17)
+53. [Problem 8-19](#8-19)
+54. [Problem 8-20](#8-20)
+55. [Problem 8-22](#8-22)
+56. [Problem 8-25](#8-25)
+57. [Problem 8-26](#8-26)
+58. [Problem 8-27](#8-27)
+59. [Problem 8-35](#8-35)
+60. [Problem 9-15](#9-15)
+61. [Problem 9-16](#9-16)
+62. [Problem 9-17](#9-17)
+63. [Problem 9-18](#9-18)
 
 
 ---
@@ -2853,6 +2854,235 @@ Check: the four totals sum back to $2{,}697{,}070$.
   - Reprice services appropriately.
   - Target process improvements where they matter (e.g., cleaning time and procedure duration for MRIs, maintenance efficiency).
   - Decide whether to expand high-margin services or redesign/streamline low-margin ones.
+
+---
+
+## 5-35
+[Table of Contents](#Table-of-Contents)
+![5-35](/images/accounting/5-35-1.jpeg)
+![5-35](/images/accounting/5-35-2.jpeg)
+![5-35](/images/accounting/5-35-3.jpeg)
+
+## Problem 5-35 Pharmacare – Step-by-step solution
+
+---
+
+## 1. Gross margin percentage for each segment (traditional analysis)
+
+Given data for August:
+
+- **Revenues**
+  - General Supermarket Chains (GS): $3,725,000  
+  - Drugstore Chains (DS): $3,175,000  
+  - “Mom and Pop” Single Stores (MP): $1,960,000  
+
+- **Cost of goods sold (COGS)**
+  - GS: $3,600,000  
+  - DS: $3,027,000  
+  - MP: $1,805,000  
+
+### 1.1 Gross margin in dollars
+
+Formula:  
+$Gross\ margin = Revenue - COGS$
+
+- GS:  
+  $3,725,000 - 3,600,000 = 125,000$
+
+- DS:  
+  $3,175,000 - 3,027,000 = 148,000$
+
+- MP:  
+  $1,960,000 - 1,805,000 = 155,000$
+
+(these match the given gross margin row)
+
+### 1.2 Gross margin percentage
+
+Formula:  
+$Gross\ margin\ \% = Gross\ margin \div Revenue$
+
+- GS:  
+  $125,000 \div 3,725,000 \approx 0.0336$ → $3.4\%$
+
+- DS:  
+  $148,000 \div 3,175,000 \approx 0.0466$ → $4.7\%$
+
+- MP:  
+  $155,000 \div 1,960,000 \approx 0.0791$ → $7.9\%$
+
+**Traditional conclusion:** based only on gross margin %, “Mom and Pop” stores appear to be the *most profitable* customers.
+
+---
+
+## 2. Per-unit activity cost-driver rates (ABC step 1)
+
+We are told “other operating costs” of $319,000 are split into 5 activity areas with the following total activity levels:
+
+| Activity area                 | Total cost | Cost driver                     | Total driver units |
+|------------------------------|-----------:|---------------------------------|-------------------:|
+| Order processing             | $85,000    | Number of orders processed      | 2,000 orders       |
+| Line-item processing         | $69,300    | Number of line items ordered    | 21,000 line items  |
+| Delivering to stores         | $72,500    | Number of store deliveries      | 1,450 deliveries   |
+| Cartons shipped to stores    | $78,200    | Number of cartons shipped       | 78,200 cartons     |
+| Shelf-stocking               | $14,000    | Shelf-stocking hours            | 700 hours          |
+
+*(The driver totals are just the sum across the three segments given in the table.)*
+
+### 2.1 Compute rate for each activity
+
+General formula:  
+$Rate\ per\ activity\ unit = Total\ activity\ cost \div Total\ driver\ units$
+
+- Order processing rate:  
+  $85,000 \div 2,000 = 42.5$ → **$42.50 per order**  
+
+- Line-item processing rate:  
+  $69,300 \div 21,000 = 3.3$ → **$3.30 per line item**  
+
+- Delivering to stores rate:  
+  $72,500 \div 1,450 = 50$ → **$50.00 per delivery**  
+
+- Cartons shipped rate:  
+  $78,200 \div 78,200 = 1$ → **$1.00 per carton**  
+
+- Shelf-stocking rate:  
+  $14,000 \div 700 = 20$ → **$20.00 per shelf-stocking hour**  
+
+These are the rates we will use to assign the $319,000$ of “other operating costs” to the three segments.
+
+---
+
+## 3. Allocate $319,000$ of “other operating costs” using ABC and compute operating income
+
+### 3.1 Activity usage by segment
+
+From the table:
+
+- **General Supermarket Chains (GS)**  
+  - Orders: $150$  
+  - Line items: $1,980$  
+  - Deliveries: $122$  
+  - Cartons: $37,000$  
+  - Shelf-stocking hours: $390$
+
+- **Drugstore Chains (DS)**  
+  - Orders: $360$  
+  - Line items: $4,500$  
+  - Deliveries: $278$  
+  - Cartons: $24,200$  
+  - Shelf-stocking hours: $200$
+
+- **“Mom and Pop” Stores (MP)**  
+  - Orders: $1,490$  
+  - Line items: $14,520$  
+  - Deliveries: $1,050$  
+  - Cartons: $17,000$  
+  - Shelf-stocking hours: $110$
+
+### 3.2 Compute ABC cost assigned to each segment
+
+Formula for each activity:  
+$Segment\ cost\ for\ activity = Segment\ driver\ units \times Activity\ rate$
+
+#### 3.2.1 General Supermarket Chains (GS)
+
+- Order processing:  
+  $150 \times 42.5 = 6,375$
+- Line-item processing:  
+  $1,980 \times 3.3 = 6,534$
+- Delivering to stores:  
+  $122 \times 50 = 6,100$
+- Cartons shipped:  
+  $37,000 \times 1 = 37,000$
+- Shelf-stocking:  
+  $390 \times 20 = 7,800$
+
+Total ABC “other operating cost” for GS:  
+$6,375 + 6,534 + 6,100 + 37,000 + 7,800 = 63,809$
+
+#### 3.2.2 Drugstore Chains (DS)
+
+- Order processing:  
+  $360 \times 42.5 = 15,300$
+- Line-item processing:  
+  $4,500 \times 3.3 = 14,850$
+- Delivering to stores:  
+  $278 \times 50 = 13,900$
+- Cartons shipped:  
+  $24,200 \times 1 = 24,200$
+- Shelf-stocking:  
+  $200 \times 20 = 4,000$
+
+Total ABC “other operating cost” for DS:  
+$15,300 + 14,850 + 13,900 + 24,200 + 4,000 = 72,250$
+
+#### 3.2.3 “Mom and Pop” Stores (MP)
+
+- Order processing:  
+  $1,490 \times 42.5 = 63,325$
+- Line-item processing:  
+  $14,520 \times 3.3 = 47,916$
+- Delivering to stores:  
+  $1,050 \times 50 = 52,500$
+- Cartons shipped:  
+  $17,000 \times 1 = 17,000$
+- Shelf-stocking:  
+  $110 \times 20 = 2,200$
+
+Total ABC “other operating cost” for MP:  
+$63,325 + 47,916 + 52,500 + 17,000 + 2,200 = 182,941$
+
+Check:  
+$63,809 + 72,250 + 182,941 = 319,000$ → matches total “other operating costs”.
+
+### 3.3 Operating income by segment under ABC
+
+Formula:  
+$Operating\ income = Gross\ margin - ABC\ other\ operating\ costs$
+
+- GS:  
+  $125,000 - 63,809 = 61,191$
+
+- DS:  
+  $148,000 - 72,250 = 75,750$
+
+- MP:  
+  $155,000 - 182,941 = -27,941$
+
+So the operating income (loss) by segment is approximately:
+
+| Segment | Gross margin | ABC other operating costs | Operating income |
+|--------|-------------:|--------------------------:|-----------------:|
+| GS     | $125,000     | $63,809                  | $61,191          |
+| DS     | $148,000     | $72,250                  | $75,750          |
+| MP     | $155,000     | $182,941                 | $-27,941         |
+| Total  | $428,000     | $319,000                 | $109,000         |
+
+(Total operating income still equals the given $109,000; we have only *reallocated* the $319,000.)
+
+---
+
+## 4. Comment on results – insights from ABC
+
+1. **Traditional gross-margin view**  
+   - GS: $3.4\%$  
+   - DS: $4.7\%$  
+   - MP: $7.9\%$  
+   Using only gross margin %, “Mom and Pop” stores seem most profitable.
+
+2. **ABC view**  
+   - GS and DS segments consume relatively fewer activity resources per dollar of sales. After charging them for their actual use of ordering, deliveries, cartons, and shelf-stocking, they both show **healthy positive operating income** ($61,191$ and $75,750$).
+   - “Mom and Pop” stores place **many small, frequent orders** with many line items and deliveries, which consume a disproportionate share of the activity costs. When these costs are traced to them with ABC, the segment actually shows an **operating loss** of about $27,941$.
+
+3. **Managerial implications**
+   - Pharmacare may need to:
+     - Re-price services or products for “Mom and Pop” customers (higher margins, service fees, or minimum order sizes).  
+     - Reduce service levels (e.g., fewer deliveries, charging for shelf-stocking).  
+     - Or reconsider whether to continue serving that segment in its current form.
+   - ABC provides **much richer insight** than the simple gross-margin percentage and prevents mis-classifying high-cost customers as “profitable”.
+
+
 
 ---
 
