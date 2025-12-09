@@ -73,7 +73,7 @@ $RMSE = \sqrt{\dfrac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$
 
 4. $R^2$ Score
 
-$R^2 = 1 - \dfrac{unexplained Variance}{total Variance} = 1 - \dfrac{SSE}{SST}$
+$R^2 = 1 - \dfrac{\text{unexplained Variance}}{\text{total Variance}} = 1 - \dfrac{SSE}{SST}$
 
 5. Adjusted $R^2$ Score
 
@@ -103,5 +103,5 @@ $\text{Precision} = \dfrac{TP}{TP + FP}$
 
 6. F1-Score
 
-$\text{F1-Score} = 2 * \dfrac{Precision * Recall}{Precision + Recall}$
+$\text{F1-Score} = 2 * \dfrac{Precision \times Recall}{Precision + Recall}$
 
