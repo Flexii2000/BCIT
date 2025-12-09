@@ -6,37 +6,37 @@
 
 *Purpose: Scales every value on the fixed range of numbers from 0 to 1, one of the easiest and most powerful normalization tools to compare different values and reduce effects created by different scales. The smallest value is always 0, the largest always 1.*
 
-$X* = \frac{x - x_{\min}}{x_{\max} - x_{\min}}$
+$X* = \dfrac{x - x_{\min}}{x_{\max} - x_{\min}}$
 
 2. Z-score standardization
 *Purpose: values standardization method whose mean(x) is always 0 and whose standard deviation is always 1.*
 
-$z = \frac{x - \mu}{\sigma}$
+$z = \dfrac{x - \mu}{\sigma}$
 
 3. Interquartile Range
-*Purpose: measures the middle 50% of the ascending ordered data set (50% middle values). General basis to perform outlier analyes.*
+Purpose: measures the middle 50% of the ascending ordered data set (50% middle values). General basis to perform outlier analysis.*
 
 $IRQ = Q3 - Q1$
 
 Values at least 1.5 times below Q1 or at least 1.5 times above Q3 are considered **extreme values**.
 
 4. Decimal Scaling
-*Purpose: similar to Min-Max (maximum range of values is 0 to 1) but does not guarantee that the smallest is 0 and the largest 1.
+Purpose: similar to Min-Max (maximum range of values is 0 to 1) but does not guarantee that the smallest is 0 and the largest 1.
 
-$d digits of the largest value$
+$\text{d digits of the largest value}$
 
-$x* = \frac{x}{10^{d}}$
+$x* = \dfrac{x}{10^{d}}$
 
 ## Statistical Approaches
 
 1. Confidence intervals using the mean value
 
-$\bar{x} \pm t_{\alpha/2} \cdot \frac{s}{\sqrt{n}}$
+$\bar{x} \pm t_{\alpha/2} \cdot \dfrac{s}{\sqrt{n}}$
 
-$\bar{x} the mean$, 
-$t_{\alpha/2} the t-critical value$, 
-$s the sample std deviation$,
-$n the sample size$
+$\bar{x} \text{ the mean}$, 
+$t_{\alpha/2} \text{ the t-critical value}$, 
+$\text{s the sample std deviation}$,
+$\text{n the sample size}$
 
 *What to do to reduce the confidence interval:*
 > - decrease the critical t-value: NOT recommended since this also decreases the quality of the confidence interval test
@@ -45,15 +45,15 @@ $n the sample size$
 
 2. Simple linear regression
 
-$\hat{y} = b + mx $
+$\hat{y} = b + mx$
 
-$x the predictor$,
-$\hat{y} the response$
-$(y - \hat{y}) the prediction error or \textbf{residual}$
+$\text{ x the predictor}$,
+$\hat{y} \text{ the response}$
+$(y - \hat{y}) \text{ the prediction error or } \textbf{residual}$
 
 3. Correlation coefficient (r value)
 
-$r = \frac{\text{Cov}(x,y)}{\sigma_x \sigma_y}$
+$r = \dfrac{\text{Cov}(x,y)}{\sigma_x \sigma_y}$
 
 *Value is always between -1 and 1, -1 means perfect negative, +1 means perfect positive correlation.*
 
@@ -61,47 +61,47 @@ $r = \frac{\text{Cov}(x,y)}{\sigma_x \sigma_y}$
 
 1. Mean Absolute Error (MAE)
 
-$MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$
+$MAE = \dfrac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|$
 
 2. Mean Squared Error (MSE)
 
-$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
+$MSE = \dfrac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 
 3. Root Mean Square Error (RMSE)
 
-$RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$
+$RMSE = \sqrt{\dfrac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$
 
 4. $R^2$ Score
 
-$R^2 = 1 - \frac{unexplained Variance}{total Variance} = 1 - \frac{SSE}{SST}$
+$R^2 = 1 - \dfrac{unexplained Variance}{total Variance} = 1 - \dfrac{SSE}{SST}$
 
 5. Adjusted $R^2$ Score
 
-$\text{Adjusted } R^2 = 1 - \frac{(1 - R^2)(n - 1)}{n - p - 1}$
+$\text{Adjusted } R^2 = 1 - \dfrac{(1 - R^2)(n - 1)}{n - p - 1}$
 
 ## Evaluation metrics for Classifications
 
 1. Sensitiviy (also called Recall or True Positive Rate)
 
-$\text{Sensitivity} = \frac{TP}{TP + FN}$
+$\text{Sensitivity} = \dfrac{TP}{TP + FN}$
 
 2. Specificity (also called True Negative Rate)
 
-$\text{Specificity} = \frac{TP}{TP + FN}$
+$\text{Specificity} = \dfrac{TP}{TP + FN}$
 
 3. False Positive Rate (FPR, needed for ROC curves)
 
-$\text{FPR} = \frac{FP}{FP + TN}$
+$\text{FPR} = \dfrac{FP}{FP + TN}$
 
 4. Accuracy
 
-$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$
+$\text{Accuracy} = \dfrac{TP + TN}{TP + TN + FP + FN}$
 
 5. Precision
 
-$\text{Precision} = \frac{TP}{TP + FP}$
+$\text{Precision} = \dfrac{TP}{TP + FP}$
 
 6. F1-Score
 
-$\text{F1-Score} = 2 * \frac{Precision * Recall}{Precision + Recall}$
+$\text{F1-Score} = 2 * \dfrac{Precision * Recall}{Precision + Recall}$
 
