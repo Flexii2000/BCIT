@@ -4157,11 +4157,11 @@ All amounts in $.
 
 ### Interpretation – Is the president’s pleasure justified?
 
-- The original Level 1 report (static budget vs. actual) shows a **$48{,}000 favourable** variance in total direct costs, which is why the president is pleased.  
+- The original Level 1 report (static budget vs. actual) shows a **$48,000 favourable** variance in total direct costs, which is why the president is pleased.  
 - However, once we adjust for the lower output (use the **flexible budget** at 8,800 units), we see that:
   - Each direct cost category (materials, manuf. labour, marketing labour) has an **unfavourable flexible-budget variance**.
-  - Total flexible-budget variance is **$24{,}000 U**, meaning costs were **higher than expected for the actual level of activity**.
-  - The overall $48{,}000 F static-budget variance is driven entirely by the **$72{,}000 F sales-volume variance** (producing and selling 1,200 fewer units than planned).
+  - Total flexible-budget variance is **$24,000 U**, meaning costs were **higher than expected for the actual level of activity**.
+  - The overall $48,000 F static-budget variance is driven entirely by the **$72,000 F sales-volume variance** (producing and selling 1,200 fewer units than planned).
 
 Therefore, the president’s pleasure is **not justified**. The company appears more “favourable” only because it produced fewer units; conditional on producing 8,800 units, its direct costs were actually **worse than budgeted**.
 
